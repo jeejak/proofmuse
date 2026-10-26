@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' file: data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'">
+<title>ProofMuse | Synthetic photo review</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f5f7;color:#172030;font:16px system-ui,sans-serif}header{padding:20px 28px;background:#10263c;color:white}header h1{margin:0 0 8px;font-size:23px}.notice{color:#ffe1a2}main{max-width:1480px;margin:auto;padding:22px}.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}button,select,input{font:inherit;padding:8px;border:1px solid #a8b2bf;border-radius:5px}button{background:white;cursor:pointer}button.primary{background:#156568;color:white}button:disabled{opacity:.45;cursor:default}.layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(320px,1fr);gap:24px}.photo{position:relative;align-self:start;background:#d8dce1}.photo img{display:block;width:100%;height:auto}.photo svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.photo rect{fill:none;stroke:#ff4d67;stroke-width:4;vector-effect:non-scaling-stroke}#ownbox{stroke:#008b9a}section{background:white;padding:18px;border-radius:8px}label.field{display:grid;grid-template-columns:minmax(150px,1fr) 1fr;align-items:center;gap:10px;margin:10px 0}label.field input,label.field select{min-width:0;width:100%}pre{white-space:pre-wrap;font:13px ui-monospace,monospace;background:#edf1f4;padding:12px}.warn{color:#9c3a00}#message{min-height:25px}small{display:block;color:#576476;line-height:1.5}.photo-note{margin:14px 0}.record{margin-top:20px;border-top:1px solid #d0d6df;padding-top:12px}details{margin-top:16px}a{color:#166376}@media(max-width:850px){.layout{grid-template-columns:1fr}main{padding:12px}}
+</style>
+<header><h1>ProofMuse: synthetic photo review</h1><div class="notice">All images are generated, not camera photos. Proposed labels are not human grades.</div></header>
+<main>
+<div class="bar"><label><input type="checkbox" id="blind" checked> Blind mode</label><label>Reviewer <input id="reviewer" value="Samsul" size="12"></label><button id="export">Download review-decisions.csv</button><span id="progress"></span></div>
+<div class="bar"><button id="prev">Previous</button><button id="next">Next</button><button id="unreviewed">Next untouched</button><label>Photo <select id="queue"></select></label></div>
+<h2 id="title"></h2><div id="message" role="status" aria-live="polite"></div>
+<div class="layout"><div><div class="photo"><img id="image" alt="Synthetic packing evidence"><svg id="overlay" viewBox="0 0 1000 1000" preserveAspectRatio="none"><rect id="ownbox" style="display:none"></rect><rect id="proposedbox" style="display:none"></rect></svg></div><small class="photo-note">Click the image to open the original at full size. Cyan: your box. Red: proposed box, shown only after comparison or with blind mode off. Bounding box uses a top-left origin on a 0 to 1000 grid.</small></div>
+<section><h3>Your photo labels</h3><small id="orientation"></small><form id="form"></form><button class="primary" id="save">Save independent labels and compare</button> <button id="accept" hidden>Accept proposed photo labels</button>
+<div id="comparison" hidden><h3>Proposed values and disagreements</h3><pre id="proposals"></pre></div>
+<div class="record"><h3>Record-level review</h3><small>Optional: enter your own record fields after checking every photo. These are kept separate from the photo decision. The field named human_verdict is a legacy column; unreviewed values remain proposals.</small><details><summary>Enter independent record observations</summary><form id="recordform"></form><button id="saverecord">Save record review</button></details></div>
+<small id="saved"></small></section></div>
+<p>Test photos come first, followed by dev. Only use dev for prompt tuning. Test review is annotation work, not permission to tune on test examples.</p>
+<p>Nothing is uploaded. Download decisions before closing. Browser-local recovery is best effort and may be unavailable for local files.</p>
+</main>
+<script>
+'use strict';
+const data=/*DATA*/[];
+const fields=['label_in_photo','label_readable','image_quality_issues','boxes_in_photo','sealed_box_in_photo','item_in_photo','label_box'];
+const recordFields=['image_usable','label_visible','label_resi_read','package_sealed','item_visible','koli_seen','human_verdict'];
+const $=id=>document.getElementById(id);let index=0;const revealed=new Set(),exposed=new Set();let decisions={};
+const storageKey='proofmuse-synthetic-review-v1';try{decisions=JSON.parse(localStorage.getItem(storageKey)||'{}')}catch(e){}
+function remember(){try{localStorage.setItem(storageKey,JSON.stringify(decisions))}catch(e){$('message').textContent='Browser storage unavailable. Download decisions before closing.'}}
+const key=p=>p.record_id+'/'+p.photo;
+const text=(el,s)=>{el.textContent=s};
+function wib(){return new Date(Date.now()+7*3600000).toISOString().replace('Z','+07:00')}
+function field(name,values,parent,prefix=''){
+ const label=document.createElement('label');label.className='field';label.textContent=name;
+ const input=document.createElement(values?'select':'input');input.id=prefix+name;input.name=name;
+ if(values){const empty=document.createElement('option');empty.value='';empty.textContent='Choose';input.append(empty);for(const v of values){const o=document.createElement('option');o.value=v;o.textContent=v;input.append(o)}}
+ else input.type='text';
+ if(name==='boxes_in_photo'||name==='koli_seen'){input.type='number';input.min='0';input.step='1'}
+ label.append(input);parent.append(label);input.addEventListener('input',draw);
+}
+for(const f of fields)field(f,['label_in_photo','label_readable','sealed_box_in_photo','item_in_photo'].includes(f)?['yes','no','uncertain']:null,$('form'));
+for(const f of recordFields)field(f,f==='human_verdict'?['kuat','perlu_dicek','lemah']:f==='image_usable'?['ok','dark','blurry','obstructed']:['label_visible','package_sealed','item_visible'].includes(f)?['yes','no','unsure']:null,$('recordform'),'record_');
+$('image_quality_issues').placeholder='none or blur|glare|too_dark|too_far|cropped|obstructed';
+$('label_box').placeholder='x_min y_min x_max y_max, or empty';
+for(let i=0;i<data.length;i++){const o=document.createElement('option');o.value=i;o.textContent=`${data[i].split}: ${key(data[i])}`;$('queue').append(o)}
+function boxValid(v){if(!v)return true;const a=v.trim().split(/\s+/).map(Number);return a.length===4&&a.every(Number.isInteger)&&a[0]>=0&&a[1]>=0&&a[2]<=1000&&a[3]<=1000&&a[0]<a[2]&&a[1]<a[3]}
+function validate(v){
+ for(const f of ['label_in_photo','label_readable','sealed_box_in_photo','item_in_photo'])if(!['yes','no','uncertain'].includes(v[f]))throw Error('Enter '+f);
+ if(!/^\d+$/.test(v.boxes_in_photo))throw Error('Enter an integer box count.');
+ if(!boxValid(v.label_box))throw Error('Bounding box must use four valid integers.');
+ if(v.label_in_photo==='yes'&&!v.label_box)throw Error('Draw/enter a label box for the visible label.');
+ if(v.label_in_photo==='no'&&v.label_box)throw Error('Remove label box when no label is visible.');
+ if(v.label_readable==='yes'&&v.label_in_photo!=='yes')throw Error('A readable label must be visible.');
+ if(v.image_quality_issues.split('|').some(x=>x&&!['blur','glare','too_dark','too_far','cropped','obstructed'].includes(x)))throw Error('Use only the listed image-quality issues.');
+}
+function getValues(){return Object.fromEntries(fields.map(f=>[f,$(f).value.trim()==='none'&&f==='image_quality_issues'?'':$(f).value.trim()]))}
+function rect(id,value){const el=$(id);const hide=!value||!boxValid(value);el.style.display=hide?'none':'';if(hide)return;const a=value.split(/\s+/).map(Number);el.setAttribute('x',a[0]);el.setAttribute('y',a[1]);el.setAttribute('width',a[2]-a[0]);el.setAttribute('height',a[3]-a[1]);}
+function draw(){const p=data[index];rect('ownbox',$('label_box').value);const show=!$('blind').checked||revealed.has(key(p));$('comparison').hidden=!show;$('accept').hidden=!show;rect('proposedbox',show?p.label_box:'');if(show){exposed.add(key(p));const own=getValues();$('proposals').textContent=fields.map(f=>`${f}: ${p[f]}${own[f]!==p[f]?' [different from your entry]':''}`).join('\n')}}
+function render(){const p=data[index];$('title').textContent=`${key(p)} | ${p.split} | SYNTHETIC`;$('image').src='../records/'+key(p);$('queue').value=index;$('orientation').textContent='Orientation from pixels: '+p.orientation;
+ const d=decisions[key(p)];for(const f of fields)$(f).value=d?.photo_review=== 'yes'?d[f]:'';
+ const r=Object.values(decisions).find(x=>x.record_id===p.record_id&&x.record_review==='yes');for(const f of recordFields)$('record_'+f).value=r?.['record_'+f]||'';
+ $('saved').textContent=d?.photo_review==='yes'?'Saved photo decision: '+d.reviewed_at:p.needs_review==='no'?'Previously reviewed: '+p.reviewed_by+' at '+p.reviewed_at:'';
+ $('progress').textContent=data.filter(p=>p.needs_review==='no'||decisions[key(p)]?.photo_review==='yes').length+' / '+data.length+' photos reviewed';$('message').textContent='';draw();}
+function reviewer(){const r=$('reviewer').value.trim();if(!r)throw Error('Enter a reviewer name.');return r}
+function savePhoto(mode,values){validate(values);const p=data[index],k=key(p);decisions[k]={...(decisions[k]||{}),record_id:p.record_id,photo:p.photo,...values,photo_review:'yes',synthetic:'true',reviewed_by:reviewer(),reviewed_at:wib(),review_mode:mode};revealed.add(k);remember();render();}
+$('save').onclick=()=>{try{savePhoto($('blind').checked&&!exposed.has(key(data[index]))?'blind':'assisted',getValues())}catch(e){$('message').textContent=e.message}};
+$('accept').onclick=()=>{try{savePhoto('accepted_proposal',Object.fromEntries(fields.map(f=>[f,data[index][f]])))}catch(e){$('message').textContent=e.message}};
+$('saverecord').onclick=()=>{try{const vals=Object.fromEntries(recordFields.map(f=>['record_'+f,$('record_'+f).value.trim()]));for(const f of recordFields.filter(f=>!['label_resi_read','koli_seen'].includes(f)))if(vals['record_'+f]==='')throw Error('Enter record '+f);const p=data[index],k=key(p);for(const old of Object.values(decisions))if(old.record_id===p.record_id)old.record_review="no";decisions[k]={...(decisions[k]||{}),record_id:p.record_id,photo:p.photo,...vals,record_review:'yes',synthetic:'true',record_reviewed_by:reviewer(),record_reviewed_at:wib()};remember();$('message').textContent='Record review saved.'}catch(e){$('message').textContent=e.message}};
+$('prev').onclick=()=>{index=(index+data.length-1)%data.length;render()};$('next').onclick=()=>{index=(index+1)%data.length;render()};$('queue').onchange=()=>{index=Number($('queue').value);render()};$('blind').onchange=draw;
+$('unreviewed').onclick=()=>{for(let n=1;n<=data.length;n++){const i=(index+n)%data.length;if(data[i].needs_review!=='no'&&decisions[key(data[i])]?.photo_review!=='yes'){index=i;render();return}}$('message').textContent='All photos have a decision.'};
+$('image').onclick=()=>window.open($('image').src,'_blank','noopener');
+$('export').onclick=()=>{const rows=Object.values(decisions);if(!rows.length){$('message').textContent='No decisions to export.';return}const columns=['record_id','photo',...fields,'photo_review','reviewed_by','reviewed_at','review_mode',...recordFields.map(f=>'record_'+f),'record_review','record_reviewed_by','record_reviewed_at','synthetic'];const quote=v=>'"'+String(v??'').replaceAll('"','""')+'"';const csv=columns.join(',')+'\n'+rows.sort((a,b)=>key(a).localeCompare(key(b))).map(r=>columns.map(c=>quote(r[c])).join(',')).join('\n')+'\n';const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='review-decisions.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+render();
+</script></html>

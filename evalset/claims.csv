@@ -1,0 +1,41 @@
+claim_id,order_id,text,claim_type,evidence_that_answers,evidence_missing,synthetic
+SYN-C01,SYN-R14,"kak barangnya kurang satu, yg satunya mana ya?",barang_kurang,,item_not_visible|not_sealed|item_quantity_not_established,true
+SYN-C02,SYN-R20,"gan cuma masuk satu barang, harusnya lebih 😕",barang_kurang,,item_not_visible|not_sealed|item_quantity_not_established,true
+SYN-C03,SYN-R26,KOK ISINYA KURANG? tolong cek packingnya,barang_kurang,R26/01.jpg,not_sealed|item_quantity_not_established,true
+SYN-C04,SYN-R42,"udh dibuka kak, ada item yg ga ikut",barang_kurang,R42/03.jpg,item_not_visible|item_quantity_not_established,true
+SYN-C05,SYN-R43,kak kayaknya ada yg ketinggalan pas dipacking deh,barang_kurang,R43/04.jpg,item_not_visible|item_quantity_not_established,true
+SYN-C06,SYN-R55,"isinya ga lengkap nih, bisa dicekin?",barang_kurang,R55/01.jpg|R55/04.jpg,item_quantity_not_established,true
+SYN-C07,SYN-R07,yg datang kurang kak... ada foto sebelum ditutup ga?,barang_kurang,R07/01.jpg|R07/08.jpg,item_quantity_not_established,true
+SYN-C08,SYN-R95,"aku terima sebagian aja, sisanya blm ada",barang_kurang,R95/01.jpg|R95/03.jpg,item_quantity_not_established,true
+SYN-C09,SYN-R15,kak barangnya nyampe rusak 😭,barang_rusak,,item_not_visible|not_sealed|delivery_condition_not_shown,true
+SYN-C10,SYN-R21,"gan ini penyok pas aku buka, packingnya gimana?",barang_rusak,,item_not_visible|not_sealed|delivery_condition_not_shown,true
+SYN-C11,SYN-R27,"BARANG RUSAK KAK, minta dicek ya",barang_rusak,R27/01.jpg,not_sealed|delivery_condition_not_shown,true
+SYN-C12,SYN-R31,"udh sampe tp ada yg pecah, sedih bgt",barang_rusak,R31/01.jpg|R31/04.jpg,delivery_condition_not_shown,true
+SYN-C13,SYN-R48,"kak ada lecetnya, sebelum dikirim kondisinya gmn?",barang_rusak,R48/01.jpg,not_sealed|delivery_condition_not_shown,true
+SYN-C14,SYN-R59,ini rusak di jalan apa dr awal ya kak?,barang_rusak,R59/01.jpg,not_sealed|delivery_condition_not_shown,true
+SYN-C15,SYN-R99,bungkusnya kebuka trus barangnya rusak nih,barang_rusak,R99/01.jpg|R99/03.jpg,delivery_condition_not_shown,true
+SYN-C16,SYN-R03,"kak barangnya retak, ada foto pas dipacking?",barang_rusak,R03/01.jpg|R03/06.jpg,delivery_condition_not_shown,true
+SYN-C17,SYN-R16,"kak paketnya kosong, serius 😭",paket_kosong,,item_not_visible|not_sealed|continuous_packing_and_delivery_not_shown,true
+SYN-C18,SYN-R22,GAN INI CUMA KARDUS DOANG,paket_kosong,,item_not_visible|not_sealed|continuous_packing_and_delivery_not_shown,true
+SYN-C19,SYN-R28,udh buka tp ga ada barangnya kak,paket_kosong,R28/01.jpg,not_sealed|continuous_packing_and_delivery_not_shown,true
+SYN-C20,SYN-R42,kok isinya kertas aja ya? barangnya mana,paket_kosong,R42/03.jpg,item_not_visible|continuous_packing_and_delivery_not_shown,true
+SYN-C21,SYN-R44,"aku terima kotak kosong nih kak, tlg dicek",paket_kosong,R44/03.jpg,item_not_visible|continuous_packing_and_delivery_not_shown,true
+SYN-C22,SYN-R45,"paket dateng kosong, ada bukti masukin barang ga?",paket_kosong,R45/04.jpg,item_not_visible|continuous_packing_and_delivery_not_shown,true
+SYN-C23,SYN-R46,kak ga ada isi sama sekali pas dibuka,paket_kosong,R46/04.jpg,item_not_visible|continuous_packing_and_delivery_not_shown,true
+SYN-C24,SYN-R01,ini beneran dikirim barangnya? kotaknya kosong,paket_kosong,R01/01.jpg|R01/04.jpg,continuous_packing_and_delivery_not_shown,true
+SYN-C25,SYN-R101,kak pesen mug merah kok dateng biru?,salah_kirim,R101/01.jpg|R101/03.jpg,,true
+SYN-C26,SYN-R102,"hijabnya ijo kak, aku pilih beige 😕",salah_kirim,R102/01.jpg|R102/03.jpg,,true
+SYN-C27,SYN-R103,"aku pesen charger putih gan, yg dtg item",salah_kirim,R103/01.jpg|R103/03.jpg,,true
+SYN-C28,SYN-R104,"KAK SALAH WARNA, kotak pensilnya merah",salah_kirim,R104/01.jpg|R104/03.jpg,,true
+SYN-C29,SYN-R36,"ini bukan pesenanku kayaknya kak, cek labelnya dong",salah_kirim,R36/01.jpg|R36/04.jpg,,true
+SYN-C30,SYN-R37,gan barang ketuker ga sih? beda yg aku beli,salah_kirim,R37/01.jpg|R37/06.jpg,,true
+SYN-C31,SYN-R39,"kak salah kirim nih, ada foto isinya sebelum packing?",salah_kirim,R39/01.jpg|R39/05.jpg,,true
+SYN-C32,SYN-R63,"labelnya kayak beda kak, tolong cocokkin pesenanku",salah_kirim,R63/03.jpg,item_not_visible,true
+SYN-C33,SYN-R17,"kak paket blm aku terima, kok udh selesai?",tidak_diterima,,readable_label_missing|delivery_tracking_missing|handover_proof_missing,true
+SYN-C34,SYN-R23,gan di aplikasi terkirim tp ga ada paket,tidak_diterima,,readable_label_missing|delivery_tracking_missing|handover_proof_missing,true
+SYN-C35,SYN-R32,"AKU BELUM TERIMA KAK, cek ke kurir dong",tidak_diterima,,readable_label_missing|delivery_tracking_missing|handover_proof_missing,true
+SYN-C36,SYN-R38,udh nunggu seharian ga dateng2 😕,tidak_diterima,R38/04.jpg,delivery_tracking_missing|handover_proof_missing,true
+SYN-C37,SYN-R61,kak statusnya delivered tp paketnya mana ya,tidak_diterima,,readable_label_missing|delivery_tracking_missing|handover_proof_missing,true
+SYN-C38,SYN-R62,"ga ada yg nerima di sini kak, tlg bantu lacak",tidak_diterima,,readable_label_missing|delivery_tracking_missing|handover_proof_missing,true
+SYN-C39,SYN-R02,ini bener udh diserahin ke kurir blm?,tidak_diterima,R02/03.jpg,delivery_tracking_missing|handover_proof_missing,true
+SYN-C40,SYN-R100,"kak pesenanku blm sampe, ada bukti serah terimanya?",tidak_diterima,R100/03.jpg,delivery_tracking_missing|handover_proof_missing,true

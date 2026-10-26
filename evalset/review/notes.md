@@ -1,0 +1,95 @@
+# Synthetic data: pixel inspection notes
+
+All entries below are model proposals, not human grades. Bounding boxes are approximate axis-aligned boxes.
+When multiple labels are visible, label_box encloses the main or closest shipping label, not all labels.
+sealed_box_in_photo means at least one visibly taped-closed shipping box, not every box in a multi-box photo.
+boxes_in_photo counts distinct visible shipping boxes, including partially cropped boxes.
+
+- R03/01.jpg: Pre-existing book cover includes a published author name, not buyer data. Do not claim every image is text-free.
+- R03/03.jpg: Book title differs from earlier shots; synthetic sequence identity drift.
+- R03/04.jpg: Uncertain sealed_box_in_photo. Taping in progress; complete seal not established.
+- R04/01.jpg: Initial disposable bottle differs from bottles inside subsequent boxes.
+- R04/03.jpg: Primary left label box; second label on right parcel also visible.
+- R05/01.jpg: Blue car changes to red in following shots.
+- R05/05.jpg: Uncertain sealed_box_in_photo. Tape being applied; complete seal not established.
+- R05/08.jpg: Red toy car outside sealed box remains visible; cannot establish contents.
+- R06/01.jpg: Containers differ from next shot; sequence identity drift.
+- R06/03.jpg: Uncertain sealed_box_in_photo. Taping in progress.
+- R07/03.jpg: One of three boxes is sealed; two remain open.
+- R07/05.jpg: Uncertain sealed_box_in_photo. One box being taped; other two open.
+- R07/07.jpg: Primary left label; three labels visible.
+- R07/08.jpg: Foreground box is open again; two background boxes closed.
+- R09/03.jpg: Extra blue scarf in second box.
+- R09/05.jpg: Uncertain sealed_box_in_photo. One box taped in progress; other open.
+- R09/06.jpg: Primary left label.
+- R09/07.jpg: One box open again in background.
+- R10/02.jpg: Different pencil case design from shot 01.
+- R11/02.jpg: Mug decoration differs between shots.
+- R11/04.jpg: Uncertain sealed_box_in_photo. Tape application in progress.
+- R11/06.jpg: Mug visible outside box, not proof of contents.
+- R12/03.jpg: Primary left shipping label.
+- R12/04.jpg: T-shirt outside sealed boxes.
+- R13/01.jpg: Pre-existing public book author text on cover.
+- R13/02.jpg: Book identity changes; generated cover includes author-like text.
+- R13/03.jpg: Uncertain sealed_box_in_photo. Tape application in progress.
+- R13/05.jpg: Book remains outside box.
+- R14/04.jpg: Bottle outside box.
+- R15/03.jpg: Box is open again in last shot.
+- R16/03.jpg: Uncertain sealed_box_in_photo. One box being taped; other open.
+- R16/04.jpg: Primary left label.
+- R16/05.jpg: One box open again in foreground.
+- R18/04.jpg: Uncertain sealed_box_in_photo. Tape application in progress in deep shadow.
+- R19/01.jpg: Scarf silhouette visible despite intended unsure label.
+- R19/03.jpg: Uncertain sealed_box_in_photo. Very deep shadow prevents confident inspection of the full seal.
+- R19/04.jpg: Uncertain sealed_box_in_photo. Top seam in deep shadow.
+- R22/04.jpg: Uncertain sealed_box_in_photo. Blurred tape application does not establish a complete seal.
+- R23/03.jpg: Primary left label.
+- R24/03.jpg: Uncertain sealed_box_in_photo. Blurred taping in progress.
+- R25/02.jpg: Toy car color changes from blue to red.
+- R25/03.jpg: Uncertain sealed_box_in_photo. Heavy motion blur prevents confident seal inspection.
+- R25/04.jpg: Uncertain sealed_box_in_photo. Heavy motion blur prevents confident seal inspection.
+- R26/03.jpg: Only a white label sliver remains visible to the right of the hand.
+- R26/04.jpg: Hand covers label completely; tape visible outside hand.
+- R27/03.jpg: Uncertain sealed_box_in_photo. Tape application in progress.
+- R27/04.jpg: Label only partially visible around hand.
+- R27/05.jpg: Label completely covered.
+- R28/02.jpg: Visible white label edges around hand.
+- R28/03.jpg: Label fully hidden by hand.
+- R30/03.jpg: Uncertain sealed_box_in_photo. Hand conceals top seam; label on side is readable.
+- R30/04.jpg: Uncertain sealed_box_in_photo. Hand covers relevant top seam.
+- R33/03.jpg: Uncertain sealed_box_in_photo. Tape being applied.
+- R34/04.jpg: Uncertain sealed_box_in_photo. Tape being applied.
+- R37/04.jpg: Uncertain sealed_box_in_photo. Tape application in progress.
+- R39/03.jpg: Uncertain sealed_box_in_photo. One box being taped and one open.
+- R39/04.jpg: Primary left label.
+- R41/03.jpg: Uncertain sealed_box_in_photo. Tape application in progress.
+- R46/01.jpg: Open empty box; no item.
+- R46/02.jpg: Uncertain sealed_box_in_photo. Taping in progress.
+- R47/03.jpg: Uncertain label_readable. Very faint low-contrast digits in wide shot; exact full resi reading not confident.
+- R47/04.jpg: Inspected full-size: faint resi remains readable.
+- R48/03.jpg: Smudges obscure digits on crumpled label.
+- R48/04.jpg: Smudge obscures full resi.
+- R49/03.jpg: Uncertain sealed_box_in_photo. Tape application in progress.
+- R49/04.jpg: Uncertain label_readable. Small distant label: cannot confidently transcribe every digit at this review scale.
+- R49/05.jpg: Box is open again in final shot; not the intended label close-up.
+- R55/04.jpg: Toy car also visible outside box.
+- R56/03.jpg: Primary left label.
+- R57/03.jpg: Primary left label.
+- R57/04.jpg: Sandals outside boxes.
+- R58/03.jpg: One rear box sealed, foreground box being taped, left open.
+- R58/04.jpg: Primary left shipping label.
+- R60/03.jpg: Uncertain label_readable. Low-contrast label in wider shot cannot be transcribed confidently.
+- R60/04.jpg: Full-size inspection: faint NLIDAP55984903 is readable.
+- R69/02.jpg: Distant framing still leaves digits readable; proposed label follows pixels.
+- R69/03.jpg: Uncertain sealed_box_in_photo. Parcel is very small; tape/seal cannot be established confidently.
+- R70/02.jpg: Distant framing still leaves digits readable.
+- R70/03.jpg: Uncertain sealed_box_in_photo. Parcel is very small; seal cannot be established confidently.
+- R71/02.jpg: Requested frame crop did not occur.
+- R71/03.jpg: Uncertain sealed_box_in_photo. Label and box cropped, but full resi remains readable. Full seal outside frame.
+- R72/02.jpg: Requested frame crop did not occur.
+- R72/03.jpg: Uncertain sealed_box_in_photo. Label and box cropped, but full resi remains readable. Full seal outside frame.
+- R83/02.jpg: Motion blur is visible, but the full resi remains readable. Do not inherit unreadability from the prompt.
+- R85/02.jpg: Motion blur is visible, but the resi remains readable in this wider view.
+- R87/02.jpg: Regenerated to correct the courier logo. The label and partial resi are genuinely cut by the right image border.
+- R87/03.jpg: Partial resi at the right edge; the cropped prefix cannot establish the full tracking number.
+- R89/02.jpg: Only a partial resi is visible beyond the frame edge.

@@ -1,0 +1,45 @@
+{
+  "synthetic": true,
+  "records": 104,
+  "photos": 399,
+  "pre_existing_photos": 279,
+  "new_photos": 120,
+  "verdict": {
+    "kuat": 43,
+    "lemah": 41,
+    "perlu_dicek": 20
+  },
+  "group": {
+    "blurry": 6,
+    "dark": 6,
+    "glare": 4,
+    "good": 13,
+    "icp_items": 6,
+    "item_mismatch": 4,
+    "item_never_shown": 5,
+    "koli_mismatch": 4,
+    "label_unreadable": 4,
+    "label_with_a_different_resi": 6,
+    "mixed": 6,
+    "never_sealed": 4,
+    "no_label": 5,
+    "obstructed": 5,
+    "portrait": 6,
+    "retake_pairs": 16,
+    "too_far_cropped": 4
+  },
+  "split": {
+    "dev": 42,
+    "test": 62
+  },
+  "claim_type": {
+    "barang_kurang": 8,
+    "barang_rusak": 8,
+    "paket_kosong": 8,
+    "salah_kirim": 8,
+    "tidak_diterima": 8
+  },
+  "claims_on_weak_records": 26,
+  "retake_pairs": 8,
+  "needs_review": 399
+}

@@ -1,0 +1,400 @@
+record_id,photo,orientation,label_in_photo,label_readable,image_quality_issues,boxes_in_photo,sealed_box_in_photo,item_in_photo,label_box,needs_review,reviewed_by,reviewed_at,synthetic
+R01,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R01,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R01,03.jpg,landscape,yes,yes,,1,yes,no,440 320 790 640,yes,,,true
+R01,04.jpg,landscape,yes,yes,,1,yes,no,175 230 820 900,yes,,,true
+R02,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R02,02.jpg,landscape,yes,yes,,1,yes,no,340 230 680 450,yes,,,true
+R02,03.jpg,landscape,yes,yes,,1,yes,no,230 330 765 955,yes,,,true
+R03,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R03,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R03,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R03,04.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
+R03,05.jpg,landscape,yes,yes,,1,yes,no,355 235 665 440,yes,,,true
+R03,06.jpg,landscape,yes,yes,,1,yes,no,300 380 850 800,yes,,,true
+R04,01.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R04,02.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R04,03.jpg,landscape,yes,yes,,2,yes,no,160 330 400 470,yes,,,true
+R04,04.jpg,landscape,yes,yes,,2,yes,no,170 320 640 840,yes,,,true
+R05,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R05,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R05,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R05,04.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R05,05.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
+R05,06.jpg,landscape,no,no,,1,yes,no,,yes,,,true
+R05,07.jpg,landscape,yes,yes,,1,yes,no,350 270 680 470,yes,,,true
+R05,08.jpg,landscape,yes,yes,,1,yes,yes,350 370 875 830,yes,,,true
+R06,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R06,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R06,03.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
+R06,04.jpg,landscape,yes,yes,,1,yes,no,340 230 680 450,yes,,,true
+R06,05.jpg,landscape,yes,yes,,1,yes,no,240 270 850 890,yes,,,true
+R07,01.jpg,landscape,no,no,,3,no,yes,,yes,,,true
+R07,02.jpg,landscape,no,no,,3,no,yes,,yes,,,true
+R07,03.jpg,landscape,no,no,,3,yes,yes,,yes,,,true
+R07,04.jpg,landscape,no,no,,3,no,yes,,yes,,,true
+R07,05.jpg,landscape,no,no,,3,uncertain,yes,,yes,,,true
+R07,06.jpg,landscape,no,no,,3,yes,no,,yes,,,true
+R07,07.jpg,landscape,yes,yes,,3,yes,no,85 345 310 530,yes,,,true
+R07,08.jpg,landscape,yes,yes,,3,yes,yes,235 580 770 860,yes,,,true
+R08,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R08,02.jpg,landscape,yes,yes,,1,yes,no,320 230 685 500,yes,,,true
+R08,03.jpg,landscape,yes,yes,,1,yes,no,265 320 760 790,yes,,,true
+R09,01.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R09,02.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R09,03.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R09,04.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R09,05.jpg,landscape,no,no,,2,uncertain,yes,,yes,,,true
+R09,06.jpg,landscape,yes,yes,,2,yes,no,130 300 410 465,yes,,,true
+R09,07.jpg,landscape,yes,yes,,2,yes,yes,100 430 550 915,yes,,,true
+R10,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R10,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R10,03.jpg,landscape,yes,yes,,1,yes,no,345 285 680 515,yes,,,true
+R10,04.jpg,landscape,yes,yes,,1,yes,no,225 325 835 830,yes,,,true
+R100,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R100,02.jpg,landscape,yes,yes,,1,yes,no,325 210 690 485,yes,,,true
+R100,03.jpg,landscape,yes,yes,,1,yes,no,235 470 780 855,yes,,,true
+R101,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R101,02.jpg,landscape,yes,yes,,1,yes,no,335 225 680 465,yes,,,true
+R101,03.jpg,landscape,yes,yes,,1,yes,no,250 320 775 740,yes,,,true
+R102,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R102,02.jpg,landscape,yes,yes,,1,yes,no,315 215 695 500,yes,,,true
+R102,03.jpg,landscape,yes,yes,,1,yes,no,220 425 780 845,yes,,,true
+R103,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R103,02.jpg,landscape,yes,yes,,1,yes,no,380 205 665 440,yes,,,true
+R103,03.jpg,landscape,yes,yes,,1,yes,no,225 450 770 850,yes,,,true
+R104,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R104,02.jpg,landscape,yes,yes,,1,yes,no,330 205 700 500,yes,,,true
+R104,03.jpg,landscape,yes,yes,,1,yes,no,240 470 780 845,yes,,,true
+R11,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R11,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R11,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R11,04.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
+R11,05.jpg,landscape,yes,yes,,1,yes,no,420 230 735 470,yes,,,true
+R11,06.jpg,landscape,yes,yes,,1,yes,yes,295 320 850 850,yes,,,true
+R12,01.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R12,02.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R12,03.jpg,landscape,yes,yes,,2,yes,no,180 350 410 540,yes,,,true
+R12,04.jpg,landscape,yes,yes,,2,yes,yes,490 360 960 855,yes,,,true
+R13,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R13,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R13,03.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
+R13,04.jpg,landscape,yes,yes,,1,yes,no,300 230 690 470,yes,,,true
+R13,05.jpg,landscape,yes,yes,,1,yes,yes,435 220 980 830,yes,,,true
+R14,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R14,02.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R14,03.jpg,landscape,yes,no,too_dark,1,yes,no,465 370 700 505,yes,,,true
+R14,04.jpg,landscape,yes,no,too_dark,1,yes,yes,550 560 805 770,yes,,,true
+R15,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R15,02.jpg,landscape,yes,no,too_dark,1,yes,no,430 280 665 410,yes,,,true
+R15,03.jpg,landscape,yes,no,too_dark,1,no,yes,265 550 500 895,yes,,,true
+R16,01.jpg,landscape,no,no,too_dark,2,no,yes,,yes,,,true
+R16,02.jpg,landscape,no,no,too_dark,2,no,yes,,yes,,,true
+R16,03.jpg,landscape,no,no,too_dark,2,uncertain,yes,,yes,,,true
+R16,04.jpg,landscape,yes,no,too_dark,2,yes,no,310 430 510 510,yes,,,true
+R16,05.jpg,landscape,yes,no,too_dark,2,yes,yes,690 450 930 700,yes,,,true
+R17,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R17,02.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R17,03.jpg,landscape,yes,no,too_dark,1,yes,no,400 335 650 500,yes,,,true
+R17,04.jpg,landscape,yes,no,too_dark,1,yes,yes,630 340 875 610,yes,,,true
+R18,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R18,02.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R18,03.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R18,04.jpg,landscape,no,no,too_dark,1,uncertain,no,,yes,,,true
+R18,05.jpg,landscape,yes,no,too_dark,1,yes,no,505 370 755 550,yes,,,true
+R18,06.jpg,landscape,yes,no,too_dark,1,yes,yes,460 400 700 820,yes,,,true
+R19,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R19,02.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R19,03.jpg,landscape,yes,no,too_dark,1,uncertain,no,500 385 665 525,yes,,,true
+R19,04.jpg,landscape,yes,no,too_dark,1,uncertain,no,405 420 685 735,yes,,,true
+R20,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R20,02.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R20,03.jpg,landscape,yes,no,blur,1,yes,no,335 245 700 475,yes,,,true
+R20,04.jpg,landscape,yes,no,blur,1,yes,yes,270 200 770 600,yes,,,true
+R21,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R21,02.jpg,landscape,yes,no,blur,1,yes,no,300 140 720 425,yes,,,true
+R21,03.jpg,landscape,yes,no,blur,1,yes,yes,325 350 850 830,yes,,,true
+R22,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R22,02.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R22,03.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R22,04.jpg,landscape,no,no,blur,1,uncertain,yes,,yes,,,true
+R22,05.jpg,landscape,yes,no,blur,1,yes,no,350 275 685 520,yes,,,true
+R22,06.jpg,landscape,yes,no,blur,1,yes,yes,400 400 960 865,yes,,,true
+R23,01.jpg,landscape,no,no,blur,2,no,yes,,yes,,,true
+R23,02.jpg,landscape,no,no,blur,2,no,yes,,yes,,,true
+R23,03.jpg,landscape,yes,no,blur,2,yes,no,175 320 430 420,yes,,,true
+R23,04.jpg,landscape,yes,no,blur,2,yes,yes,490 430 970 900,yes,,,true
+R24,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R24,02.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R24,03.jpg,landscape,no,no,blur,1,uncertain,yes,,yes,,,true
+R24,04.jpg,landscape,yes,no,blur,1,yes,no,360 190 755 480,yes,,,true
+R24,05.jpg,landscape,yes,no,blur,1,yes,yes,180 410 750 900,yes,,,true
+R25,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R25,02.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R25,03.jpg,landscape,yes,no,blur,1,uncertain,no,340 235 690 450,yes,,,true
+R25,04.jpg,landscape,yes,no,blur,1,uncertain,no,300 320 810 820,yes,,,true
+R26,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R26,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R26,03.jpg,landscape,yes,no,obstructed,1,yes,no,560 440 675 520,yes,,,true
+R26,04.jpg,landscape,no,no,obstructed,1,yes,no,,yes,,,true
+R27,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R27,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R27,03.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
+R27,04.jpg,landscape,yes,no,obstructed,1,yes,no,515 310 670 450,yes,,,true
+R27,05.jpg,landscape,no,no,obstructed,1,yes,no,,yes,,,true
+R28,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R28,02.jpg,landscape,yes,no,obstructed,1,yes,no,365 290 670 495,yes,,,true
+R28,03.jpg,landscape,no,no,obstructed,1,yes,no,,yes,,,true
+R29,01.jpg,landscape,no,no,obstructed,1,no,yes,,yes,,,true
+R29,02.jpg,landscape,no,no,obstructed,1,no,yes,,yes,,,true
+R29,03.jpg,landscape,yes,yes,obstructed,1,yes,no,530 400 770 550,yes,,,true
+R29,04.jpg,landscape,yes,yes,obstructed,1,yes,no,420 390 870 765,yes,,,true
+R30,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R30,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R30,03.jpg,landscape,yes,yes,obstructed,1,uncertain,no,280 500 550 780,yes,,,true
+R30,04.jpg,landscape,yes,yes,obstructed,1,uncertain,no,280 310 815 730,yes,,,true
+R31,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R31,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R31,03.jpg,landscape,no,no,,1,yes,no,,yes,,,true
+R31,04.jpg,landscape,no,no,,1,yes,no,,yes,,,true
+R32,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R32,02.jpg,landscape,no,no,,1,yes,no,,yes,,,true
+R32,03.jpg,landscape,no,no,,1,yes,no,,yes,,,true
+R33,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R33,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R33,03.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
+R33,04.jpg,landscape,no,no,,1,yes,no,,yes,,,true
+R33,05.jpg,landscape,no,no,,1,yes,no,,yes,,,true
+R34,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R34,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R34,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R34,04.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
+R34,05.jpg,landscape,no,no,,1,yes,no,,yes,,,true
+R34,06.jpg,landscape,no,no,,1,yes,no,,yes,,,true
+R35,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R35,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R35,03.jpg,landscape,no,no,,1,yes,no,,yes,,,true
+R35,04.jpg,landscape,no,no,,1,yes,no,,yes,,,true
+R36,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R36,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R36,03.jpg,landscape,yes,yes,,1,yes,no,320 230 680 450,yes,,,true
+R36,04.jpg,landscape,yes,yes,,1,yes,no,220 130 865 830,yes,,,true
+R37,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R37,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R37,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R37,04.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
+R37,05.jpg,landscape,yes,yes,,1,yes,no,455 270 800 475,yes,,,true
+R37,06.jpg,landscape,yes,yes,,1,yes,no,180 300 860 820,yes,,,true
+R38,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R38,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R38,03.jpg,landscape,yes,yes,,1,yes,no,310 215 700 470,yes,,,true
+R38,04.jpg,landscape,yes,yes,,1,yes,no,175 310 810 860,yes,,,true
+R39,01.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R39,02.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R39,03.jpg,landscape,no,no,,2,uncertain,yes,,yes,,,true
+R39,04.jpg,landscape,yes,yes,,2,yes,no,180 345 405 505,yes,,,true
+R39,05.jpg,landscape,yes,yes,,2,yes,no,250 350 740 850,yes,,,true
+R40,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R40,02.jpg,landscape,yes,yes,,1,yes,no,345 235 685 440,yes,,,true
+R40,03.jpg,landscape,yes,yes,,1,yes,no,220 235 840 830,yes,,,true
+R41,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R41,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R41,03.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
+R41,04.jpg,landscape,yes,yes,,1,yes,no,320 190 700 440,yes,,,true
+R41,05.jpg,landscape,yes,yes,,1,yes,yes,310 270 815 790,yes,,,true
+R42,01.jpg,landscape,yes,yes,,1,yes,no,320 195 700 430,yes,,,true
+R42,02.jpg,landscape,yes,yes,,1,yes,no,540 410 760 775,yes,,,true
+R42,03.jpg,landscape,yes,yes,,1,yes,no,285 360 865 855,yes,,,true
+R43,01.jpg,landscape,yes,yes,,1,yes,no,310 215 720 505,yes,,,true
+R43,02.jpg,landscape,yes,yes,,1,yes,no,635 340 875 735,yes,,,true
+R43,03.jpg,landscape,yes,yes,,1,yes,no,280 300 930 820,yes,,,true
+R43,04.jpg,landscape,yes,yes,,1,yes,no,580 280 810 735,yes,,,true
+R44,01.jpg,landscape,yes,yes,,1,yes,no,360 280 650 440,yes,,,true
+R44,02.jpg,landscape,yes,yes,,1,yes,no,370 395 670 780,yes,,,true
+R44,03.jpg,landscape,yes,yes,,1,yes,no,270 270 865 775,yes,,,true
+R45,01.jpg,landscape,yes,yes,,1,yes,no,395 255 695 440,yes,,,true
+R45,02.jpg,landscape,yes,yes,,1,yes,no,550 350 850 755,yes,,,true
+R45,03.jpg,landscape,yes,yes,,1,yes,no,300 310 875 850,yes,,,true
+R45,04.jpg,landscape,yes,yes,,1,yes,no,435 445 750 750,yes,,,true
+R46,01.jpg,landscape,no,no,,1,no,no,,yes,,,true
+R46,02.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
+R46,03.jpg,landscape,yes,yes,,1,yes,no,355 260 680 470,yes,,,true
+R46,04.jpg,landscape,yes,yes,,1,yes,no,275 270 875 875,yes,,,true
+R47,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R47,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R47,03.jpg,landscape,yes,uncertain,,1,yes,no,335 255 680 470,yes,,,true
+R47,04.jpg,landscape,yes,yes,,1,yes,no,250 135 785 810,yes,,,true
+R48,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R48,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R48,03.jpg,landscape,yes,no,obstructed,1,yes,no,320 285 720 615,yes,,,true
+R48,04.jpg,landscape,yes,no,obstructed,1,yes,no,355 310 850 880,yes,,,true
+R49,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R49,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R49,03.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
+R49,04.jpg,landscape,yes,uncertain,too_far,1,yes,no,440 375 550 455,yes,,,true
+R49,05.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R50,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R50,02.jpg,landscape,yes,yes,,1,yes,no,430 260 760 590,yes,,,true
+R50,03.jpg,landscape,yes,yes,,1,yes,no,300 200 685 820,yes,,,true
+R51,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R51,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R51,03.jpg,landscape,yes,yes,,1,no,yes,550 530 780 830,yes,,,true
+R51,04.jpg,landscape,yes,yes,,1,no,yes,400 430 790 820,yes,,,true
+R52,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R52,02.jpg,landscape,yes,yes,,1,no,yes,620 495 820 830,yes,,,true
+R52,03.jpg,landscape,yes,yes,,1,no,yes,250 405 600 805,yes,,,true
+R53,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R53,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R53,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R53,04.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R53,05.jpg,landscape,yes,yes,,1,no,yes,580 540 780 845,yes,,,true
+R53,06.jpg,landscape,yes,yes,,1,no,yes,370 550 760 800,yes,,,true
+R54,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R54,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R54,03.jpg,landscape,yes,yes,,1,no,yes,550 650 800 880,yes,,,true
+R54,04.jpg,landscape,yes,yes,,1,no,yes,395 475 810 850,yes,,,true
+R55,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R55,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R55,03.jpg,landscape,yes,yes,,1,yes,no,350 230 685 465,yes,,,true
+R55,04.jpg,landscape,yes,yes,,1,yes,yes,315 285 800 845,yes,,,true
+R56,01.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R56,02.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R56,03.jpg,landscape,yes,yes,,2,yes,no,185 320 380 500,yes,,,true
+R56,04.jpg,landscape,yes,yes,,2,yes,yes,395 350 990 925,yes,,,true
+R57,01.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R57,02.jpg,landscape,no,no,,2,no,yes,,yes,,,true
+R57,03.jpg,landscape,yes,yes,,2,yes,no,210 315 405 445,yes,,,true
+R57,04.jpg,landscape,yes,yes,,2,yes,yes,280 425 685 770,yes,,,true
+R58,01.jpg,landscape,no,no,,3,no,yes,,yes,,,true
+R58,02.jpg,landscape,no,no,,3,no,yes,,yes,,,true
+R58,03.jpg,landscape,no,no,,3,yes,yes,,yes,,,true
+R58,04.jpg,landscape,yes,yes,,3,yes,no,80 360 300 525,yes,,,true
+R58,05.jpg,landscape,yes,yes,,3,yes,yes,390 445 805 850,yes,,,true
+R59,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R59,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R59,03.jpg,landscape,yes,yes,,1,no,yes,190 535 405 815,yes,,,true
+R59,04.jpg,landscape,yes,yes,,1,no,yes,505 510 945 820,yes,,,true
+R60,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R60,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R60,03.jpg,landscape,yes,uncertain,,1,no,yes,545 580 815 810,yes,,,true
+R60,04.jpg,landscape,yes,yes,,1,no,no,365 325 895 795,yes,,,true
+R61,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R61,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R61,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R61,04.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R62,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R62,02.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R62,03.jpg,landscape,yes,no,too_dark,1,yes,no,485 340 725 470,yes,,,true
+R62,04.jpg,landscape,yes,no,too_dark,1,yes,yes,595 410 820 750,yes,,,true
+R63,01.jpg,landscape,yes,yes,,1,yes,no,375 250 680 460,yes,,,true
+R63,02.jpg,landscape,yes,yes,,1,yes,no,550 360 800 740,yes,,,true
+R63,03.jpg,landscape,yes,yes,,1,yes,no,245 245 845 835,yes,,,true
+R64,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R64,02.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R64,03.jpg,landscape,yes,no,blur,1,no,yes,310 480 550 700,yes,,,true
+R64,04.jpg,landscape,yes,no,blur,1,no,yes,540 530 870 880,yes,,,true
+R65,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R65,02.jpg,landscape,yes,yes,glare,1,yes,no,300 205 720 525,yes,,,true
+R65,03.jpg,landscape,yes,no,glare,1,yes,no,205 260 795 700,yes,,,true
+R66,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R66,02.jpg,landscape,yes,yes,glare,1,yes,no,300 200 720 525,yes,,,true
+R66,03.jpg,landscape,yes,no,glare,1,yes,no,235 345 765 790,yes,,,true
+R67,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R67,02.jpg,landscape,yes,yes,glare,1,yes,no,275 180 715 525,yes,,,true
+R67,03.jpg,landscape,yes,no,glare,1,yes,no,230 300 795 740,yes,,,true
+R68,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R68,02.jpg,landscape,yes,yes,glare,1,yes,no,295 190 705 480,yes,,,true
+R68,03.jpg,landscape,yes,no,glare,1,yes,no,215 300 795 710,yes,,,true
+R69,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R69,02.jpg,landscape,yes,yes,too_far,1,yes,no,430 420 580 535,yes,,,true
+R69,03.jpg,landscape,yes,no,too_far,1,uncertain,no,915 440 960 457,yes,,,true
+R70,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R70,02.jpg,landscape,yes,yes,too_far,1,yes,no,440 410 560 525,yes,,,true
+R70,03.jpg,landscape,yes,no,too_far,1,uncertain,no,910 515 955 538,yes,,,true
+R71,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R71,02.jpg,landscape,yes,yes,,1,yes,no,465 260 850 565,yes,,,true
+R71,03.jpg,landscape,yes,yes,cropped,1,uncertain,no,465 225 1000 940,yes,,,true
+R72,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R72,02.jpg,landscape,yes,yes,,1,yes,no,470 170 885 430,yes,,,true
+R72,03.jpg,landscape,yes,yes,cropped,1,uncertain,no,520 350 1000 1000,yes,,,true
+R73,01.jpg,portrait,no,no,,1,no,yes,,yes,,,true
+R73,02.jpg,portrait,yes,yes,,1,yes,no,290 290 745 505,yes,,,true
+R73,03.jpg,portrait,yes,yes,,1,yes,no,185 365 825 710,yes,,,true
+R74,01.jpg,portrait,no,no,,1,no,yes,,yes,,,true
+R74,02.jpg,portrait,yes,yes,,1,yes,no,300 320 745 500,yes,,,true
+R74,03.jpg,portrait,yes,yes,,1,yes,no,110 470 890 835,yes,,,true
+R75,01.jpg,portrait,no,no,,1,no,yes,,yes,,,true
+R75,02.jpg,portrait,yes,yes,,1,yes,no,280 285 730 480,yes,,,true
+R75,03.jpg,portrait,yes,yes,,1,yes,no,120 480 910 850,yes,,,true
+R76,01.jpg,portrait,no,no,,1,no,yes,,yes,,,true
+R76,02.jpg,portrait,yes,yes,,1,yes,no,280 300 740 510,yes,,,true
+R76,03.jpg,portrait,yes,yes,,1,yes,no,155 290 865 660,yes,,,true
+R77,01.jpg,portrait,no,no,,1,no,yes,,yes,,,true
+R77,02.jpg,portrait,yes,yes,,1,yes,no,290 310 745 510,yes,,,true
+R77,03.jpg,portrait,yes,yes,,1,yes,no,175 500 825 850,yes,,,true
+R78,01.jpg,portrait,no,no,,1,no,yes,,yes,,,true
+R78,02.jpg,portrait,yes,yes,,1,yes,no,285 280 740 495,yes,,,true
+R78,03.jpg,portrait,yes,yes,,1,yes,no,190 420 815 820,yes,,,true
+R79,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R79,02.jpg,landscape,yes,yes,too_dark,1,yes,no,370 240 675 485,yes,,,true
+R79,03.jpg,landscape,yes,yes,too_dark,1,yes,no,245 435 760 850,yes,,,true
+R80,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R80,02.jpg,landscape,yes,yes,,1,yes,no,350 230 670 520,yes,,,true
+R80,03.jpg,landscape,yes,yes,,1,yes,no,290 515 745 835,yes,,,true
+R81,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
+R81,02.jpg,landscape,yes,yes,too_dark,1,yes,no,340 250 710 510,yes,,,true
+R81,03.jpg,landscape,yes,yes,too_dark,1,yes,no,270 540 735 900,yes,,,true
+R82,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R82,02.jpg,landscape,yes,yes,,1,yes,no,340 195 685 485,yes,,,true
+R82,03.jpg,landscape,yes,yes,,1,yes,no,245 315 775 720,yes,,,true
+R83,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R83,02.jpg,landscape,yes,yes,blur,1,yes,no,295 225 735 555,yes,,,true
+R83,03.jpg,landscape,yes,no,blur,1,yes,no,220 310 890 960,yes,,,true
+R84,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R84,02.jpg,landscape,yes,yes,,1,yes,no,300 225 740 540,yes,,,true
+R84,03.jpg,landscape,yes,yes,,1,yes,no,235 205 770 670,yes,,,true
+R85,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
+R85,02.jpg,landscape,yes,yes,blur,1,yes,no,305 185 690 480,yes,,,true
+R85,03.jpg,landscape,yes,no,blur,1,yes,no,270 235 855 810,yes,,,true
+R86,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R86,02.jpg,landscape,yes,yes,,1,yes,no,335 195 670 490,yes,,,true
+R86,03.jpg,landscape,yes,yes,,1,yes,no,295 450 735 795,yes,,,true
+R87,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R87,02.jpg,landscape,yes,no,cropped,1,yes,no,770 205 1000 645,yes,,,true
+R87,03.jpg,landscape,yes,no,cropped,1,yes,no,705 205 975 645,yes,,,true
+R88,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R88,02.jpg,landscape,yes,yes,,1,yes,no,335 210 685 475,yes,,,true
+R88,03.jpg,landscape,yes,yes,,1,yes,no,275 420 760 795,yes,,,true
+R89,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R89,02.jpg,landscape,yes,no,cropped,1,yes,no,600 160 1000 595,yes,,,true
+R89,03.jpg,landscape,yes,no,cropped,1,yes,no,665 180 1000 570,yes,,,true
+R90,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R90,02.jpg,landscape,yes,yes,,1,yes,no,335 210 690 475,yes,,,true
+R90,03.jpg,landscape,yes,yes,,1,yes,no,260 435 775 855,yes,,,true
+R91,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R91,02.jpg,landscape,yes,yes,,1,no,yes,370 620 650 840,yes,,,true
+R91,03.jpg,landscape,yes,yes,,1,no,yes,340 520 675 830,yes,,,true
+R92,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R92,02.jpg,landscape,yes,yes,,1,yes,no,335 240 665 510,yes,,,true
+R92,03.jpg,landscape,yes,yes,,1,yes,no,230 460 780 860,yes,,,true
+R93,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R93,02.jpg,landscape,yes,yes,,1,no,yes,345 695 635 855,yes,,,true
+R93,03.jpg,landscape,yes,yes,,1,no,yes,275 495 730 860,yes,,,true
+R94,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R94,02.jpg,landscape,yes,yes,,1,yes,no,315 215 700 520,yes,,,true
+R94,03.jpg,landscape,yes,yes,,1,yes,no,220 495 770 885,yes,,,true
+R95,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R95,02.jpg,landscape,yes,yes,,1,yes,no,330 245 680 535,yes,,,true
+R95,03.jpg,landscape,yes,yes,,1,yes,no,300 255 720 580,yes,,,true
+R96,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R96,02.jpg,landscape,yes,yes,,1,yes,no,335 275 700 620,yes,,,true
+R96,03.jpg,landscape,yes,yes,,1,yes,no,245 480 750 850,yes,,,true
+R97,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R97,02.jpg,landscape,yes,yes,,1,yes,no,325 245 685 505,yes,,,true
+R97,03.jpg,landscape,yes,yes,,1,yes,no,230 550 775 900,yes,,,true
+R98,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R98,02.jpg,landscape,yes,yes,,1,yes,no,345 260 680 515,yes,,,true
+R98,03.jpg,landscape,yes,yes,,1,yes,no,210 425 785 920,yes,,,true
+R99,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
+R99,02.jpg,landscape,yes,yes,,1,yes,no,340 230 675 495,yes,,,true
+R99,03.jpg,landscape,yes,yes,,1,yes,no,225 365 775 820,yes,,,true

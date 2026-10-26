@@ -1,0 +1,966 @@
+[
+  {
+    "record_id": "R65",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R65 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "glare",
+    "reference_record": "R65"
+  },
+  {
+    "record_id": "R65",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R65 photo 02. Broad white specular glare from glossy clear plastic over the label obscures the middle resi digits in EVERY label view; no fully readable resi. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID1327681069\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "glare",
+    "reference_record": "R65"
+  },
+  {
+    "record_id": "R65",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R65 photo 03. Broad white specular glare from glossy clear plastic over the label obscures the middle resi digits in EVERY label view; no fully readable resi. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID1327681069\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "glare",
+    "reference_record": "R65"
+  },
+  {
+    "record_id": "R66",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R66 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "glare",
+    "reference_record": "R66"
+  },
+  {
+    "record_id": "R66",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R66 photo 02. Broad white specular glare from glossy clear plastic over the label obscures the middle resi digits in EVERY label view; no fully readable resi. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP5553947550\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "glare",
+    "reference_record": "R66"
+  },
+  {
+    "record_id": "R66",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R66 photo 03. Broad white specular glare from glossy clear plastic over the label obscures the middle resi digits in EVERY label view; no fully readable resi. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP5553947550\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "glare",
+    "reference_record": "R66"
+  },
+  {
+    "record_id": "R67",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R67 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "glare",
+    "reference_record": "R67"
+  },
+  {
+    "record_id": "R67",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R67 photo 02. Broad white specular glare from glossy clear plastic over the label obscures the middle resi digits in EVERY label view; no fully readable resi. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"JNE\", \"16357937266438\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "glare",
+    "reference_record": "R67"
+  },
+  {
+    "record_id": "R67",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R67 photo 03. Broad white specular glare from glossy clear plastic over the label obscures the middle resi digits in EVERY label view; no fully readable resi. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"JNE\", \"16357937266438\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "glare",
+    "reference_record": "R67"
+  },
+  {
+    "record_id": "R68",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R68 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "glare",
+    "reference_record": "R68"
+  },
+  {
+    "record_id": "R68",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R68 photo 02. Broad white specular glare from glossy clear plastic over the label obscures the middle resi digits in EVERY label view; no fully readable resi. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID6654155265\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "glare",
+    "reference_record": "R68"
+  },
+  {
+    "record_id": "R68",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R68 photo 03. Broad white specular glare from glossy clear plastic over the label obscures the middle resi digits in EVERY label view; no fully readable resi. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID6654155265\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "glare",
+    "reference_record": "R68"
+  },
+  {
+    "record_id": "R69",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R69 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "too_far",
+    "reference_record": "R69"
+  },
+  {
+    "record_id": "R69",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R69 photo 02. Very distant wide view: parcel occupies less than one tenth of the frame width, lots of empty table. Label exists but digits are too small to read. No close-up. One fully taped box with a white dummy waybill on the table. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP4975753028\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "too_far",
+    "reference_record": "R69"
+  },
+  {
+    "record_id": "R69",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic landscape smartphone photo. Extreme distant wide-angle view of a very long empty light grey packing table and plain cream wall. One TINY sealed cardboard shipping box in the far right corner occupies only 5 percent of the image width. A tiny white shipping label exists on its top, completely illegible at this distance, no closeup. The small box contains the same white mug as the reference, hidden. No people, hands, papers, other boxes, watermarks, or collage. No personal information. Synthetic eval asset, R69 photo03.",
+    "synthetic": true,
+    "condition": "too_far",
+    "reference_record": "R69"
+  },
+  {
+    "record_id": "R70",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R70 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "too_far",
+    "reference_record": "R70"
+  },
+  {
+    "record_id": "R70",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R70 photo 02. Very distant wide view: parcel occupies less than one tenth of the frame width, lots of empty table. Label exists but digits are too small to read. No close-up. One fully taped box with a white dummy waybill on the table. Only these printed contents on the dummy waybill: \"JNE\", \"16392373066164\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "too_far",
+    "reference_record": "R70"
+  },
+  {
+    "record_id": "R70",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic landscape smartphone photo. Extreme distant wide-angle view of a very long empty light grey packing table and plain cream wall. One TINY sealed cardboard shipping box in the far right corner occupies only 5 percent of the image width. A tiny white shipping label exists on its top, completely illegible at this distance, no closeup. The small box contains the same white mug as the reference, hidden. No people, hands, papers, other boxes, watermarks, or collage. No personal information. Synthetic eval asset, R70 photo03.",
+    "synthetic": true,
+    "condition": "too_far",
+    "reference_record": "R70"
+  },
+  {
+    "record_id": "R71",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R71 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "cropped",
+    "reference_record": "R71"
+  },
+  {
+    "record_id": "R71",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R71 photo 02. Camera framing cuts off the right half of the shipping label and parcel beyond the right image edge. The resi is truncated by the FRAME EDGE, never fully visible. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID8083172620\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "cropped",
+    "reference_record": "R71"
+  },
+  {
+    "record_id": "R71",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R71 photo 03. Camera framing cuts off the right half of the shipping label and parcel beyond the right image edge. The resi is truncated by the FRAME EDGE, never fully visible. Extreme close-up with ONLY THE LEFT HALF of the dummy label visible: position the label so the right half extends BEYOND THE RIGHT EDGE OF THE PHOTO. The resi is cut in half by the image border. There is no white margin to the right of the partial label. Most of the parcel extends outside the frame. Tape visible on the left. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID8083172620\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "cropped",
+    "reference_record": "R71"
+  },
+  {
+    "record_id": "R72",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R72 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "cropped",
+    "reference_record": "R72"
+  },
+  {
+    "record_id": "R72",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R72 photo 02. Camera framing cuts off the right half of the shipping label and parcel beyond the right image edge. The resi is truncated by the FRAME EDGE, never fully visible. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP4491519447\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "cropped",
+    "reference_record": "R72"
+  },
+  {
+    "record_id": "R72",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R72 photo 03. Camera framing cuts off the right half of the shipping label and parcel beyond the right image edge. The resi is truncated by the FRAME EDGE, never fully visible. Extreme close-up with ONLY THE LEFT HALF of the dummy label visible: position the label so the right half extends BEYOND THE RIGHT EDGE OF THE PHOTO. The resi is cut in half by the image border. There is no white margin to the right of the partial label. Most of the parcel extends outside the frame. Tape visible on the left. Item inside hidden. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP4491519447\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "cropped",
+    "reference_record": "R72"
+  },
+  {
+    "record_id": "R73",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R73 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R73"
+  },
+  {
+    "record_id": "R73",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R73 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"JNE\", \"16161404851949\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R73"
+  },
+  {
+    "record_id": "R73",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R73 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"JNE\", \"16161404851949\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R73"
+  },
+  {
+    "record_id": "R74",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R74 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R74"
+  },
+  {
+    "record_id": "R74",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R74 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID9008015275\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R74"
+  },
+  {
+    "record_id": "R74",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R74 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID9008015275\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R74"
+  },
+  {
+    "record_id": "R75",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R75 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R75"
+  },
+  {
+    "record_id": "R75",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R75 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP6703174857\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R75"
+  },
+  {
+    "record_id": "R75",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R75 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP6703174857\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R75"
+  },
+  {
+    "record_id": "R76",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R76 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R76"
+  },
+  {
+    "record_id": "R76",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R76 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"JNE\", \"16625467668712\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R76"
+  },
+  {
+    "record_id": "R76",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R76 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"JNE\", \"16625467668712\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R76"
+  },
+  {
+    "record_id": "R77",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R77 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R77"
+  },
+  {
+    "record_id": "R77",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R77 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID5510755344\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R77"
+  },
+  {
+    "record_id": "R77",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R77 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID5510755344\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R77"
+  },
+  {
+    "record_id": "R78",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R78 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R78"
+  },
+  {
+    "record_id": "R78",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R78 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP8484255686\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R78"
+  },
+  {
+    "record_id": "R78",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R78 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP8484255686\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Portrait phone framing, height greater than width. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R78"
+  },
+  {
+    "record_id": "R79",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R79 photo 01. VERY DIM light for this entire image. Strong underexposure. Shapes recognizable but label digits NOT readable. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Landscape phone framing. No people, no hands, no documents, no loose paper, no labels, no waybills, no barcodes or printed material of any kind, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo. ABSOLUTELY NO PAPER SLIP OR LABEL ANYWHERE. Only the open cardboard box and white mug on the empty grey table.",
+    "synthetic": true,
+    "condition": "dark",
+    "reference_record": "R79",
+    "reference_override": "/Users/samsul/.codex/generated_images/01a14490-a1c9-73c0-a995-6ba6c2794289/exec-bf210969-3106-424a-bcbc-0a2431f3a34e.png"
+  },
+  {
+    "record_id": "R79",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R79 photo 02. VERY DIM light for this entire image. Strong underexposure. Shapes recognizable but label digits NOT readable. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"JNE\", \"16738565294713\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "dark",
+    "reference_record": "R79"
+  },
+  {
+    "record_id": "R79",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R79 photo 03. VERY DIM light for this entire image. Strong underexposure. Shapes recognizable but label digits NOT readable. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"JNE\", \"16738565294713\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "dark",
+    "reference_record": "R79"
+  },
+  {
+    "record_id": "R80",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R80 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R79"
+  },
+  {
+    "record_id": "R80",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R80 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"JNE\", \"16738565294713\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R79"
+  },
+  {
+    "record_id": "R80",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R80 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"JNE\", \"16738565294713\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R79"
+  },
+  {
+    "record_id": "R81",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R81 photo 01. VERY DIM light for this entire image. Strong underexposure. Shapes recognizable but label digits NOT readable. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Landscape phone framing. No people, no hands, no documents, no loose paper, no labels, no waybills, no barcodes or printed material of any kind, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo. ABSOLUTELY NO PAPER SLIP OR LABEL ANYWHERE. Only the open cardboard box and white mug on the empty grey table.",
+    "synthetic": true,
+    "condition": "dark",
+    "reference_record": "R81",
+    "reference_override": "/Users/samsul/.codex/generated_images/01a14490-a1c9-73c0-a995-6ba6c2794289/exec-bf210969-3106-424a-bcbc-0a2431f3a34e.png"
+  },
+  {
+    "record_id": "R81",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R81 photo 02. VERY DIM light for this entire image. Strong underexposure. Shapes recognizable but label digits NOT readable. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP5399633245\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "dark",
+    "reference_record": "R81"
+  },
+  {
+    "record_id": "R81",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R81 photo 03. VERY DIM light for this entire image. Strong underexposure. Shapes recognizable but label digits NOT readable. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP5399633245\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "dark",
+    "reference_record": "R81"
+  },
+  {
+    "record_id": "R82",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R82 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R81"
+  },
+  {
+    "record_id": "R82",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R82 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP5399633245\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R81"
+  },
+  {
+    "record_id": "R82",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R82 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP5399633245\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R81"
+  },
+  {
+    "record_id": "R83",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R83 photo 01. Strong real camera-motion blur across this entire image. Shapes recognizable, label digits NOT readable. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents, no loose paper, no labels, no waybills, no barcodes or printed material of any kind, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo. ABSOLUTELY NO PAPER SLIP OR LABEL ANYWHERE. Only the open cardboard box and white mug on the empty grey table.",
+    "synthetic": true,
+    "condition": "blur",
+    "reference_record": "R83",
+    "reference_override": "/Users/samsul/.codex/generated_images/01a14490-a1c9-73c0-a995-6ba6c2794289/exec-bf210969-3106-424a-bcbc-0a2431f3a34e.png"
+  },
+  {
+    "record_id": "R83",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R83 photo 02. Strong real camera-motion blur across this entire image. Shapes recognizable, label digits NOT readable. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID8188941778\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "blur",
+    "reference_record": "R83"
+  },
+  {
+    "record_id": "R83",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R83 photo 03. Strong real camera-motion blur across this entire image. Shapes recognizable, label digits NOT readable. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID8188941778\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "blur",
+    "reference_record": "R83"
+  },
+  {
+    "record_id": "R84",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R84 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R83"
+  },
+  {
+    "record_id": "R84",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R84 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID8188941778\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R83"
+  },
+  {
+    "record_id": "R84",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R84 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID8188941778\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R83"
+  },
+  {
+    "record_id": "R85",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R85 photo 01. Strong real camera-motion blur across this entire image. Shapes recognizable, label digits NOT readable. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents, no loose paper, no labels, no waybills, no barcodes or printed material of any kind, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo. ABSOLUTELY NO PAPER SLIP OR LABEL ANYWHERE. Only the open cardboard box and white mug on the empty grey table.",
+    "synthetic": true,
+    "condition": "blur",
+    "reference_record": "R85",
+    "reference_override": "/Users/samsul/.codex/generated_images/01a14490-a1c9-73c0-a995-6ba6c2794289/exec-bf210969-3106-424a-bcbc-0a2431f3a34e.png"
+  },
+  {
+    "record_id": "R85",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R85 photo 02. Strong real camera-motion blur across this entire image. Shapes recognizable, label digits NOT readable. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"JNE\", \"16503594208099\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "blur",
+    "reference_record": "R85"
+  },
+  {
+    "record_id": "R85",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R85 photo 03. Strong real camera-motion blur across this entire image. Shapes recognizable, label digits NOT readable. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"JNE\", \"16503594208099\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "blur",
+    "reference_record": "R85"
+  },
+  {
+    "record_id": "R86",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R86 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R85"
+  },
+  {
+    "record_id": "R86",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R86 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"JNE\", \"16503594208099\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R85"
+  },
+  {
+    "record_id": "R86",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R86 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"JNE\", \"16503594208099\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R85"
+  },
+  {
+    "record_id": "R87",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R87 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "cropped",
+    "reference_record": "R87"
+  },
+  {
+    "record_id": "R87",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R87 photo 02. Camera framing cuts off the right half of the shipping label and parcel beyond the right image edge. The resi is truncated by the FRAME EDGE, never fully visible. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP2116657615\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "cropped",
+    "reference_record": "R87"
+  },
+  {
+    "record_id": "R87",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R87 photo 03. Camera framing cuts off the right half of the shipping label and parcel beyond the right image edge. The resi is truncated by the FRAME EDGE, never fully visible. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP2116657615\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "cropped",
+    "reference_record": "R87"
+  },
+  {
+    "record_id": "R88",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R88 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R87"
+  },
+  {
+    "record_id": "R88",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R88 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP2116657615\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R87"
+  },
+  {
+    "record_id": "R88",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R88 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP2116657615\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R87"
+  },
+  {
+    "record_id": "R89",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R89 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "cropped",
+    "reference_record": "R89"
+  },
+  {
+    "record_id": "R89",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R89 photo 02. Camera framing cuts off the right half of the shipping label and parcel beyond the right image edge. The resi is truncated by the FRAME EDGE, never fully visible. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID1081509029\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "cropped",
+    "reference_record": "R89"
+  },
+  {
+    "record_id": "R89",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R89 photo 03. Camera framing cuts off the right half of the shipping label and parcel beyond the right image edge. The resi is truncated by the FRAME EDGE, never fully visible. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID1081509029\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "cropped",
+    "reference_record": "R89"
+  },
+  {
+    "record_id": "R90",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R90 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R89"
+  },
+  {
+    "record_id": "R90",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R90 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID1081509029\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R89"
+  },
+  {
+    "record_id": "R90",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R90 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID1081509029\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R89"
+  },
+  {
+    "record_id": "R91",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R91 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "open",
+    "reference_record": "R91"
+  },
+  {
+    "record_id": "R91",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R91 photo 02. The same box still OPEN with all flaps standing, NO tape anywhere. a white ceramic mug visible inside. White dummy waybill stuck to SIDE of box. Only these printed contents on the dummy waybill: \"JNE\", \"16717953741368\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "open",
+    "reference_record": "R91"
+  },
+  {
+    "record_id": "R91",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R91 photo 03. Close-up of side waybill, open flaps clearly visible in background, NO tape. Only these printed contents on the dummy waybill: \"JNE\", \"16717953741368\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "open",
+    "reference_record": "R91"
+  },
+  {
+    "record_id": "R92",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R92 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R91"
+  },
+  {
+    "record_id": "R92",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R92 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"JNE\", \"16717953741368\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R91"
+  },
+  {
+    "record_id": "R92",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R92 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"JNE\", \"16717953741368\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R91"
+  },
+  {
+    "record_id": "R93",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R93 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "open",
+    "reference_record": "R93"
+  },
+  {
+    "record_id": "R93",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R93 photo 02. The same box still OPEN with all flaps standing, NO tape anywhere. a white ceramic mug visible inside. White dummy waybill stuck to SIDE of box. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP1379393415\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "open",
+    "reference_record": "R93"
+  },
+  {
+    "record_id": "R93",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R93 photo 03. Close-up of side waybill, open flaps clearly visible in background, NO tape. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP1379393415\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "open",
+    "reference_record": "R93"
+  },
+  {
+    "record_id": "R94",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R94 photo 01. A white ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R93"
+  },
+  {
+    "record_id": "R94",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R94 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP1379393415\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R93"
+  },
+  {
+    "record_id": "R94",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R94 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP1379393415\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R93"
+  },
+  {
+    "record_id": "R95",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R95 photo 01. A lipstick set INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R95"
+  },
+  {
+    "record_id": "R95",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R95 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID5702762972\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R95"
+  },
+  {
+    "record_id": "R95",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R95 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID5702762972\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R95"
+  },
+  {
+    "record_id": "R96",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R96 photo 01. A skincare bottle INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R96"
+  },
+  {
+    "record_id": "R96",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R96 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP3889366817\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R96"
+  },
+  {
+    "record_id": "R96",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R96 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP3889366817\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R96"
+  },
+  {
+    "record_id": "R97",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R97 photo 01. Earphones in a plain retail box INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R97"
+  },
+  {
+    "record_id": "R97",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R97 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"JNE\", \"16057711572652\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R97"
+  },
+  {
+    "record_id": "R97",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R97 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"JNE\", \"16057711572652\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R97"
+  },
+  {
+    "record_id": "R98",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R98 photo 01. A phone charger INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R98"
+  },
+  {
+    "record_id": "R98",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R98 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID0106524930\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R98"
+  },
+  {
+    "record_id": "R98",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R98 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID0106524930\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R98"
+  },
+  {
+    "record_id": "R99",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R99 photo 01. A glass candle jar in bubble wrap INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R99"
+  },
+  {
+    "record_id": "R99",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R99 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP7673958184\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R99"
+  },
+  {
+    "record_id": "R99",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R99 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP7673958184\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R99"
+  },
+  {
+    "record_id": "R100",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R100 photo 01. A folded hijab INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R100"
+  },
+  {
+    "record_id": "R100",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R100 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"JNE\", \"16595904782989\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R100"
+  },
+  {
+    "record_id": "R100",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R100 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"JNE\", \"16595904782989\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R100"
+  },
+  {
+    "record_id": "R101",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R101 photo 01. A blue ceramic mug INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R101"
+  },
+  {
+    "record_id": "R101",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R101 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID9292962414\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R101"
+  },
+  {
+    "record_id": "R101",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R101 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID9292962414\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R101"
+  },
+  {
+    "record_id": "R102",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R102 photo 01. A green folded hijab INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R102"
+  },
+  {
+    "record_id": "R102",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R102 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP5910341273\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R102"
+  },
+  {
+    "record_id": "R102",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R102 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"J&T Express\", \"JP5910341273\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R102"
+  },
+  {
+    "record_id": "R103",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R103 photo 01. A black phone charger INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R103"
+  },
+  {
+    "record_id": "R103",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R103 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"JNE\", \"16501651539972\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R103"
+  },
+  {
+    "record_id": "R103",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R103 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"JNE\", \"16501651539972\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R103"
+  },
+  {
+    "record_id": "R104",
+    "photo": "01.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R104 photo 01. A red pencil case INSIDE one open brown corrugated shipping box, all four flaps open, top-down view with contents visible. No tape or label yet. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R104"
+  },
+  {
+    "record_id": "R104",
+    "photo": "02.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R104 photo 02. The SAME box now closed and fully sealed with brown packing tape across the top seam and edges, whole box in frame, three-quarter view. Item inside hidden. White rectangular dummy waybill on top. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID4919747579\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R104"
+  },
+  {
+    "record_id": "R104",
+    "photo": "03.jpg",
+    "prompt": "Use case: photorealistic-natural. Create ONE synthetic smartphone photograph for a packing-evidence evaluation, R104 photo 03. Close-up of the SAME dummy waybill on the taped box, label fills half the frame, top seam tape visible. Item inside hidden. Only these printed contents on the dummy waybill: \"SPX Express\", \"SPXID4919747579\", one generic barcode, \"PENERIMA: DUMMY\", \"ALAMAT: CONTOH\". No other text, no names, phone numbers, street addresses, order ids, or record ids. Same plain light grey table and cream wall, ordinary everyday packing bench, realistic cardboard, no stylization. Natural even daylight. Landscape phone framing. No people, no hands, no documents other than the specified dummy waybill, no personal information, no watermarks, no collage. Preserve the exact item, box, table and waybill identity across this sequence and its retake pair. This is synthetic, not a camera photo.",
+    "synthetic": true,
+    "condition": "clean",
+    "reference_record": "R104"
+  }
+]

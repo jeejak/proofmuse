@@ -36,13 +36,17 @@ reads the buyer's claim and assembles the dispute packet.
 Ported from ParcelProof, each adapted for the Meta pipeline and listed
 here when it lands:
 
-- (none yet)
+- `evalset/records/R01` to `R64`: the 279 synthetic photos generated on
+  2026-10-07 for ParcelProof, copied and resized to 1280 px JPEG, plus the
+  original 11 label columns in `evalset/labels.csv`. Everything else in
+  `evalset/` (R65 to R104, photo-level labels, orders, claims, retake
+  pairs, split, review page, tools) was built during the hackathon. See
+  `evalset/README.md`.
 
 Candidates we expect to port, named now so the list cannot grow quietly:
 the verdict rules and reason codes (`evidencecheck/verdict.go`), the
 no-model basic check for brightness, sharpness and barcode
-(`evidencecheck/basic.go`), the eval harness layout (`cmd/eval`), and
-the synthetic eval set with its dummy-waybill generator.
+(`evidencecheck/basic.go`), and the eval harness layout (`cmd/eval`).
 
 Also pre-existing and not part of this submission: the JejakPaket mobile
 app and the Jeejak backend (private). ProofMuse does not depend on them.

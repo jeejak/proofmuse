@@ -1,0 +1,11 @@
+{
+  "record_id": "R87",
+  "photo": "02.jpg",
+  "prompt": "Create one synthetic packing-evidence smartphone image, matching the reference plain grey table, cream wall and taped carton. Landscape frame. White dummy waybill at extreme right edge, with its right half completely beyond the camera image border. The cardboard box also extends beyond the right frame. The ONLY courier text must say J&T Express. Visible resi prefix JP21166 with all remaining digits outside the image, never print the full resi or another number. Include generic barcode, PENERIMA: DUMMY and ALAMAT: CONTOH only, these words may also be cut at right border. No JNE, no other courier. No people, hands, paperwork, private information, phone numbers, street addresses, personal names, watermarks or collage. Clearly visible tape across closed top seam. Synthetic, not a camera photo.",
+  "source_path": "/Users/samsul/.codex/generated_images/01a14490-a1c9-73c0-a995-6ba6c2794289/exec-2f81bf8f-f1dc-4d74-929c-1d42a56e4201.png",
+  "reference_paths": [
+    "/Users/samsul/.codex/generated_images/01a14490-a1c9-73c0-a995-6ba6c2794289/exec-4e8c6e39-0862-4135-a41b-93edac4afe9e.png"
+  ],
+  "synthetic": true,
+  "regeneration_reason": "Wrong courier logo in earlier cropped view."
+}

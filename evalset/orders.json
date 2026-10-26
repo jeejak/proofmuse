@@ -1,0 +1,1042 @@
+[
+  {
+    "order_id": "SYN-R01",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID5774637064",
+    "koli": 1,
+    "listing_item": "a mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R02",
+    "marketplace": "tiktok",
+    "courier": "J&T Express",
+    "resi": "JP3304452940",
+    "koli": 1,
+    "listing_item": "a folded T-shirt",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R03",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16394029077943",
+    "koli": 1,
+    "listing_item": "a paperback book",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R04",
+    "marketplace": "tiktok",
+    "courier": "SiCepat",
+    "resi": "004546157682",
+    "koli": 2,
+    "listing_item": "a water bottle",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R05",
+    "marketplace": "shopee",
+    "courier": "AnterAja",
+    "resi": "100094904108537",
+    "koli": 1,
+    "listing_item": "a toy car",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R06",
+    "marketplace": "tiktok",
+    "courier": "Ninja Xpress",
+    "resi": "NLIDAP24457712",
+    "koli": 1,
+    "listing_item": "three small cosmetics bottles",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R07",
+    "marketplace": "tiktok",
+    "courier": "SPX Express",
+    "resi": "SPXID7077071791",
+    "koli": 3,
+    "listing_item": "a pair of sandals",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R08",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP7023650806",
+    "koli": 1,
+    "listing_item": "a phone case in its retail box",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R09",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16957813511813",
+    "koli": 2,
+    "listing_item": "a scarf",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R10",
+    "marketplace": "shopee",
+    "courier": "SiCepat",
+    "resi": "000601062432",
+    "koli": 1,
+    "listing_item": "a pencil case",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R11",
+    "marketplace": "tiktok",
+    "courier": "AnterAja",
+    "resi": "100090383112466",
+    "koli": 1,
+    "listing_item": "a mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R12",
+    "marketplace": "tiktok",
+    "courier": "Ninja Xpress",
+    "resi": "NLIDAP06777400",
+    "koli": 2,
+    "listing_item": "a folded T-shirt",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R13",
+    "marketplace": "tiktok",
+    "courier": "SPX Express",
+    "resi": "SPXID0364861316",
+    "koli": 1,
+    "listing_item": "a paperback book",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R14",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP1417626322",
+    "koli": 1,
+    "listing_item": "a water bottle",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R15",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16668362572636",
+    "koli": 1,
+    "listing_item": "a toy car",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R16",
+    "marketplace": "tiktok",
+    "courier": "SiCepat",
+    "resi": "000749411473",
+    "koli": 2,
+    "listing_item": "three small cosmetics bottles",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R17",
+    "marketplace": "tiktok",
+    "courier": "AnterAja",
+    "resi": "100087397827811",
+    "koli": 1,
+    "listing_item": "a pair of sandals",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R18",
+    "marketplace": "shopee",
+    "courier": "Ninja Xpress",
+    "resi": "NLIDAP50717085",
+    "koli": 1,
+    "listing_item": "a phone case in its retail box",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R19",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID8215646133",
+    "koli": 1,
+    "listing_item": "a scarf",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R20",
+    "marketplace": "tiktok",
+    "courier": "J&T Express",
+    "resi": "JP7300356993",
+    "koli": 1,
+    "listing_item": "a pencil case",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R21",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16040602833884",
+    "koli": 1,
+    "listing_item": "a mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R22",
+    "marketplace": "shopee",
+    "courier": "SiCepat",
+    "resi": "008099837975",
+    "koli": 1,
+    "listing_item": "a folded T-shirt",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R23",
+    "marketplace": "tiktok",
+    "courier": "AnterAja",
+    "resi": "100027213015412",
+    "koli": 2,
+    "listing_item": "a paperback book",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R24",
+    "marketplace": "shopee",
+    "courier": "Ninja Xpress",
+    "resi": "NLIDAP02913539",
+    "koli": 1,
+    "listing_item": "a water bottle",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R25",
+    "marketplace": "tiktok",
+    "courier": "SPX Express",
+    "resi": "SPXID6121710922",
+    "koli": 1,
+    "listing_item": "a toy car",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R26",
+    "marketplace": "tiktok",
+    "courier": "J&T Express",
+    "resi": "JP2360516641",
+    "koli": 1,
+    "listing_item": "three small cosmetics bottles",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R27",
+    "marketplace": "tiktok",
+    "courier": "JNE",
+    "resi": "16969357560531",
+    "koli": 1,
+    "listing_item": "a pair of sandals",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R28",
+    "marketplace": "tiktok",
+    "courier": "SiCepat",
+    "resi": "003660936850",
+    "koli": 1,
+    "listing_item": "a phone case in its retail box",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R29",
+    "marketplace": "shopee",
+    "courier": "AnterAja",
+    "resi": "100086502635260",
+    "koli": 1,
+    "listing_item": "a scarf",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R30",
+    "marketplace": "tiktok",
+    "courier": "Ninja Xpress",
+    "resi": "NLIDAP60670202",
+    "koli": 1,
+    "listing_item": "a pencil case",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R31",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID3949960018",
+    "koli": 1,
+    "listing_item": "a mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R32",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP8025991984",
+    "koli": 1,
+    "listing_item": "a folded T-shirt",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R33",
+    "marketplace": "tiktok",
+    "courier": "JNE",
+    "resi": "16729649968129",
+    "koli": 1,
+    "listing_item": "a paperback book",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R34",
+    "marketplace": "tiktok",
+    "courier": "SiCepat",
+    "resi": "000444751464",
+    "koli": 1,
+    "listing_item": "a water bottle",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R35",
+    "marketplace": "tiktok",
+    "courier": "AnterAja",
+    "resi": "100097011564743",
+    "koli": 1,
+    "listing_item": "a toy car",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R36",
+    "marketplace": "shopee",
+    "courier": "Ninja Xpress",
+    "resi": "NLIDAP40703162",
+    "koli": 1,
+    "listing_item": "three small cosmetics bottles",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R37",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID5691405256",
+    "koli": 1,
+    "listing_item": "a pair of sandals",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R38",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP5323808140",
+    "koli": 1,
+    "listing_item": "a phone case in its retail box",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R39",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16814311775001",
+    "koli": 2,
+    "listing_item": "a scarf",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R40",
+    "marketplace": "tiktok",
+    "courier": "SiCepat",
+    "resi": "002322651203",
+    "koli": 1,
+    "listing_item": "a pencil case",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R41",
+    "marketplace": "tiktok",
+    "courier": "AnterAja",
+    "resi": "100053708050786",
+    "koli": 1,
+    "listing_item": "a mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R42",
+    "marketplace": "tiktok",
+    "courier": "Ninja Xpress",
+    "resi": "NLIDAP02435707",
+    "koli": 1,
+    "listing_item": "a folded T-shirt",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R43",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID2357655346",
+    "koli": 1,
+    "listing_item": "a paperback book",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R44",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP0603620399",
+    "koli": 1,
+    "listing_item": "a water bottle",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R45",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16209183936407",
+    "koli": 1,
+    "listing_item": "a toy car",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R46",
+    "marketplace": "shopee",
+    "courier": "SiCepat",
+    "resi": "000545533084",
+    "koli": 1,
+    "listing_item": "three small cosmetics bottles",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R47",
+    "marketplace": "shopee",
+    "courier": "AnterAja",
+    "resi": "100024551317043",
+    "koli": 1,
+    "listing_item": "a pair of sandals",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R48",
+    "marketplace": "tiktok",
+    "courier": "Ninja Xpress",
+    "resi": "NLIDAP46824805",
+    "koli": 1,
+    "listing_item": "a phone case in its retail box",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R49",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID6035155568",
+    "koli": 1,
+    "listing_item": "a scarf",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R50",
+    "marketplace": "tiktok",
+    "courier": "J&T Express",
+    "resi": "JP4391399192",
+    "koli": 1,
+    "listing_item": "a pencil case",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R51",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16682892392397",
+    "koli": 1,
+    "listing_item": "a mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R52",
+    "marketplace": "shopee",
+    "courier": "SiCepat",
+    "resi": "008332694013",
+    "koli": 1,
+    "listing_item": "a folded T-shirt",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R53",
+    "marketplace": "tiktok",
+    "courier": "AnterAja",
+    "resi": "100058430910112",
+    "koli": 1,
+    "listing_item": "a paperback book",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R54",
+    "marketplace": "tiktok",
+    "courier": "Ninja Xpress",
+    "resi": "NLIDAP20665438",
+    "koli": 1,
+    "listing_item": "a water bottle",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R55",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID2255969683",
+    "koli": 2,
+    "listing_item": "a toy car",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R56",
+    "marketplace": "tiktok",
+    "courier": "J&T Express",
+    "resi": "JP8462516675",
+    "koli": 3,
+    "listing_item": "three small cosmetics bottles",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R57",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16263696923681",
+    "koli": 1,
+    "listing_item": "a pair of sandals",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R58",
+    "marketplace": "shopee",
+    "courier": "SiCepat",
+    "resi": "009686108937",
+    "koli": 1,
+    "listing_item": "a phone case in its retail box",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R59",
+    "marketplace": "shopee",
+    "courier": "AnterAja",
+    "resi": "100055719824119",
+    "koli": 2,
+    "listing_item": "a scarf",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R60",
+    "marketplace": "shopee",
+    "courier": "Ninja Xpress",
+    "resi": "NLIDAP55984903",
+    "koli": 1,
+    "listing_item": "a pencil case",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R61",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID6146385167",
+    "koli": 1,
+    "listing_item": "a mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R62",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP3854585781",
+    "koli": 2,
+    "listing_item": "a folded T-shirt",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R63",
+    "marketplace": "tiktok",
+    "courier": "JNE",
+    "resi": "16350319748525",
+    "koli": 1,
+    "listing_item": "a paperback book",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R64",
+    "marketplace": "tiktok",
+    "courier": "SiCepat",
+    "resi": "004930549425",
+    "koli": 1,
+    "listing_item": "a water bottle",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R65",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID1327681069",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R66",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP5553947550",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R67",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16357937266438",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R68",
+    "marketplace": "tiktok",
+    "courier": "SPX Express",
+    "resi": "SPXID6654155265",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R69",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP4975753028",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R70",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16392373066164",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R71",
+    "marketplace": "tiktok",
+    "courier": "SPX Express",
+    "resi": "SPXID8083172620",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R72",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP4491519447",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R73",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16161404851949",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R74",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID9008015275",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R75",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP6703174857",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R76",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16625467668712",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R77",
+    "marketplace": "tiktok",
+    "courier": "SPX Express",
+    "resi": "SPXID5510755344",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R78",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP8484255686",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R79",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16738565294713",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R80",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16738565294713",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R81",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP5399633245",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R82",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP5399633245",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R83",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID8188941778",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R84",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID8188941778",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R85",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16503594208099",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R86",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16503594208099",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R87",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP2116657615",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R88",
+    "marketplace": "tiktok",
+    "courier": "J&T Express",
+    "resi": "JP2116657615",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R89",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID1081509029",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R90",
+    "marketplace": "shopee",
+    "courier": "SPX Express",
+    "resi": "SPXID1081509029",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R91",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16717953741368",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R92",
+    "marketplace": "tiktok",
+    "courier": "JNE",
+    "resi": "16717953741368",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R93",
+    "marketplace": "tiktok",
+    "courier": "J&T Express",
+    "resi": "JP1379393415",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R94",
+    "marketplace": "shopee",
+    "courier": "J&T Express",
+    "resi": "JP1379393415",
+    "koli": 1,
+    "listing_item": "a white ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R95",
+    "marketplace": "tiktok",
+    "courier": "SPX Express",
+    "resi": "SPXID5702762972",
+    "koli": 1,
+    "listing_item": "a lipstick set",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R96",
+    "marketplace": "tiktok",
+    "courier": "J&T Express",
+    "resi": "JP3889366817",
+    "koli": 1,
+    "listing_item": "a skincare bottle",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R97",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16057711572652",
+    "koli": 1,
+    "listing_item": "earphones in a plain retail box",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R98",
+    "marketplace": "tiktok",
+    "courier": "SPX Express",
+    "resi": "SPXID0106524930",
+    "koli": 1,
+    "listing_item": "a phone charger",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R99",
+    "marketplace": "tiktok",
+    "courier": "J&T Express",
+    "resi": "JP7673958184",
+    "koli": 1,
+    "listing_item": "a glass candle jar in bubble wrap",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R100",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16595904782989",
+    "koli": 1,
+    "listing_item": "a folded hijab",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R101",
+    "marketplace": "tiktok",
+    "courier": "SPX Express",
+    "resi": "SPXID9292962414",
+    "koli": 1,
+    "listing_item": "a red ceramic mug",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R102",
+    "marketplace": "tiktok",
+    "courier": "J&T Express",
+    "resi": "JP5910341273",
+    "koli": 1,
+    "listing_item": "a beige folded hijab",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R103",
+    "marketplace": "shopee",
+    "courier": "JNE",
+    "resi": "16501651539972",
+    "koli": 1,
+    "listing_item": "a white phone charger",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  },
+  {
+    "order_id": "SYN-R104",
+    "marketplace": "tiktok",
+    "courier": "SPX Express",
+    "resi": "SPXID4919747579",
+    "koli": 1,
+    "listing_item": "a blue pencil case",
+    "created_at": "2026-10-20T09:00:00+07:00",
+    "synthetic": true
+  }
+]
