@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+/server
+/eval
+*.test
+*.out
+.DS_Store
