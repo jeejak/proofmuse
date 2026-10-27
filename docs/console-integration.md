@@ -30,8 +30,11 @@ so the code that matters is quoted here.
 
 Screens from the demo stack (`console-demo.jeejak.id`, a separate demo
 tenant with staged photos only). Every verdict shown was set by the
-console's check job calling ProofMuse. We also ran a parcel through the
-whole path, starting in the JejakPaket app on an Android emulator.
+console's check job calling ProofMuse. We also ran parcels through the
+whole path, starting in the JejakPaket app: one on an Android emulator,
+and one (CGK2610270005) on an iPhone 14 Pro, scanned, photographed,
+handed over and synced, then checked by the console as Bukti kuat. The
+iPhone photographed staged label images with a dummy waybill.
 
 ## The checker
 
