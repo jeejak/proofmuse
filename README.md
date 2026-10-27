@@ -6,6 +6,8 @@ ProofMuse is the successor to [ParcelProof](https://github.com/jeejak/parcel-pro
 
 ![ProofMuse flags three dark packing photos and draws SAM 3.1's label box on each](docs/images/dark-flagged.png)
 
+**Live demo:** https://proofmuse.jeejak.id (no login; staged sample parcels with dummy waybills are preloaded).
+
 Built for the Meta Global AI Developer Hackathon (Meta x Cerebral Valley, 2026), Startup track. See [HACKATHON.md](HACKATHON.md) for what was built during the event and what was ported.
 
 ## How it works
