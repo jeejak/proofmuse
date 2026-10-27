@@ -54,6 +54,7 @@ func main() {
 	noGround := flag.Bool("no-ground", false, "Muse Spark only: no SAM, no reread, no verify")
 	reportOnly := flag.Bool("report", false, "only rebuild the report from the JSONL")
 	limit := flag.Int("limit", 0, "stop after this many new records (0: all)")
+	claims := flag.Bool("claims", false, "evaluate buyer-claim triage instead of photos")
 	flag.Parse()
 
 	s, err := evalset.Load(*dir)
@@ -72,6 +73,14 @@ func main() {
 	}
 	if *noGround {
 		cfg.Ground, cfg.Reread, cfg.Verify = false, false, false
+	}
+	if *claims {
+		key := os.Getenv("MODEL_API_KEY")
+		if key == "" {
+			log.Fatal("MODEL_API_KEY is not set")
+		}
+		runClaims(s, cfg, meta.New(key), *split, *out)
+		return
 	}
 	base := filepath.Join(*out, *name+"-"+*split)
 	if err := os.MkdirAll(*out, 0o755); err != nil {

@@ -103,3 +103,29 @@ func TestEveryReasonHasAMessage(t *testing.T) {
 		}
 	}
 }
+
+func TestParseClaim(t *testing.T) {
+	if c, err := ParseClaim([]byte(`{"claim_type":"paket_kosong"}`)); err != nil || c != ClaimPaketKosong {
+		t.Fatalf("%q %v", c, err)
+	}
+	for _, bad := range []string{`{"claim_type":"refund_now"}`, `{"claim_type":"lainnya","reply":"x"}`, `kosong`, `{}`} {
+		if _, err := ParseClaim([]byte(bad)); !errors.Is(err, ErrSchema) {
+			t.Errorf("accepted %s", bad)
+		}
+	}
+}
+
+func TestEveryClaimAndGapHasText(t *testing.T) {
+	for _, c := range ClaimTypes {
+		if ClaimText[c].ID == "" || ClaimText[c].EN == "" {
+			t.Errorf("claim %s has no text", c)
+		}
+	}
+	for _, typ := range ClaimTypes {
+		for _, g := range TriageClaim(typ, nil).Missing {
+			if GapText[g].ID == "" || GapText[g].EN == "" {
+				t.Errorf("gap %s has no text", g)
+			}
+		}
+	}
+}

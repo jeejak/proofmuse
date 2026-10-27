@@ -19,7 +19,7 @@ Planned scope, ticked as it lands:
 - [x] Verify before accusing: a resi that differs from the order is read again from the crop; the mismatch stands only if both reads agree
 - [x] Go rules engine: schema validation, resi normalisation and order match, verdict, Indonesian messages
 - [x] Retake loop at packing time (bad photo, Indonesian retake prompt, retake one photo, check again, attempt history)
-- [ ] Claim triage: buyer's claim text to claim type to the evidence that answers it
+- [x] Claim triage: buyer's message to claim type (Muse Spark, enum only) to the photos that answer it and what they cannot show (Go rules)
 - [ ] Dispute packet PDF: verdict, crops and fixed Indonesian strings, no model prose
 - [x] Retries with backoff and Retry-After, per-call usage and cost tracking
 - [x] Async jobs with idempotency keys (order + photo hashes + prompt + config), results persisted, per-client and daily rate limits

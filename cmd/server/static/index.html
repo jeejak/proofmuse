@@ -72,6 +72,12 @@ td,th{text-align:left;padding:5px 4px;border-top:1px solid var(--line);vertical-
 footer{font-size:13px;color:var(--muted);margin:24px 0}
 footer a{color:var(--accent)}
 .hidden{display:none}
+textarea{width:100%;font:inherit;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.ph.ans{outline:3px solid var(--accent);outline-offset:2px}
+.ph .tag{position:absolute;top:6px;right:6px;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:700;border-radius:6px;padding:1px 7px}
+.claimtype{font-weight:700;font-size:18px}
+.gaps{margin:8px 0 0;padding-left:18px}
+.gaps li{margin:6px 0}
 </style>
 </head>
 <body>
@@ -111,6 +117,16 @@ footer a{color:var(--accent)}
   <div id="retakeHint"></div>
 </section>
 
+<section class="card hidden" id="claim">
+  <h2>4. Ada komplain pembeli? <span class="en">A buyer complaint?</span></h2>
+  <p class="en" style="margin-top:0">Tempel pesan pembeli. ProofMuse menunjukkan foto mana yang menjawabnya dan apa yang belum terbukti. <i>Paste the buyer's message: which photos answer it, and what they cannot show.</i></p>
+  <div class="chips" id="claimSamples"></div>
+  <textarea id="claimText" rows="3" maxlength="1000" placeholder="contoh: kak paketnya kosong, ga ada barangnya"></textarea>
+  <button id="claimGo" style="margin-top:8px;width:100%">Baca komplain</button>
+  <p class="err" id="claimErr"></p>
+  <div id="claimOut"></div>
+</section>
+
 <section class="card hidden" id="history">
   <h2>Riwayat percobaan <span class="en">Attempts</span></h2>
   <div class="hist" id="hist"></div>
@@ -135,7 +151,8 @@ const $ = id => document.getElementById(id);
 const el = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) { if (k === 'class') e.className = v; else if (k === 'style') e.style.cssText = v; else e[k] = v; } e.append(...kids.filter(k => k !== null && k !== undefined)); return e; };
 const ISSUE = { blur: 'buram', glare: 'silau', too_dark: 'gelap', too_far: 'terlalu jauh', cropped: 'terpotong', obstructed: 'tertutup' };
 
-let orders = [], samples = [], msgs = {}, photos = [], attempts = [], current = null, retakeSet = null;
+let orders = [], samples = [], msgs = {}, photos = [], attempts = [], current = null, retakeSet = null, triage = null;
+const CLAIM_SAMPLES = ['kak paketnya kosong, ga ada barangnya 😭', 'barangnya nyampe pecah gan', 'warnanya beda sama yg aku pesen', 'yg dateng cuma 1, aku pesen 2', 'udh seminggu blm nyampe kak'];
 
 async function init() {
   [orders, samples, msgs] = await Promise.all(['/api/orders', '/api/samples', '/api/messages'].map(u => fetch(u).then(r => r.json())));
@@ -145,6 +162,8 @@ async function init() {
   $('cam').onchange = e => addFiles(e.target.files, e.target);
   $('pick').onchange = e => addFiles(e.target.files, e.target);
   $('go').onclick = check;
+  $('claimGo').onclick = readClaim;
+  for (const t of CLAIM_SAMPLES) $('claimSamples').append(el('button', { textContent: t, onclick: () => { $('claimText').value = t; } }));
   if (samples.length) loadSample(samples[0]);
 }
 
@@ -224,13 +243,15 @@ function render() {
     const acts = el('div', { class: 'acts' },
       el('button', { textContent: 'Foto ulang', onclick: () => retake(i) }),
       el('button', { textContent: 'Hapus', onclick: () => { photos.splice(i, 1); resetResult(); render(); } }));
-    g.append(el('div', { class: 'ph' + (probs.length ? ' flag' : '') }, wrap, meta, acts));
+    const ans = triage && triage.answers.includes(i + 1);
+    if (ans) wrap.append(el('span', { class: 'tag', textContent: 'menjawab · answers' }));
+    g.append(el('div', { class: 'ph' + (probs.length ? ' flag' : '') + (ans ? ' ans' : '') }, wrap, meta, acts));
   });
   $('go').disabled = !photos.length || !$('order').value;
   $('go').textContent = attempts.length ? 'Cek lagi' : 'Cek bukti';
 }
 
-function resetResult() { current = null; ['result', 'trace'].forEach(id => $(id).classList.add('hidden')); $('err').textContent = ''; }
+function resetResult() { current = null; triage = null; $('claimOut').innerHTML = ''; $('claimErr').textContent = ''; ['result', 'trace', 'claim'].forEach(id => $(id).classList.add('hidden')); $('err').textContent = ''; }
 
 const STEPS = ['Membaca semua foto (Muse Spark)…', 'Mencari label (SAM 3.1)…', 'Membaca ulang label dari dekat…', 'Mengecek dengan pesanan…'];
 
@@ -289,6 +310,43 @@ function show(c) {
   const u = r.usage;
   $('traceSum').textContent = `${(r.latency_ns / 1e9).toFixed(1)} s · $${u.cost_usd.toFixed(4)} · ${u.input_tokens} input / ${u.output_tokens} output tokens (${u.reasoning_tokens} reasoning) · ${u.images} SAM images · prompt ${r.prompt_version}` + (c.reused ? ' · hasil tersimpan (cached, no charge)' : '') + '. Model mengamati, aturan Go yang memutuskan. The models observe; Go rules decide.';
   $('trace').classList.remove('hidden');
+  $('claim').classList.remove('hidden');
+}
+
+async function readClaim() {
+  const text = $('claimText').value.trim();
+  if (!text || !current) return;
+  $('claimErr').textContent = ''; $('claimGo').disabled = true; $('claimGo').textContent = 'Membaca…';
+  try {
+    const r = await fetch(`/api/checks/${current.id}/claim`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text }) });
+    const t = await r.json();
+    if (!r.ok) throw new Error(t.error || r.statusText);
+    triage = t; showClaim(t); render();
+  } catch (e) {
+    $('claimErr').textContent = 'Gagal: ' + e.message;
+  } finally {
+    $('claimGo').disabled = false; $('claimGo').textContent = 'Baca komplain';
+  }
+}
+
+function showClaim(t) {
+  const out = $('claimOut'); out.innerHTML = '';
+  const ct = msgs.claims[t.claim_type];
+  out.append(el('div', { class: 'claimtype', textContent: ct.id }), el('div', { class: 'en', textContent: ct.en }));
+  if (t.claim_type === 'lainnya') {
+    out.append(el('p', { textContent: 'Komplain ini di luar yang bisa dijawab foto packing. ', }, el('span', { class: 'en', textContent: 'Packing photos cannot answer this kind of complaint.' })));
+    return;
+  }
+  out.append(el('p', {},
+    t.answers.length ? `Foto yang menjawab: ${t.answers.map(n => '#' + n).join(', ')}. ` : 'Belum ada foto yang menjawab. ',
+    el('span', { class: 'en', textContent: t.answers.length ? `Photos that answer it: ${t.answers.map(n => '#' + n).join(', ')}.` : 'No photo answers it yet.' })));
+  if (t.missing.length) {
+    out.append(el('b', { textContent: 'Yang belum terbukti ' }), el('span', { class: 'en', textContent: 'Not shown by these photos' }));
+    const ul = el('ul', { class: 'gaps' });
+    for (const g of t.missing) ul.append(el('li', {}, msgs.gaps[g].id, el('div', { class: 'en', textContent: msgs.gaps[g].en })));
+    out.append(ul);
+  }
+  out.append(el('p', { class: 'advisory', textContent: `Muse Spark hanya mengklasifikasi; foto dan kekurangannya ditentukan aturan Go. The model only classifies; Go rules pick the photos and the gaps. $${t.usage.cost_usd.toFixed(5)}` }));
 }
 
 init().catch(e => { $('err').textContent = 'Gagal memuat: ' + e.message; });

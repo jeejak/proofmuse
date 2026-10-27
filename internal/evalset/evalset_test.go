@@ -64,3 +64,33 @@ func TestOrdersMatchLabels(t *testing.T) {
 		}
 	}
 }
+
+// TestTriageMatchesEvalset pins evidence.TriageClaim to the rule that
+// built claims.csv from the human photo labels.
+func TestTriageMatchesEvalset(t *testing.T) {
+	s, err := Load("../../evalset")
+	if err != nil {
+		t.Fatal(err)
+	}
+	claims, err := LoadClaims("../../evalset")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(claims) != 40 {
+		t.Fatalf("got %d claims, want 40", len(claims))
+	}
+	for _, c := range claims {
+		var obs []evidence.PhotoObs
+		for _, p := range s.Photos[c.RecordID] {
+			obs = append(obs, p.Obs)
+		}
+		got := evidence.TriageClaim(c.ClaimType, obs)
+		var answers []string
+		for _, n := range got.Answers {
+			answers = append(answers, c.RecordID+"/"+s.Photos[c.RecordID][n-1].File)
+		}
+		if !slices.Equal(answers, c.Answers) || !slices.Equal(got.Missing, c.Missing) {
+			t.Errorf("%s (%s): got %v %v, want %v %v", c.ClaimID, c.ClaimType, answers, got.Missing, c.Answers, c.Missing)
+		}
+	}
+}

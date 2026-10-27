@@ -43,6 +43,7 @@ const (
 )
 
 type server struct {
+	claim   func(ctx context.Context, text string, photos []evidence.PhotoObs) (*pipeline.ClaimResult, error)
 	set     *evalset.Set
 	orders  map[string]evalset.Order // by order id
 	svc     *checks.Service
@@ -72,10 +73,16 @@ func main() {
 	var run checks.Runner = func(context.Context, [][]byte, evidence.Order) (*pipeline.Result, error) {
 		return nil, errors.New("MODEL_API_KEY is not set on the server")
 	}
+	claim := func(context.Context, string, []evidence.PhotoObs) (*pipeline.ClaimResult, error) {
+		return nil, errors.New("MODEL_API_KEY is not set on the server")
+	}
 	if key != "" {
 		api := meta.New(key)
 		run = func(ctx context.Context, photos [][]byte, o evidence.Order) (*pipeline.Result, error) {
 			return pipeline.Run(ctx, api, cfg, photos, o)
+		}
+		claim = func(ctx context.Context, text string, photos []evidence.PhotoObs) (*pipeline.ClaimResult, error) {
+			return pipeline.TriageClaim(ctx, api, cfg, text, photos)
 		}
 	} else {
 		log.Warn("MODEL_API_KEY not set; checks will fail, stored results still serve")
@@ -87,7 +94,8 @@ func main() {
 		os.Exit(1)
 	}
 	s := &server{
-		set: set, orders: map[string]evalset.Order{}, svc: svc, log: log,
+		claim: claim,
+		set:   set, orders: map[string]evalset.Order{}, svc: svc, log: log,
 		limit: &checks.Limiter{PerClientHour: envInt("LIMIT_PER_HOUR", 30), PerDay: envInt("LIMIT_PER_DAY", 500)},
 		trust: os.Getenv("TRUST_PROXY") == "1",
 	}
@@ -124,11 +132,13 @@ func (s *server) routes() http.Handler {
 	mux.HandleFunc("GET /api/orders", s.listOrders)
 	mux.HandleFunc("GET /api/samples", func(w http.ResponseWriter, _ *http.Request) { writeJSON(w, 200, s.samples) })
 	mux.HandleFunc("GET /api/messages", func(w http.ResponseWriter, _ *http.Request) {
-		writeJSON(w, 200, map[string]any{"reasons": evidence.Messages, "verdicts": evidence.VerdictText, "advisory": evidence.Advisory})
+		writeJSON(w, 200, map[string]any{"reasons": evidence.Messages, "verdicts": evidence.VerdictText, "advisory": evidence.Advisory,
+			"claims": evidence.ClaimText, "gaps": evidence.GapText})
 	})
 	mux.Handle("GET /samples/", http.StripPrefix("/samples/", http.FileServer(http.Dir(filepath.Join(s.set.Dir, "records")))))
 	mux.HandleFunc("POST /api/checks", s.createCheck)
 	mux.HandleFunc("GET /api/checks/{id}", s.getCheck)
+	mux.HandleFunc("POST /api/checks/{id}/claim", s.triageClaim)
 	return securityHeaders(mux)
 }
 
@@ -215,6 +225,37 @@ func (s *server) getCheck(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	writeJSON(w, 200, c)
+}
+
+// triageClaim reads a buyer's complaint against a finished check: which
+// kind of claim it is, which photos answer it, what is missing.
+func (s *server) triageClaim(w http.ResponseWriter, r *http.Request) {
+	c, ok := s.svc.Get(r.PathValue("id"))
+	if !ok || c.Status != checks.Done || c.Result == nil {
+		writeErr(w, 404, "no finished check with that id")
+		return
+	}
+	var body struct {
+		Text string `json:"text"`
+	}
+	if err := json.NewDecoder(http.MaxBytesReader(w, r.Body, 8<<10)).Decode(&body); err != nil || strings.TrimSpace(body.Text) == "" {
+		writeErr(w, 400, "send {\"text\": \"...\"}")
+		return
+	}
+	if ok, why := s.limit.Allow(s.clientIP(r)); !ok {
+		writeErr(w, 429, why)
+		return
+	}
+	ctx, cancel := context.WithTimeout(r.Context(), time.Minute)
+	defer cancel()
+	res, err := s.claim(ctx, strings.TrimSpace(body.Text), c.Result.Photos)
+	if err != nil {
+		s.log.Warn("claim", "check", c.ID, "err", err)
+		writeErr(w, 502, "could not read the claim; try again")
+		return
+	}
+	s.log.Info("claim", "check", c.ID, "type", res.ClaimType, "cost_usd", res.Usage.CostUSD)
+	writeJSON(w, 200, res)
 }
 
 func (s *server) clientIP(r *http.Request) string {

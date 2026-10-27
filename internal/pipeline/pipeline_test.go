@@ -188,3 +188,21 @@ func TestVerifyBeforeMismatch(t *testing.T) {
 		t.Errorf("verified a matching read: %v", f.calls)
 	}
 }
+
+func TestTriageClaimUsesCheckPhotos(t *testing.T) {
+	f := &fakeAPI{observe: []string{`{"claim_type":"refund"}`, `{"claim_type":"salah_kirim"}`}}
+	photos := []evidence.PhotoObs{
+		{Photo: 1, ItemInPhoto: "yes", LabelReadable: "no", SealedBoxInPhoto: "no"},
+		{Photo: 2, SealedBoxInPhoto: "yes", LabelReadable: "yes", ItemInPhoto: "no"},
+	}
+	r, err := TriageClaim(context.Background(), f, Defaults(), "warnanya beda kak", photos)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if r.ClaimType != "salah_kirim" || !slices.Equal(r.Answers, []int{1, 2}) || len(r.Missing) != 0 || r.Usage.InputTokens != 200 {
+		t.Fatalf("%+v", r)
+	}
+	if _, err := TriageClaim(context.Background(), f, Defaults(), strings.Repeat("x", MaxClaimRunes+1), nil); err == nil {
+		t.Fatal("accepted an over-long claim")
+	}
+}

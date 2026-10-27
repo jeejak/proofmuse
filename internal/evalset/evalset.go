@@ -233,3 +233,36 @@ func parseLabel(r map[string]string) (Label, error) {
 		ItemMismatch: r["group"] == "item_mismatch",
 	}, nil
 }
+
+// Claim is one row of claims.csv.
+type Claim struct {
+	ClaimID   string
+	RecordID  string
+	Text      string
+	ClaimType string
+	Answers   []string // "R05/02.jpg"
+	Missing   []string
+}
+
+// LoadClaims reads claims.csv.
+func LoadClaims(dir string) ([]Claim, error) {
+	rows, err := readCSV(filepath.Join(dir, "claims.csv"))
+	if err != nil {
+		return nil, err
+	}
+	split := func(s string) []string {
+		var out []string
+		for _, x := range strings.Split(s, "|") {
+			if x != "" {
+				out = append(out, x)
+			}
+		}
+		return out
+	}
+	var out []Claim
+	for _, r := range rows {
+		out = append(out, Claim{ClaimID: r["claim_id"], RecordID: strings.TrimPrefix(r["order_id"], "SYN-"), Text: r["text"],
+			ClaimType: r["claim_type"], Answers: split(r["evidence_that_answers"]), Missing: split(r["evidence_missing"])})
+	}
+	return out, nil
+}

@@ -16,6 +16,8 @@ Built for the Meta Global AI Developer Hackathon (Meta x Cerebral Valley, 2026),
 
 Every step is written to a trace with why it ran and what it cost.
 
+**Buyer claim triage.** When a complaint comes in, the seller pastes the buyer's message under a finished check. Muse Spark only classifies it into one of five claim types (barang kurang, rusak, paket kosong, salah kirim, tidak diterima) or "other". Go rules then pick the photos that answer that claim, skipping blurry, dark or obstructed ones, and name what packing photos cannot show: item count, condition on arrival, handover to the courier. On the 40 synthetic buyer messages in the eval set, the type matched 40 of 40 at 0.8 s and $0.0006 per claim ([`docs/eval/claims-all.md`](docs/eval/claims-all.md)). The messages were written to be clear examples of each type, so this shows the pipeline works, not robustness to messy real chats.
+
 ## Measured, not claimed
 
 Test split, 62 records, run once per configuration (`go run ./cmd/eval -split test`). Reports: [`docs/eval/`](docs/eval/).
