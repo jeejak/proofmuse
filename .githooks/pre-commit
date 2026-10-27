@@ -1,0 +1,11 @@
+#!/bin/sh
+# Blocks a commit on unformatted Go, vet or test failures, or a secret in
+# the staged changes. Install once per clone: make hooks
+set -e
+unformatted=$(gofmt -l $(git ls-files '*.go'))
+if [ -n "$unformatted" ]; then
+  echo "gofmt needed:"; echo "$unformatted"; exit 1
+fi
+go vet ./...
+go test -count=1 ./... >/dev/null
+gitleaks git --pre-commit --staged --no-banner --redact
