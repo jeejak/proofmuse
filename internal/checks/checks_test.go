@@ -48,10 +48,15 @@ func TestIdempotentSubmit(t *testing.T) {
 	if !c.Reused || c.Status != Done || runs.Load() != 1 {
 		t.Fatalf("not reused: %+v runs %d", c, runs.Load())
 	}
-	if d := s.Submit("SYN-R01", evidence.Order{}, [][]byte{[]byte("b"), []byte("a")}); d.ID == a.ID {
+	d := s.Submit("SYN-R01", evidence.Order{}, [][]byte{[]byte("b"), []byte("a")})
+	e := s.Submit("SYN-R02", evidence.Order{}, photos)
+	// Wait for both, so no worker writes into the temp dir after the test.
+	wait(t, s, d.ID)
+	wait(t, s, e.ID)
+	if d.ID == a.ID {
 		t.Fatal("photo order ignored by the key")
 	}
-	if d := s.Submit("SYN-R02", evidence.Order{}, photos); d.ID == a.ID {
+	if e.ID == a.ID {
 		t.Fatal("order ignored by the key")
 	}
 	// A restart reads finished results back.
