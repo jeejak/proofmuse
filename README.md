@@ -47,6 +47,13 @@ What the extra steps buy: without them, Muse Spark misread one digit on a small 
 - **The two disagreements are about legibility.** On R47 and R69 the human marked the label unreadable, while the model read it and matched the order's resi exactly. The labels were left as they are.
 - **The dev split is not pristine.** It was looked at during development, so the test split above is the published number.
 
+## Privacy
+
+- **The demo runs on the hackathon's free Meta Model API credits.** Under those credits, Meta may use the content sent for product improvement. So the public demo is for staged photos with dummy waybills only, and the page says so next to the upload buttons. Real seller photos never go to it.
+- **Before any real seller photo is checked, the production path must change.** It has to run on paid usage with free credits switched off. Sellers must opt in per shop. And Jeejak's privacy policy must name Meta as a processor. Until then, ProofMuse in the Jeejak console runs only on a demo shop holding synthetic parcels.
+- **The model is never told the expected tracking number,** and its own words never reach a seller; only fixed strings do.
+- **The server keeps results, never photos.** Results are cached by a hash of the photos.
+
 ## About Jeejak
 
 Jeejak is a family of small-business tools for Indonesian online sellers, made by CV. Adisatya IT Consultant in Kediri, East Java ([jeejak.id](https://jeejak.id)). Its first product, [JejakPaket](https://play.google.com/store/apps/details?id=id.jeejak.paket), records proof for every parcel a Shopee or TikTok Shop seller sends: the resi scan, packing photos, the handover video and a dispute PDF. Paid plans sync that evidence to a seller console that matches it with marketplace orders.
