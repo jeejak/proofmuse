@@ -55,6 +55,10 @@ func main() {
 	reportOnly := flag.Bool("report", false, "only rebuild the report from the JSONL")
 	limit := flag.Int("limit", 0, "stop after this many new records (0: all)")
 	claims := flag.Bool("claims", false, "evaluate buyer-claim triage instead of photos")
+	visionURL := flag.String("vision-base-url", "", "OpenAI-compatible endpoint for the vision model (e.g. https://inference.baseten.co/v1); SAM stays on the Meta Model API")
+	visionKeyEnv := flag.String("vision-key-env", "BASETEN_API_KEY", "env var holding the key for -vision-base-url")
+	priceIn := flag.Float64("price-in", 0, "USD per 1M input tokens for a model the client does not know")
+	priceOut := flag.Float64("price-out", 0, "USD per 1M output tokens for a model the client does not know")
 	flag.Parse()
 
 	s, err := evalset.Load(*dir)
@@ -64,6 +68,9 @@ func main() {
 	cfg := pipeline.Defaults()
 	if *effort != "" {
 		cfg.Effort = *effort
+	}
+	if cfg.Effort == "omit" { // some partner hosts reject reasoning_effort
+		cfg.Effort, cfg.RereadEffort = "", ""
 	}
 	if *maxSide > 0 {
 		cfg.MaxSide = *maxSide
@@ -95,7 +102,20 @@ func main() {
 		if key == "" {
 			log.Fatal("MODEL_API_KEY is not set")
 		}
-		run(s, cfg, meta.New(key), *split, base+".jsonl", done, *workers, *limit)
+		var api pipeline.API = meta.New(key)
+		if *visionURL != "" {
+			vkey := os.Getenv(*visionKeyEnv)
+			if vkey == "" {
+				log.Fatalf("%s is not set", *visionKeyEnv)
+			}
+			v := meta.New(vkey)
+			v.BaseURL = *visionURL
+			api = meta.Split{Vision: v, Segmenter: meta.New(key)}
+		}
+		if *priceIn > 0 || *priceOut > 0 {
+			meta.SetPrice(cfg.VisionModel, *priceIn, *priceOut)
+		}
+		run(s, cfg, api, *split, base+".jsonl", done, *workers, *limit)
 		if done, err = readRows(base + ".jsonl"); err != nil {
 			log.Fatal(err)
 		}
@@ -135,7 +155,7 @@ func readRows(path string) (map[string]Row, error) {
 	return rows, sc.Err()
 }
 
-func run(s *evalset.Set, cfg pipeline.Config, api *meta.Client, split, path string, done map[string]Row, workers, limit int) {
+func run(s *evalset.Set, cfg pipeline.Config, api pipeline.API, split, path string, done map[string]Row, workers, limit int) {
 	var todo []evalset.Label
 	for _, l := range s.Labels {
 		if (split == "all" || s.Split[l.RecordID] == split) && done[l.RecordID].RecordID == "" {
@@ -178,7 +198,7 @@ func run(s *evalset.Set, cfg pipeline.Config, api *meta.Client, split, path stri
 	wg.Wait()
 }
 
-func runOne(s *evalset.Set, cfg pipeline.Config, api *meta.Client, l evalset.Label) Row {
+func runOne(s *evalset.Set, cfg pipeline.Config, api pipeline.API, l evalset.Label) Row {
 	row := Row{RecordID: l.RecordID, Split: s.Split[l.RecordID], Group: l.Group, Human: l.Verdict, RunAt: time.Now().UTC()}
 	var photos [][]byte
 	for _, p := range s.Photos[l.RecordID] {

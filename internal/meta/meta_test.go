@@ -167,3 +167,36 @@ func TestSegmentStreamCutShort(t *testing.T) {
 		t.Fatal("accepted a stream with no response.completed")
 	}
 }
+
+func TestSplitRoutesCalls(t *testing.T) {
+	var vision, sam atomic.Int32
+	vs := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		vision.Add(1)
+		if r.URL.Path != "/chat/completions" {
+			t.Errorf("vision path %s", r.URL.Path)
+		}
+		fmt.Fprint(w, chatOK)
+	}))
+	defer vs.Close()
+	ss := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		sam.Add(1)
+		fmt.Fprint(w, "data: {\"type\":\"response.completed\",\"response\":{\"usage\":{\"images_processed\":1}}}\n\n")
+	}))
+	defer ss.Close()
+	v, _ := testClient(vs.URL)
+	g, _ := testClient(ss.URL)
+	sp := Split{Vision: v, Segmenter: g}
+	if _, _, err := sp.JSON(context.Background(), JSONRequest{Model: "meta-models/muse-spark-open-1026"}); err != nil {
+		t.Fatal(err)
+	}
+	if _, _, err := sp.Segment(context.Background(), "sam-3.1", []byte{1}, "label"); err != nil {
+		t.Fatal(err)
+	}
+	if vision.Load() != 1 || sam.Load() != 1 {
+		t.Fatalf("vision %d sam %d", vision.Load(), sam.Load())
+	}
+	SetPrice("meta-models/muse-spark-open-1026", 1, 2)
+	if c := Cost(Usage{Model: "meta-models/muse-spark-open-1026", InputTokens: 1e6, OutputTokens: 1e6}); c != 3 {
+		t.Fatalf("cost %v", c)
+	}
+}
