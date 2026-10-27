@@ -108,8 +108,12 @@ func (s *server) observe(w http.ResponseWriter, r *http.Request) {
 }
 
 // orderIDFor names an API order for the idempotency key and the stored
-// result. The resi goes in hashed, so a caller's tracking numbers never
-// land in this server's logs or DATA_DIR in the clear.
+// result. The resi goes in as an unsalted, truncated SHA-256, which keeps
+// it out of the id at a glance but is not protection: a resi can be
+// brute-forced against it. The stored result also keeps the model's own
+// label reads, which on a readable label are the resi. Fine for staged
+// photos with dummy labels; not for real seller data (Jeejak Plan 0016
+// D15).
 func orderIDFor(caller, resi string, koli int) string {
 	sum := sha256.Sum256([]byte(evidence.NormaliseResi(resi)))
 	return fmt.Sprintf("api:%s:%x:%d", caller, sum[:8], koli)
