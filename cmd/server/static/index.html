@@ -210,6 +210,8 @@ footer{font-size:13px;color:var(--muted);margin:28px 0 12px}
   <div id="verdict"></div>
   <ul class="reasons" id="reasons"></ul>
   <div id="retakeHint"></div>
+  <button class="sec" id="packetBtn" type="button"></button>
+  <p class="note" id="packetNote" style="margin:6px 0 0"></p>
   <p class="advisory" id="advisory"></p>
 </section>
 
@@ -278,6 +280,7 @@ const T = {
     otherClaim: 'Packing photos cannot answer this kind of complaint.', answeredBy: a => `Photos that answer it: ${a}.`, noAnswer: 'No photo answers it yet.', notShown: 'Not shown by these photos',
     famTitle: 'Part of Jeejak', famText: 'ProofMuse is the new AI layer of Jeejak\'s tools for Indonesian online sellers. The products below are pre-existing and not part of this hackathon submission.',
     famApp: 'Android app that records packing proof: resi scan, photos, handover video, dispute PDF', famConsole: 'Web console that matches the evidence to Shopee and TikTok Shop orders', famSite: 'Product site, pricing and help',
+    packetBtn: '📄 Download evidence packet (PDF)', packetBusy: 'Preparing PDF…', packetNote: 'Verdict, reasons, the photos with the label box, the complaint triage if any, and each photo\'s SHA-256. Fixed text only; photos are not stored.',
     claimFoot: 'The model only classifies the message; Go rules pick the photos and the gaps.', failed: 'Failed: ', traceFoot: 'The models observe; Go rules decide.',
   },
   id: {
@@ -301,6 +304,7 @@ const T = {
     otherClaim: 'Komplain ini di luar yang bisa dijawab foto packing.', answeredBy: a => `Foto yang menjawab: ${a}.`, noAnswer: 'Belum ada foto yang menjawab.', notShown: 'Yang belum terbukti',
     famTitle: 'Bagian dari Jeejak', famText: 'ProofMuse adalah lapisan AI baru untuk tools Jeejak bagi seller online Indonesia. Produk di bawah ini sudah ada sebelumnya dan bukan bagian dari hackathon ini.',
     famApp: 'Aplikasi Android untuk rekam bukti packing: scan resi, foto, video serah-terima, PDF sengketa', famConsole: 'Console web yang mencocokkan bukti dengan pesanan Shopee dan TikTok Shop', famSite: 'Situs produk, harga dan bantuan',
+    packetBtn: '📄 Unduh paket bukti (PDF)', packetBusy: 'Menyiapkan PDF…', packetNote: 'Hasil, alasan, foto dengan kotak label, analisis komplain bila ada, dan SHA-256 tiap foto. Teks tetap; foto tidak disimpan.',
     claimFoot: 'Model hanya mengklasifikasi pesan; foto dan kekurangannya ditentukan aturan Go.', failed: 'Gagal: ', traceFoot: 'Model mengamati, aturan Go yang memutuskan.',
   },
 };
@@ -325,6 +329,7 @@ function setLang(l) {
   $('lang-id').classList.toggle('on', l === 'id');
   document.querySelectorAll('[data-t]').forEach(e => { e.innerHTML = t(e.dataset.t); });
   $('claimGo').textContent = t('claimBtn');
+  $('packetBtn').textContent = t('packetBtn');
   renderSamples(); showOrder(); render();
   if (current) show(current, false);
   if (triage) showClaim(triage, false);
@@ -338,6 +343,7 @@ async function init() {
   $('pick').onchange = e => addFiles(e.target.files, e.target);
   $('go').onclick = check;
   $('claimGo').onclick = readClaim;
+  $('packetBtn').onclick = downloadPacket;
   $('lang-en').onclick = () => setLang('en');
   $('lang-id').onclick = () => setLang('id');
   for (const c of CLAIM_SAMPLES) $('claimSamples').append(el('button', { textContent: c, onclick: () => { $('claimText').value = c; } }));
@@ -497,6 +503,7 @@ function show(c, scroll) {
   }
   if (!(r.verdict.reasons || []).length) $('reasons').append(el('li', {}, el('b', { textContent: t('allClear') })));
   $('advisory').textContent = lang === 'en' ? msgs.advisory_en : msgs.advisory;
+  $('packetNote').textContent = t('packetNote');
   $('retakeHint').innerHTML = '';
   if (v !== 'kuat' && retakeSet) {
     $('retakeHint').append(el('button', { id: 'retakeBtn', class: 'retake', textContent: t('retakeBtn'), onclick: async () => { photos = await Promise.all(retakeSet.map(urlToPhoto)); retakeSet = null; resetResult(); render(); window.scrollTo({ top: $('photos').offsetTop - 80, behavior: 'smooth' }); } }));
@@ -556,6 +563,29 @@ function showClaim(tr, scroll) {
   }
   out.append(el('p', { class: 'advisory', textContent: `${t('claimFoot')} $${tr.usage.cost_usd.toFixed(5)}` }));
   if (scroll && tr.answers.length) $('photos').scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// The server keeps no photos, so the packet request sends the same photos
+// again; the server checks they are exactly the ones that were checked.
+async function downloadPacket() {
+  if (!current) return;
+  const btn = $('packetBtn'); btn.disabled = true; btn.textContent = t('packetBusy');
+  try {
+    const fd = new FormData();
+    photos.forEach((p, i) => fd.append('photo', p.blob, `${i + 1}.jpg`));
+    if (triage) fd.append('claim_type', triage.claim_type);
+    const r = await fetch(`/api/checks/${current.id}/packet`, { method: 'POST', body: fd });
+    if (!r.ok) { const e = await r.json().catch(() => ({})); throw new Error(e.error || r.statusText); }
+    const blob = await r.blob();
+    const cd = r.headers.get('Content-Disposition') || '';
+    const name = (cd.match(/filename="([^"]+)"/) || [])[1] || 'bukti-paket.pdf';
+    const a = el('a', { href: URL.createObjectURL(blob), download: name });
+    document.body.append(a); a.click(); a.remove();
+  } catch (e) {
+    $('err').textContent = t('failed') + e.message;
+  } finally {
+    btn.disabled = false; btn.textContent = t('packetBtn');
+  }
 }
 
 init().catch(e => { $('err').textContent = 'Failed to load: ' + e.message; });

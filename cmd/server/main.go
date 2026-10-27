@@ -172,6 +172,7 @@ func (s *server) routes() http.Handler {
 	mux.HandleFunc("POST /v1/observe", s.observe)
 	mux.HandleFunc("GET /api/checks/{id}", s.getCheck)
 	mux.HandleFunc("POST /api/checks/{id}/claim", s.triageClaim)
+	mux.HandleFunc("POST /api/checks/{id}/packet", s.packetPDF)
 	return securityHeaders(mux)
 }
 

@@ -20,7 +20,7 @@ Planned scope, ticked as it lands:
 - [x] Go rules engine: schema validation, resi normalisation and order match, verdict, Indonesian messages
 - [x] Retake loop at packing time (bad photo, Indonesian retake prompt, retake one photo, check again, attempt history)
 - [x] Claim triage: buyer's message to claim type (Muse Spark, enum only) to the photos that answer it and what they cannot show (Go rules)
-- [ ] Dispute packet PDF: verdict, crops and fixed Indonesian strings, no model prose
+- [x] Evidence packet PDF: order facts, verdict and fixed reasons (Indonesian and English), the claim triage, the photos with the SAM label box, and each photo's SHA-256; built only from the exact photos that were checked, nothing stored, no model prose
 - [x] Server-to-server API (`POST /v1/observe`, keyed, per-caller limits) and a dependency-free Go client (`client/`) returning the six-field observation the Jeejak console stores
 - [x] Retries with backoff and Retry-After, per-call usage and cost tracking
 - [x] Async jobs with idempotency keys (order + photo hashes + prompt + config), results persisted, per-client and daily rate limits

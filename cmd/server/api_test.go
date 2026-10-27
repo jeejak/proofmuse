@@ -40,6 +40,9 @@ func testServer(t *testing.T, keys map[string]string, run checks.Runner) *httpte
 		keys:     keys,
 		apiLimit: &checks.Limiter{PerClientHour: 100, PerDay: 100},
 	}
+	for _, o := range set.Orders {
+		s.orders[o.OrderID] = o
+	}
 	ts := httptest.NewServer(s.routes())
 	t.Cleanup(ts.Close)
 	return ts
