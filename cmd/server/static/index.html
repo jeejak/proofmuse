@@ -2,147 +2,230 @@
 <html lang="id">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ProofMuse</title>
-<meta name="description" content="Cek bukti packing sebelum paket dikirim. Built on Meta Muse Spark and SAM 3.1.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ProofMuse by Jeejak</title>
+<meta name="description" content="Cek bukti packing sebelum paket dikirim. Checks packing photos at the bench. Built on Meta Muse Spark 1.3 and SAM 3.1.">
+<link rel="icon" href="/static/jeejak-icon.png">
 <style>
 :root{
-  --bg:#f6f5f2;--card:#fff;--ink:#1c1b19;--muted:#6b6862;--line:#e3e0da;
-  --accent:#1f5f8b;--accent-ink:#fff;
-  --kuat:#1d7a46;--kuat-bg:#e4f4ea;--dicek:#9a6400;--dicek-bg:#fdf1d8;--lemah:#b3261e;--lemah-bg:#fbe6e4;
-  --box:#13a36f;
+  --bg:#f4f6fa;--card:#fff;--ink:#0f1b33;--muted:#5b6a85;--line:#dfe5ef;--soft:#eef2f8;
+  --navy:#0e2152;--teal:#139a9c;--green:#2f9e3a;--accent:#0e2152;--accent-ink:#fff;
+  --kuat:#1d7a46;--kuat-bg:#e3f4e8;--dicek:#8a5a00;--dicek-bg:#fdf0d5;--lemah:#b3261e;--lemah-bg:#fbe5e3;
+  --box:#13a36f;--shadow:0 1px 2px rgba(15,27,51,.06),0 8px 24px rgba(15,27,51,.06);
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#141413;--card:#1f1e1c;--ink:#efede8;--muted:#a19d95;--line:#34322e;
-  --accent:#6fb1df;--accent-ink:#0d1b26;
-  --kuat:#6fd39a;--kuat-bg:#18301f;--dicek:#f2c25b;--dicek-bg:#352a10;--lemah:#f2867e;--lemah-bg:#3a1a17;
+  --bg:#0a1430;--card:#111d3d;--ink:#eef2f9;--muted:#9aa8c4;--line:#22305a;--soft:#17244a;
+  --accent:#4fd1c5;--accent-ink:#06213a;--teal:#4fd1c5;--green:#7ad66b;
+  --kuat:#7ad69a;--kuat-bg:#15362a;--dicek:#f2c25b;--dicek-bg:#3a2e12;--lemah:#f2867e;--lemah-bg:#3d1b1e;
+  --shadow:none;
 }}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:760px;margin:0 auto;padding:16px}
-header h1{margin:8px 0 2px;font-size:26px;letter-spacing:-.01em}
-header p{margin:0;color:var(--muted)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
-h2{font-size:17px;margin:0 0 10px}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:880px;margin:0 auto;padding:0 16px 120px}
+a{color:var(--teal)}
 small,.muted{color:var(--muted)}
 .en{color:var(--muted);font-size:13px}
-select,button{font:inherit}
-select{width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
-button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer}
-button.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600;width:100%;padding:13px}
-button:disabled{opacity:.5;cursor:default}
-.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
-.chips button{white-space:nowrap;font-size:14px}
-.order{margin-top:8px;font-size:14px;color:var(--muted)}
-.order b{color:var(--ink);font-family:ui-monospace,Menlo,monospace}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:12px 0}
-.ph{position:relative;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg)}
+button{font:inherit;cursor:pointer;color:inherit}
+.hidden{display:none!important}
+
+/* top bar and hero */
+.top{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700}
+.brand img{width:32px;height:32px;border-radius:9px}
+.brand span{color:var(--muted);font-weight:500;font-size:14px}
+.top a.gh{font-size:14px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+.hero{padding:8px 0 4px}
+.hero h1{font-size:clamp(34px,7vw,52px);line-height:1.02;margin:6px 0 10px;letter-spacing:-.03em}
+.hero h1 b{background:linear-gradient(90deg,#16a7a9,#4cc24a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{margin:0;font-size:18px;max-width:640px}
+.hero p.en{font-size:15px;margin-top:4px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 12px;font-size:13px;color:var(--muted)}
+.chip b{color:var(--ink)}
+.chip.meta{border-color:transparent;background:var(--navy);color:#fff}
+:root:not([data-theme="light"]) .chip.meta{}
+@media (prefers-color-scheme:dark){.chip.meta{background:#1d2f63}}
+
+/* cards and steps */
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin:16px 0;box-shadow:var(--shadow)}
+.step{display:flex;align-items:baseline;gap:10px;margin:0 0 12px}
+.step i{font-style:normal;display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--soft);color:var(--ink);font-weight:700;font-size:14px;flex:none}
+.step h2{font-size:18px;margin:0}
+
+/* sample cards */
+.samples{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sample{display:flex;flex-direction:column;text-align:left;border:1px solid var(--line);background:var(--bg);border-radius:14px;overflow:hidden;padding:0}
+.sample img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--soft)}
+.sample div{padding:8px 10px 10px}
+.sample b{display:block;font-size:14px;line-height:1.3}
+.sample small{font-size:12px}
+.sample.on{outline:3px solid var(--teal);outline-offset:-1px}
+.other{margin-top:12px}
+.other summary{cursor:pointer;color:var(--muted);font-size:14px}
+select{width:100%;margin-top:8px;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.order{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:14px;padding:12px 14px;border-radius:12px;background:var(--soft);font-size:14px}
+.order .resi{font-family:ui-monospace,Menlo,monospace;font-weight:700;font-size:16px}
+.warn{margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--dicek-bg);color:var(--dicek);font-size:14px}
+
+/* photos */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin:4px 0 12px}
+.ph{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg)}
 .ph.flag{border:2px solid var(--lemah)}
+.ph.ans{outline:3px solid var(--teal);outline-offset:2px}
 .ph .img{position:relative}
 .ph img{display:block;width:100%;height:auto}
-.ph .n{position:absolute;top:6px;left:6px;background:rgba(0,0,0,.65);color:#fff;font-size:12px;border-radius:6px;padding:1px 7px}
-.ph .bx{position:absolute;border:2px solid var(--box);border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,.35)}
-.ph .bx span{position:absolute;top:-20px;left:-2px;background:var(--box);color:#fff;font-size:11px;padding:1px 5px;border-radius:4px;white-space:nowrap}
-.ph .meta{padding:6px 8px;font-size:12px}
-.ph .meta .bad{color:var(--lemah);font-weight:600}
-.ph .acts{display:flex;gap:6px;padding:0 8px 8px}
-.ph .acts button{flex:1;font-size:13px;padding:6px}
-.add{display:flex;gap:8px;flex-wrap:wrap}
-.add label{flex:1}
-.add label span{display:block;text-align:center;border:1px dashed var(--line);border-radius:10px;padding:10px;cursor:pointer}
+.ph .n{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.65);color:#fff;font-size:12px;font-weight:700;border-radius:7px;padding:1px 8px}
+.ph .tag{position:absolute;top:8px;right:8px;background:var(--teal);color:#06213a;font-size:11px;font-weight:800;border-radius:7px;padding:2px 8px}
+.ph .bx{position:absolute;border:2px solid var(--box);border-radius:4px;box-shadow:0 0 0 1px rgba(0,0,0,.35)}
+.ph .bx span{position:absolute;top:-21px;left:-2px;background:var(--box);color:#fff;font-size:11px;font-weight:600;padding:1px 6px;border-radius:5px;white-space:nowrap}
+.ph .meta{padding:8px 10px 0;font-size:13px;min-height:28px}
+.ph .meta .bad{color:var(--lemah);font-weight:700}
+.ph .meta .ok{color:var(--kuat);font-weight:600;font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.ph .acts{display:flex;gap:6px;padding:8px 10px 10px}
+.ph .acts button{flex:1;font-size:13px;padding:6px 4px;border:1px solid var(--line);background:var(--card);border-radius:9px;white-space:nowrap}
+.add{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.add label span{display:block;text-align:center;border:1.5px dashed var(--line);border-radius:12px;padding:12px;cursor:pointer;font-weight:600}
 input[type=file]{display:none}
-.badge{display:inline-block;font-weight:700;font-size:20px;padding:6px 14px;border-radius:999px}
-.kuat{background:var(--kuat-bg);color:var(--kuat)}
-.perlu_dicek{background:var(--dicek-bg);color:var(--dicek)}
-.lemah{background:var(--lemah-bg);color:var(--lemah)}
-.reasons{list-style:none;padding:0;margin:12px 0 0}
-.reasons li{border-top:1px solid var(--line);padding:10px 0}
-.reasons b{display:block}
-.reasons .todo{margin-top:2px}
-.advisory{font-size:13px;color:var(--muted);margin-top:10px}
-.hist{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:14px}
-.hist .badge{font-size:13px;padding:3px 10px}
-.status{display:flex;gap:10px;align-items:center;color:var(--muted)}
-.spin{width:16px;height:16px;border:2px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:s 1s linear infinite}
+.note{font-size:13px;color:var(--muted);margin:10px 0 0}
+
+/* action bar */
+.bar{position:sticky;bottom:0;z-index:5;padding:12px 0 calc(12px + env(safe-area-inset-bottom));background:linear-gradient(transparent,var(--bg) 30%)}
+.go{width:100%;border:0;border-radius:14px;padding:15px;font-weight:700;font-size:17px;background:var(--accent);color:var(--accent-ink)}
+.go:disabled{opacity:.5;cursor:default}
+.status{display:none;margin-top:10px}
+.status.on{display:block}
+.progress{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.progress li{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px}
+.progress li::before{content:"";width:14px;height:14px;border-radius:50%;border:2px solid var(--line);flex:none}
+.progress li.now{color:var(--ink);font-weight:600}
+.progress li.now::before{border-color:var(--teal);border-top-color:transparent;animation:s 1s linear infinite}
+.progress li.done::before{background:var(--teal);border-color:var(--teal)}
 @keyframes s{to{transform:rotate(360deg)}}
-details summary{cursor:pointer;font-weight:600}
-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
-td,th{text-align:left;padding:5px 4px;border-top:1px solid var(--line);vertical-align:top}
-.err{color:var(--lemah)}
-footer{font-size:13px;color:var(--muted);margin:24px 0}
-footer a{color:var(--accent)}
-.hidden{display:none}
-textarea{width:100%;font:inherit;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
-.ph.ans{outline:3px solid var(--accent);outline-offset:2px}
-.ph .tag{position:absolute;top:6px;right:6px;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:700;border-radius:6px;padding:1px 7px}
-.claimtype{font-weight:700;font-size:18px}
+.err{color:var(--lemah);font-size:14px}
+
+/* result */
+.verdict{display:flex;align-items:center;gap:14px;padding:16px;border-radius:14px}
+.verdict.kuat{background:var(--kuat-bg);color:var(--kuat)}
+.verdict.perlu_dicek{background:var(--dicek-bg);color:var(--dicek)}
+.verdict.lemah{background:var(--lemah-bg);color:var(--lemah)}
+.verdict .big{font-size:26px;font-weight:800;line-height:1.1}
+.verdict .sub{font-size:14px;opacity:.85}
+.verdict .ico{font-size:30px}
+.reasons{list-style:none;padding:0;margin:12px 0 0}
+.reasons li{padding:12px 0;border-top:1px solid var(--line)}
+.reasons li:first-child{border-top:0}
+.reasons b{display:block}
+.reasons .todo{margin-top:3px}
+.advisory{font-size:13px;color:var(--muted);margin:12px 0 0}
+.retake{margin-top:12px;width:100%;border:1px solid var(--teal);background:transparent;color:var(--teal);border-radius:12px;padding:11px;font-weight:700}
+.hist{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:14px}
+.badge{display:inline-block;font-weight:800;font-size:13px;padding:3px 10px;border-radius:999px}
+.badge.kuat{background:var(--kuat-bg);color:var(--kuat)}
+.badge.perlu_dicek{background:var(--dicek-bg);color:var(--dicek)}
+.badge.lemah{background:var(--lemah-bg);color:var(--lemah)}
+
+/* claim */
+textarea{width:100%;font:inherit;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical}
+.qs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.qs button{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:5px 11px;font-size:13px}
+.sec{width:100%;margin-top:8px;border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:11px;font-weight:700}
+.claimtype{font-weight:800;font-size:20px}
 .gaps{margin:8px 0 0;padding-left:18px}
 .gaps li{margin:6px 0}
+
+details summary{cursor:pointer;font-weight:700}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px;min-width:520px}
+td,th{text-align:left;padding:6px 6px;border-top:1px solid var(--line);vertical-align:top}
+footer{font-size:13px;color:var(--muted);margin:28px 0 12px}
 </style>
 </head>
 <body>
 <main>
-<header>
-  <h1>ProofMuse</h1>
-  <p>Cek bukti packing sebelum paket dikirim, selagi masih bisa foto ulang.</p>
-  <p class="en">Checks packing photos at the bench, while a retake still takes seconds. Built on Meta Muse Spark 1.3 and SAM 3.1.</p>
+<nav class="top">
+  <a class="brand" href="https://jeejak.id"><img src="/static/jeejak-icon.png" alt="">ProofMuse <span>by Jeejak</span></a>
+  <a class="gh" href="https://github.com/jeejak/proofmuse">GitHub</a>
+</nav>
+
+<header class="hero">
+  <h1>Cek bukti packing <b>sebelum paket dikirim.</b></h1>
+  <p>Foto gelap, label terpotong, kardus belum disegel: ketahuan sekarang, selagi masih bisa foto ulang.</p>
+  <p class="en">Checks a seller's packing photos while the parcel is still on the table, and says what to retake.</p>
+  <!-- Figures from docs/eval/full-test.md (held-out test split). Update together. -->
+  <div class="chips">
+    <span class="chip meta">Meta Muse Spark 1.3 · SAM 3.1</span>
+    <span class="chip"><b>100%</b> weak-evidence precision &amp; recall</span>
+    <span class="chip"><b>0</b> false alarms</span>
+    <span class="chip"><b>~5 s</b> · <b>$0.014</b> per parcel</span>
+    <span class="chip">62 held-out synthetic parcels</span>
+  </div>
 </header>
 
 <section class="card">
-  <h2>1. Pesanan <span class="en">Order</span></h2>
-  <div class="chips" id="samples"></div>
-  <p class="en" style="margin:6px 0 10px">Contoh siap pakai (foto sintetis, label dummy). <i>Ready-made samples: synthetic photos, dummy labels.</i></p>
-  <select id="order" aria-label="Pesanan"></select>
+  <div class="step"><i>1</i><h2>Pilih contoh <span class="en">Pick a sample</span></h2></div>
+  <div class="samples" id="samples"></div>
+  <p class="note">Foto sintetis dengan label dummy. <i>Synthetic photos with dummy waybills.</i></p>
+  <details class="other"><summary>Atau pilih pesanan lain dan unggah foto sendiri · <i>or pick an order and use your own photos</i></summary>
+    <select id="order" aria-label="Pesanan"></select>
+  </details>
   <div class="order" id="orderInfo"></div>
+  <div class="warn hidden" id="mismatch"></div>
 </section>
 
 <section class="card">
-  <h2>2. Foto packing <span class="en">Packing photos</span></h2>
+  <div class="step"><i>2</i><h2>Foto packing <span class="en">Packing photos</span></h2></div>
   <div class="grid" id="photos"></div>
   <div class="add">
     <label><input type="file" id="cam" accept="image/*" capture="environment"><span>📷 Ambil foto</span></label>
-    <label><input type="file" id="pick" accept="image/jpeg,image/png" multiple><span>🖼️ Pilih dari galeri</span></label>
+    <label><input type="file" id="pick" accept="image/jpeg,image/png" multiple><span>🖼️ Dari galeri</span></label>
   </div>
-  <p class="en">Hanya label dummy. Jangan unggah label dengan nama, alamat atau nomor HP asli. <i>Dummy labels only.</i></p>
-  <button class="primary" id="go" disabled>Cek bukti</button>
-  <div class="status hidden" id="status"><div class="spin"></div><span id="statusText">Memeriksa foto…</span></div>
-  <p class="err" id="err"></p>
+  <p class="note">Hanya label dummy: jangan unggah label dengan nama, alamat atau nomor HP asli. <i>Dummy labels only; this demo runs on free API credits.</i></p>
 </section>
+
+<div class="bar">
+  <button class="go" id="go" disabled>Cek bukti</button>
+  <div class="status card" id="status">
+    <ol class="progress" id="progress"></ol>
+  </div>
+  <p class="err" id="err"></p>
+</div>
 
 <section class="card hidden" id="result">
-  <h2>3. Hasil <span class="en">Result</span></h2>
+  <div class="step"><i>3</i><h2>Hasil <span class="en">Result</span></h2></div>
   <div id="verdict"></div>
   <ul class="reasons" id="reasons"></ul>
-  <p class="advisory" id="advisory"></p>
   <div id="retakeHint"></div>
-</section>
-
-<section class="card hidden" id="claim">
-  <h2>4. Ada komplain pembeli? <span class="en">A buyer complaint?</span></h2>
-  <p class="en" style="margin-top:0">Tempel pesan pembeli. ProofMuse menunjukkan foto mana yang menjawabnya dan apa yang belum terbukti. <i>Paste the buyer's message: which photos answer it, and what they cannot show.</i></p>
-  <div class="chips" id="claimSamples"></div>
-  <textarea id="claimText" rows="3" maxlength="1000" placeholder="contoh: kak paketnya kosong, ga ada barangnya"></textarea>
-  <button id="claimGo" style="margin-top:8px;width:100%">Baca komplain</button>
-  <p class="err" id="claimErr"></p>
-  <div id="claimOut"></div>
+  <p class="advisory" id="advisory"></p>
 </section>
 
 <section class="card hidden" id="history">
-  <h2>Riwayat percobaan <span class="en">Attempts</span></h2>
+  <h2 style="font-size:16px;margin:0 0 8px">Riwayat percobaan <span class="en">Attempts</span></h2>
   <div class="hist" id="hist"></div>
+</section>
+
+<section class="card hidden" id="claim">
+  <div class="step"><i>4</i><h2>Ada komplain pembeli? <span class="en">A buyer complaint?</span></h2></div>
+  <p class="note" style="margin:0 0 10px">Tempel pesan pembeli: foto mana yang menjawabnya, dan apa yang belum terbukti. <i>Which photos answer it, and what they cannot show.</i></p>
+  <div class="qs" id="claimSamples"></div>
+  <textarea id="claimText" rows="2" maxlength="1000" placeholder="contoh: kak paketnya kosong, ga ada barangnya"></textarea>
+  <button class="sec" id="claimGo">Baca komplain</button>
+  <p class="err" id="claimErr"></p>
+  <div id="claimOut"></div>
 </section>
 
 <section class="card hidden" id="trace">
   <details>
     <summary>Di balik layar <span class="en">Under the hood</span></summary>
     <p class="en" id="traceSum"></p>
-    <table><thead><tr><th>Langkah</th><th>Foto</th><th>Kenapa</th><th>Hasil</th><th>Biaya</th></tr></thead><tbody id="traceRows"></tbody></table>
+    <div class="tbl"><table><thead><tr><th>Langkah</th><th>Foto</th><th>Kenapa</th><th>Hasil</th><th>Biaya</th></tr></thead><tbody id="traceRows"></tbody></table></div>
   </details>
 </section>
 
 <footer>
   ProofMuse is advisory: it flags evidence-quality issues for a person to act on. It never proves what was in the box or decides a dispute.
-  By <a href="https://jeejak.id">Jeejak</a>, CV. Adisatya IT Consultant, Kediri. Source: <a href="https://github.com/jeejak/proofmuse">github.com/jeejak/proofmuse</a>.
+  The models observe; plain Go rules decide. By <a href="https://jeejak.id">Jeejak</a>, CV. Adisatya IT Consultant, Kediri, Indonesia.
+  Source and evaluation: <a href="https://github.com/jeejak/proofmuse">github.com/jeejak/proofmuse</a>.
 </footer>
 </main>
 
@@ -150,35 +233,57 @@ textarea{width:100%;font:inherit;padding:10px;border-radius:10px;border:1px soli
 const $ = id => document.getElementById(id);
 const el = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) { if (k === 'class') e.className = v; else if (k === 'style') e.style.cssText = v; else e[k] = v; } e.append(...kids.filter(k => k !== null && k !== undefined)); return e; };
 const ISSUE = { blur: 'buram', glare: 'silau', too_dark: 'gelap', too_far: 'terlalu jauh', cropped: 'terpotong', obstructed: 'tertutup' };
+const SAMPLE_EN = { R79: 'Too dark, then retaken', R83: 'Blurry, then retaken', R87: 'Unreadable resi, then retaken', R91: 'Not sealed, then retaken', R39: 'Wrong label on the box', R70: 'Label too far away', R04: 'Two parcels, complete proof' };
+const THUMB = { R70: 0 }; // the far-label shot is mostly empty table; show the item instead
+const CLAIM_SAMPLES = ['kak paketnya kosong, ga ada barangnya 😭', 'barangnya nyampe pecah gan', 'warnanya beda sama yg aku pesen', 'yg dateng cuma 1, aku pesen 2', 'udh seminggu blm nyampe kak'];
+const STEPS = [['observe', 'Membaca semua foto · Muse Spark'], ['ground', 'Mencari label · SAM 3.1'], ['reread', 'Membaca ulang label dari dekat'], ['decide', 'Mencocokkan dengan pesanan · aturan Go']];
 
 let orders = [], samples = [], msgs = {}, photos = [], attempts = [], current = null, retakeSet = null, triage = null;
-const CLAIM_SAMPLES = ['kak paketnya kosong, ga ada barangnya 😭', 'barangnya nyampe pecah gan', 'warnanya beda sama yg aku pesen', 'yg dateng cuma 1, aku pesen 2', 'udh seminggu blm nyampe kak'];
+let photoOrder = null; // the order the loaded sample photos belong to
+let loading = false;
 
 async function init() {
   [orders, samples, msgs] = await Promise.all(['/api/orders', '/api/samples', '/api/messages'].map(u => fetch(u).then(r => r.json())));
   for (const o of orders) $('order').append(el('option', { value: o.order_id, textContent: `${o.order_id} · ${o.courier} · ${o.resi}` }));
-  for (const s of samples) $('samples').append(el('button', { textContent: s.title, onclick: () => loadSample(s) }));
+  for (const s of samples) {
+    $('samples').append(el('button', { class: 'sample', onclick: () => loadSample(s) },
+      el('img', { src: s.photos[s.id in THUMB ? THUMB[s.id] : s.photos.length - 1], alt: '', loading: 'lazy' }),
+      el('div', {}, el('b', { textContent: s.title }), el('small', { textContent: SAMPLE_EN[s.id] || '' }))));
+    $('samples').lastChild.dataset.id = s.id;
+  }
   $('order').onchange = () => { showOrder(); resetResult(); };
   $('cam').onchange = e => addFiles(e.target.files, e.target);
   $('pick').onchange = e => addFiles(e.target.files, e.target);
   $('go').onclick = check;
   $('claimGo').onclick = readClaim;
   for (const t of CLAIM_SAMPLES) $('claimSamples').append(el('button', { textContent: t, onclick: () => { $('claimText').value = t; } }));
-  if (samples.length) loadSample(samples[0]);
+  if (samples.length) await loadSample(samples[0]);
 }
 
 function showOrder() {
   const o = orders.find(o => o.order_id === $('order').value);
   $('orderInfo').innerHTML = '';
-  if (!o) return;
-  $('orderInfo').append('Resi ', el('b', { textContent: o.resi }), ` · ${o.courier} · ${o.koli} koli · ${o.marketplace} · ${o.listing_item}`);
+  if (o) $('orderInfo').append(
+    el('span', {}, 'Resi ', el('span', { class: 'resi', textContent: o.resi })),
+    el('span', { textContent: o.courier }), el('span', { textContent: `${o.koli} koli` }),
+    el('span', { textContent: o.marketplace }), el('span', { textContent: o.listing_item }));
+  const off = photoOrder && photos.length && photoOrder !== $('order').value;
+  $('mismatch').classList.toggle('hidden', !off);
+  if (off) $('mismatch').textContent = `Foto ini milik contoh ${photoOrder}. Dicek terhadap pesanan lain, labelnya akan terbaca beda. · These photos belong to ${photoOrder}; against another order the label will not match.`;
 }
 
+// Fetch the sample's photos first, then switch order and photos together,
+// so the page never shows one order beside another sample's photos.
 async function loadSample(s) {
-  $('order').value = s.order_id; showOrder();
-  photos = await Promise.all(s.photos.map(urlToPhoto));
-  retakeSet = s.retake || null;
-  attempts = []; resetResult(); render();
+  if (loading) return;
+  loading = true; $('go').disabled = true;
+  try {
+    const ps = await Promise.all(s.photos.map(urlToPhoto));
+    photos = ps; photoOrder = s.order_id; retakeSet = s.retake || null;
+    $('order').value = s.order_id;
+    document.querySelectorAll('.sample').forEach(b => b.classList.toggle('on', b.dataset.id === s.id));
+    attempts = []; resetResult(); showOrder(); render();
+  } finally { loading = false; render(); }
 }
 
 async function urlToPhoto(u) {
@@ -205,7 +310,8 @@ async function addFiles(files, input, at) {
     if (at !== undefined) photos[at] = p; else if (photos.length < 8) photos.push(p);
   }
   input.value = '';
-  render();
+  if (at === undefined) photoOrder = null; // own photos: no sample order to warn about
+  resetResult(); showOrder(); render();
 }
 
 function retake(i) {
@@ -235,35 +341,35 @@ function render() {
       wrap.append(el('div', { class: 'bx', style: `left:${b.x_min / 10}%;top:${b.y_min / 10}%;width:${(b.x_max - b.x_min) / 10}%;height:${(b.y_max - b.y_min) / 10}%` },
         el('span', { textContent: `label · SAM ${box.confidence.toFixed(2)}` })));
     }
-    const meta = el('div', { class: 'meta' });
-    if (obs) {
-      if (probs.length) meta.append(el('span', { class: 'bad', textContent: probs.join(', ') }));
-      else meta.append(el('span', { textContent: obs.resi_text ? 'resi ' + obs.resi_text : 'jelas' }));
-    }
-    const acts = el('div', { class: 'acts' },
-      el('button', { textContent: 'Foto ulang', onclick: () => retake(i) }),
-      el('button', { textContent: 'Hapus', onclick: () => { photos.splice(i, 1); resetResult(); render(); } }));
     const ans = triage && triage.answers.includes(i + 1);
     if (ans) wrap.append(el('span', { class: 'tag', textContent: 'menjawab · answers' }));
+    const meta = el('div', { class: 'meta' });
+    if (obs) meta.append(probs.length ? el('span', { class: 'bad', textContent: '⚠ ' + probs.join(', ') }) : el('span', { class: 'ok', textContent: obs.resi_text ? '✓ resi ' + obs.resi_text : '✓ jelas' }));
+    const acts = el('div', { class: 'acts' },
+      el('button', { textContent: '📷 Foto ulang', onclick: () => retake(i) }),
+      el('button', { textContent: 'Hapus', onclick: () => { photos.splice(i, 1); resetResult(); render(); } }));
     g.append(el('div', { class: 'ph' + (probs.length ? ' flag' : '') + (ans ? ' ans' : '') }, wrap, meta, acts));
   });
-  $('go').disabled = !photos.length || !$('order').value;
+  $('go').disabled = loading || !photos.length || !$('order').value;
   $('go').textContent = attempts.length ? 'Cek lagi' : 'Cek bukti';
 }
 
 function resetResult() { current = null; triage = null; $('claimOut').innerHTML = ''; $('claimErr').textContent = ''; ['result', 'trace', 'claim'].forEach(id => $(id).classList.add('hidden')); $('err').textContent = ''; }
 
-const STEPS = ['Membaca semua foto (Muse Spark)…', 'Mencari label (SAM 3.1)…', 'Membaca ulang label dari dekat…', 'Mengecek dengan pesanan…'];
+function progress(n) {
+  $('progress').innerHTML = '';
+  STEPS.forEach(([, label], i) => $('progress').append(el('li', { class: i < n ? 'done' : i === n ? 'now' : '', textContent: label })));
+}
 
 async function check() {
-  $('err').textContent = ''; $('go').disabled = true; $('status').classList.remove('hidden');
-  let step = 0; $('statusText').textContent = STEPS[0];
-  const tick = setInterval(() => { step = Math.min(step + 1, STEPS.length - 1); $('statusText').textContent = STEPS[step]; }, 2500);
+  $('err').textContent = ''; $('go').disabled = true; $('status').classList.add('on');
+  let step = 0; progress(0);
+  const tick = setInterval(() => { step = Math.min(step + 1, STEPS.length - 1); progress(step); }, 2200);
   try {
     const fd = new FormData();
     fd.append('order_id', $('order').value);
     photos.forEach((p, i) => fd.append('photo', p.blob, `${i + 1}.jpg`));
-    let r = await fetch('/api/checks', { method: 'POST', body: fd });
+    const r = await fetch('/api/checks', { method: 'POST', body: fd });
     let c = await r.json();
     if (!r.ok) throw new Error(c.error || r.statusText);
     while (c.status === 'queued' || c.status === 'running') {
@@ -271,28 +377,32 @@ async function check() {
       c = await (await fetch('/api/checks/' + c.id)).json();
     }
     if (c.status !== 'done') throw new Error(c.error || 'check failed');
+    progress(STEPS.length);
     current = c; attempts.push(c); show(c);
   } catch (e) {
     $('err').textContent = 'Gagal: ' + e.message;
   } finally {
-    clearInterval(tick); $('status').classList.add('hidden'); render();
+    clearInterval(tick); $('status').classList.remove('on'); render();
   }
 }
+
+const ICON = { kuat: '✅', perlu_dicek: '🔍', lemah: '⚠️' };
 
 function show(c) {
   const r = c.result, v = r.verdict.verdict, vt = msgs.verdicts[v];
   $('verdict').innerHTML = '';
-  $('verdict').append(el('span', { class: 'badge ' + v, textContent: vt[0] }), ' ', el('span', { class: 'en', textContent: vt[1] }));
+  $('verdict').append(el('div', { class: 'verdict ' + v }, el('span', { class: 'ico', textContent: ICON[v] }),
+    el('div', {}, el('div', { class: 'big', textContent: vt[0] }), el('div', { class: 'sub', textContent: vt[1] + (c.reused ? ' · cached result' : '') }))));
   $('reasons').innerHTML = '';
   for (const code of r.verdict.reasons || []) {
     const m = msgs.reasons[code];
     $('reasons').append(el('li', {}, el('b', { textContent: m.problem }), el('div', { class: 'todo', textContent: '→ ' + m.retake }), el('div', { class: 'en', textContent: m.english })));
   }
-  if (!(r.verdict.reasons || []).length) $('reasons').append(el('li', {}, el('b', { textContent: 'Semua yang dicek terlihat jelas.' }), el('div', { class: 'en', textContent: 'Everything checked is clearly shown.' })));
+  if (!(r.verdict.reasons || []).length) $('reasons').append(el('li', {}, el('b', { textContent: 'Semua yang dicek terlihat jelas.' }), el('div', { class: 'en', textContent: 'Everything checked is clearly shown, and the label matches the order.' })));
   $('advisory').textContent = msgs.advisory + ' Advice, not proof: the marketplace still decides any dispute.';
   $('retakeHint').innerHTML = '';
   if (v !== 'kuat' && retakeSet) {
-    $('retakeHint').append(el('button', { textContent: 'Contoh: pakai foto ulang dari paket yang sama', onclick: async () => { photos = await Promise.all(retakeSet.map(urlToPhoto)); retakeSet = null; resetResult(); render(); } }));
+    $('retakeHint').append(el('button', { class: 'retake', textContent: '📷 Contoh: pakai foto ulang dari paket yang sama · use the retaken photos', onclick: async () => { photos = await Promise.all(retakeSet.map(urlToPhoto)); retakeSet = null; resetResult(); render(); window.scrollTo({ top: $('photos').offsetTop - 80, behavior: 'smooth' }); } }));
   }
   $('result').classList.remove('hidden');
 
@@ -311,6 +421,7 @@ function show(c) {
   $('traceSum').textContent = `${(r.latency_ns / 1e9).toFixed(1)} s · $${u.cost_usd.toFixed(4)} · ${u.input_tokens} input / ${u.output_tokens} output tokens (${u.reasoning_tokens} reasoning) · ${u.images} SAM images · prompt ${r.prompt_version}` + (c.reused ? ' · hasil tersimpan (cached, no charge)' : '') + '. Model mengamati, aturan Go yang memutuskan. The models observe; Go rules decide.';
   $('trace').classList.remove('hidden');
   $('claim').classList.remove('hidden');
+  $('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 async function readClaim() {
@@ -334,7 +445,7 @@ function showClaim(t) {
   const ct = msgs.claims[t.claim_type];
   out.append(el('div', { class: 'claimtype', textContent: ct.id }), el('div', { class: 'en', textContent: ct.en }));
   if (t.claim_type === 'lainnya') {
-    out.append(el('p', { textContent: 'Komplain ini di luar yang bisa dijawab foto packing. ', }, el('span', { class: 'en', textContent: 'Packing photos cannot answer this kind of complaint.' })));
+    out.append(el('p', {}, 'Komplain ini di luar yang bisa dijawab foto packing. ', el('span', { class: 'en', textContent: 'Packing photos cannot answer this kind of complaint.' })));
     return;
   }
   out.append(el('p', {},
@@ -347,6 +458,7 @@ function showClaim(t) {
     out.append(ul);
   }
   out.append(el('p', { class: 'advisory', textContent: `Muse Spark hanya mengklasifikasi; foto dan kekurangannya ditentukan aturan Go. The model only classifies; Go rules pick the photos and the gaps. $${t.usage.cost_usd.toFixed(5)}` }));
+  if (t.answers.length) $('photos').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 init().catch(e => { $('err').textContent = 'Gagal memuat: ' + e.message; });

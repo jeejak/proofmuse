@@ -123,6 +123,12 @@ func main() {
 func (s *server) routes() http.Handler {
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /health", func(w http.ResponseWriter, _ *http.Request) { io.WriteString(w, "ok\n") })
+	mux.HandleFunc("GET /static/jeejak-icon.png", func(w http.ResponseWriter, r *http.Request) {
+		b, _ := static.ReadFile("static/jeejak-icon.png")
+		w.Header().Set("Content-Type", "image/png")
+		w.Header().Set("Cache-Control", "public, max-age=86400")
+		w.Write(b)
+	})
 	mux.HandleFunc("GET /{$}", func(w http.ResponseWriter, r *http.Request) {
 		b, _ := static.ReadFile("static/index.html")
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
