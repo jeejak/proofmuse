@@ -13,9 +13,11 @@ The git history starts on Oct 26, 2026 and is the evidence.
 Planned scope, ticked as it lands:
 
 - [x] Muse Spark 1.3 structured observation of packing photos, per photo (JSON schema, strict)
-- [ ] SAM 3.1 segmentation: shipping label crop, sealed-box region, koli count by box instances
-- [ ] Second-pass resi read on the SAM label crop, only when the first pass is unsure
-- [ ] Go rules engine: schema validation, resi normalisation and order match, verdict, Indonesian messages
+- [x] SAM 3.1 label grounding on every photo that may show a label (box for overlay and crop)
+- [ ] SAM 3.1 koli count by carton instances, sealed-box region
+- [x] Second-pass resi read on the SAM label crop, only when the first pass could not read it
+- [x] Verify before accusing: a resi that differs from the order is read again from the crop; the mismatch stands only if both reads agree
+- [x] Go rules engine: schema validation, resi normalisation and order match, verdict, Indonesian messages
 - [ ] Retake loop at packing time (bad photo, Indonesian retake prompt, re-verify)
 - [ ] Claim triage: buyer's claim text to claim type to the evidence that answers it
 - [ ] Dispute packet PDF: verdict, crops and fixed Indonesian strings, no model prose
