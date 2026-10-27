@@ -12,7 +12,7 @@ The git history starts on Oct 26, 2026 and is the evidence.
 
 Planned scope, ticked as it lands:
 
-- [ ] Muse Spark 1.3 structured observation of packing photos (JSON schema, strict)
+- [x] Muse Spark 1.3 structured observation of packing photos, per photo (JSON schema, strict)
 - [ ] SAM 3.1 segmentation: shipping label crop, sealed-box region, koli count by box instances
 - [ ] Second-pass resi read on the SAM label crop, only when the first pass is unsure
 - [ ] Go rules engine: schema validation, resi normalisation and order match, verdict, Indonesian messages
@@ -42,10 +42,16 @@ here when it lands:
   `evalset/` (R65 to R104, photo-level labels, orders, claims, retake
   pairs, split, review page, tools) was built during the hackathon. See
   `evalset/README.md`.
+- `internal/evidence/decide.go`: `Decide` and `NormaliseResi` ported from
+  ParcelProof `evidencecheck/verdict.go` (the verdict rule and the nine
+  reason codes). New in ProofMuse: per-photo observations folded by
+  `Aggregate`, and the `item_mismatch` and `resi_conflict` reasons.
+- `internal/evidence/messages.go`: the nine Indonesian problem strings
+  from ParcelProof's demo page. The retake instructions, English lines
+  and the two new reasons' strings are new.
 
-Candidates we expect to port, named now so the list cannot grow quietly:
-the verdict rules and reason codes (`evidencecheck/verdict.go`), the
-no-model basic check for brightness, sharpness and barcode
+Candidates we may still port, named now so the list cannot grow quietly:
+the no-model basic check for brightness, sharpness and barcode
 (`evidencecheck/basic.go`), and the eval harness layout (`cmd/eval`).
 
 Also pre-existing and not part of this submission: the JejakPaket mobile
