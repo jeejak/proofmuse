@@ -26,6 +26,7 @@ Planned scope, ticked as it lands:
 - [x] Async jobs with idempotency keys (order + photo hashes + prompt + config), results persisted, per-client and daily rate limits
 - [x] Eval harness and results table: precision, recall, invalid rate, false alarms, per-photo field agreement, label-box IoU, p50/p95 latency, cost per parcel and per photo
 - [x] Mobile-friendly web UI with the SAM label box overlay and the step trace
+- [x] Console integration: the Jeejak console calls ProofMuse through `client/` on a demo deployment (private repo, disclosed below)
 - [ ] Stretch: SAM 3.1 video pass over a packing clip
 - [ ] Stretch: open-weight comparison column (Muse Spark Open)
 
@@ -62,6 +63,15 @@ bukti lemah precision and recall against human labels.
 
 Also pre-existing and not part of this submission: the JejakPaket mobile
 app and the Jeejak backend (private). ProofMuse does not depend on them.
+
+One change to that backend was made during the hackathon, and it is
+disclosed here because the repository is private: ProofMuse as a second
+evidence-check backend in the console (pull request #391, four commits on
+2026-10-27, merged the same day; 15 files, +501 / -22 without the agent
+notes file and `go.sum`). It is off by default and refuses to run outside
+a demo deployment. The relevant code is quoted in
+[docs/console-integration.md](docs/console-integration.md). The rest of
+the console, which that change plugs into, is pre-existing.
 
 ## Data
 

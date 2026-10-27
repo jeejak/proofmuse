@@ -85,7 +85,13 @@ Jeejak builds tools for Indonesian online sellers, made by CV. Adisatya IT Consu
 - **[Jeejak console](https://paket.jeejak.id)**: paid plans sync that evidence to a web console that matches it with marketplace orders, for teams with owner, admin and operator roles.
 - **[jeejak.id](https://jeejak.id/en/)**: the product site.
 
-JejakPaket records evidence; ProofMuse checks it. ProofMuse is the AI layer we built during this hackathon. The next step is to run it inside JejakPaket at packing time and show its verdict in the console, once it has been measured on real photos from sellers who opt in. JejakPaket and the console are pre-existing and are not part of this submission; see [HACKATHON.md](HACKATHON.md).
+JejakPaket records evidence; ProofMuse checks it. ProofMuse is the AI layer we built during this hackathon.
+
+**Already wired into the console, on a demo deployment.** During the hackathon we added ProofMuse as a second backend for the console's evidence check (private repo, merged 2026-10-27, 15 files, +501 / -22). Photos synced from the app go to `POST /v1/observe`, and the verdict shows on the console's Drop evidence page. It is off by default: the console refuses to boot with ProofMuse configured unless the deployment is in demo mode with synthetic data, so production does not run it. The quoted code and screens are in [docs/console-integration.md](docs/console-integration.md).
+
+![The Jeejak console's Drop evidence page on the demo tenant, each parcel with its ProofMuse verdict](docs/images/console-drop-evidence.png)
+
+The next step is to run it inside JejakPaket at packing time and turn it on for real sellers who opt in, once it has been measured on their photos and the privacy policy names Meta. JejakPaket and the console themselves are pre-existing and are not part of this submission; see [HACKATHON.md](HACKATHON.md).
 
 ## Run locally
 
