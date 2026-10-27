@@ -146,6 +146,9 @@ details summary{cursor:pointer;font-weight:700}
 .tbl{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px;min-width:520px}
 td,th{text-align:left;padding:6px 6px;border-top:1px solid var(--line);vertical-align:top}
+.famlinks{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.famlinks a{display:block;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--bg);border-radius:12px;padding:10px 12px}
+.famlinks a span{display:block;color:var(--muted);font-size:13px;margin-top:2px}
 footer{font-size:13px;color:var(--muted);margin:28px 0 12px}
 </style>
 </head>
@@ -233,6 +236,16 @@ footer{font-size:13px;color:var(--muted);margin:28px 0 12px}
   </details>
 </section>
 
+<section class="card family">
+  <h2 style="font-size:16px;margin:0 0 6px" data-t="famTitle"></h2>
+  <p class="note" style="margin:0 0 12px" data-t="famText"></p>
+  <div class="famlinks">
+    <a href="https://play.google.com/store/apps/details?id=id.jeejak.paket"><b>JejakPaket</b><span data-t="famApp"></span></a>
+    <a href="https://paket.jeejak.id"><b>Jeejak console</b><span data-t="famConsole"></span></a>
+    <a href="https://jeejak.id/en/"><b>jeejak.id</b><span data-t="famSite"></span></a>
+  </div>
+</section>
+
 <footer data-t="footer"></footer>
 </main>
 
@@ -263,6 +276,8 @@ const T = {
     allClear: 'Everything checked is clearly shown, and the label matches the order.', sellerSees: 'The packer sees:', cached: 'cached result',
     mismatch: o => `These photos belong to sample ${o}. Checked against another order, the label will not match.`,
     otherClaim: 'Packing photos cannot answer this kind of complaint.', answeredBy: a => `Photos that answer it: ${a}.`, noAnswer: 'No photo answers it yet.', notShown: 'Not shown by these photos',
+    famTitle: 'Part of Jeejak', famText: 'ProofMuse is the new AI layer of Jeejak\'s tools for Indonesian online sellers. The products below are pre-existing and not part of this hackathon submission.',
+    famApp: 'Android app that records packing proof: resi scan, photos, handover video, dispute PDF', famConsole: 'Web console that matches the evidence to Shopee and TikTok Shop orders', famSite: 'Product site, pricing and help',
     claimFoot: 'The model only classifies the message; Go rules pick the photos and the gaps.', failed: 'Failed: ', traceFoot: 'The models observe; Go rules decide.',
   },
   id: {
@@ -284,6 +299,8 @@ const T = {
     allClear: 'Semua yang dicek terlihat jelas, dan label cocok dengan pesanan.', sellerSees: 'English:', cached: 'hasil tersimpan',
     mismatch: o => `Foto ini milik contoh ${o}. Dicek terhadap pesanan lain, labelnya akan terbaca beda.`,
     otherClaim: 'Komplain ini di luar yang bisa dijawab foto packing.', answeredBy: a => `Foto yang menjawab: ${a}.`, noAnswer: 'Belum ada foto yang menjawab.', notShown: 'Yang belum terbukti',
+    famTitle: 'Bagian dari Jeejak', famText: 'ProofMuse adalah lapisan AI baru untuk tools Jeejak bagi seller online Indonesia. Produk di bawah ini sudah ada sebelumnya dan bukan bagian dari hackathon ini.',
+    famApp: 'Aplikasi Android untuk rekam bukti packing: scan resi, foto, video serah-terima, PDF sengketa', famConsole: 'Console web yang mencocokkan bukti dengan pesanan Shopee dan TikTok Shop', famSite: 'Situs produk, harga dan bantuan',
     claimFoot: 'Model hanya mengklasifikasi pesan; foto dan kekurangannya ditentukan aturan Go.', failed: 'Gagal: ', traceFoot: 'Model mengamati, aturan Go yang memutuskan.',
   },
 };

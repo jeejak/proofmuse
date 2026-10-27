@@ -58,9 +58,15 @@ What the extra steps buy: without them, Muse Spark misread one digit on a small 
 
 ## About Jeejak
 
-Jeejak is a family of small-business tools for Indonesian online sellers, made by CV. Adisatya IT Consultant in Kediri, East Java ([jeejak.id](https://jeejak.id)). Its first product, [JejakPaket](https://play.google.com/store/apps/details?id=id.jeejak.paket), records proof for every parcel a Shopee or TikTok Shop seller sends: the resi scan, packing photos, the handover video and a dispute PDF. Paid plans sync that evidence to a seller console that matches it with marketplace orders.
+Jeejak builds tools for Indonesian online sellers, made by CV. Adisatya IT Consultant in Kediri, East Java.
 
-JejakPaket records evidence; ProofMuse checks it. It is the AI layer we built during this hackathon, and it is meant to run inside JejakPaket at packing time once it has been measured on real photos from sellers who opt in. JejakPaket and the console are pre-existing and are not part of this submission; see [HACKATHON.md](HACKATHON.md).
+![The Jeejak product family: the JejakPaket app records packing proof and the Jeejak console matches it to marketplace orders (demo data; existing products, not part of this submission)](docs/images/jeejak-family.png)
+
+- **[JejakPaket](https://play.google.com/store/apps/details?id=id.jeejak.paket)**, on Google Play: records proof for every parcel a Shopee or TikTok Shop seller sends. That means the resi scan, packing photos, the handover video to the courier and a dispute PDF. In pilot since September 2026, it has recorded 3,076 parcels and 1,545 packing photos in the cloud.
+- **[Jeejak console](https://paket.jeejak.id)**: paid plans sync that evidence to a web console that matches it with marketplace orders, for teams with owner, admin and operator roles.
+- **[jeejak.id](https://jeejak.id/en/)**: the product site.
+
+JejakPaket records evidence; ProofMuse checks it. ProofMuse is the AI layer we built during this hackathon. The next step is to run it inside JejakPaket at packing time and show its verdict in the console, once it has been measured on real photos from sellers who opt in. JejakPaket and the console are pre-existing and are not part of this submission; see [HACKATHON.md](HACKATHON.md).
 
 ## Run locally
 
