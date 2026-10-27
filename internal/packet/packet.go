@@ -209,8 +209,12 @@ func Render(in Input) ([]byte, error) {
 		}
 	}
 
-	// Integrity.
+	// Integrity. Kept on one page: a hash list split across pages reads
+	// as if photos were missing from it.
 	pdf.Ln(2)
+	if pdf.GetY()+5+4*float64(len(hashes)) > 297-22 {
+		pdf.AddPage()
+	}
 	pdf.SetFont("Helvetica", "B", 9.5)
 	pdf.CellFormat(inner, 5, tr("Sidik foto / Photo fingerprints (SHA-256 of the files checked)"), "", 1, "L", false, 0, "")
 	pdf.SetFont("Courier", "", 7.5)
