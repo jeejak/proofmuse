@@ -18,13 +18,13 @@ Planned scope, ticked as it lands:
 - [x] Second-pass resi read on the SAM label crop, only when the first pass could not read it
 - [x] Verify before accusing: a resi that differs from the order is read again from the crop; the mismatch stands only if both reads agree
 - [x] Go rules engine: schema validation, resi normalisation and order match, verdict, Indonesian messages
-- [ ] Retake loop at packing time (bad photo, Indonesian retake prompt, re-verify)
+- [x] Retake loop at packing time (bad photo, Indonesian retake prompt, retake one photo, check again, attempt history)
 - [ ] Claim triage: buyer's claim text to claim type to the evidence that answers it
 - [ ] Dispute packet PDF: verdict, crops and fixed Indonesian strings, no model prose
 - [x] Retries with backoff and Retry-After, per-call usage and cost tracking
-- [ ] Async jobs with idempotency keys
+- [x] Async jobs with idempotency keys (order + photo hashes + prompt + config), results persisted, per-client and daily rate limits
 - [x] Eval harness and results table: precision, recall, invalid rate, false alarms, per-photo field agreement, label-box IoU, p50/p95 latency, cost per parcel and per photo
-- [ ] Mobile-friendly web UI with box and mask overlay
+- [x] Mobile-friendly web UI with the SAM label box overlay and the step trace
 - [ ] Stretch: SAM 3.1 video pass over a packing clip
 - [ ] Stretch: open-weight comparison column (Muse Spark Open)
 
