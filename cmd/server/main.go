@@ -139,7 +139,7 @@ func (s *server) routes() http.Handler {
 	mux.HandleFunc("GET /api/samples", func(w http.ResponseWriter, _ *http.Request) { writeJSON(w, 200, s.samples) })
 	mux.HandleFunc("GET /api/messages", func(w http.ResponseWriter, _ *http.Request) {
 		writeJSON(w, 200, map[string]any{"reasons": evidence.Messages, "verdicts": evidence.VerdictText, "advisory": evidence.Advisory,
-			"claims": evidence.ClaimText, "gaps": evidence.GapText})
+			"advisory_en": evidence.AdvisoryEN, "claims": evidence.ClaimText, "gaps": evidence.GapText})
 	})
 	mux.Handle("GET /samples/", http.StripPrefix("/samples/", http.FileServer(http.Dir(filepath.Join(s.set.Dir, "records")))))
 	mux.HandleFunc("POST /api/checks", s.createCheck)

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -34,6 +34,11 @@ button{font:inherit;cursor:pointer;color:inherit}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700}
 .brand img{width:32px;height:32px;border-radius:50%}
 .brand span{color:var(--muted);font-weight:500;font-size:14px}
+.top .r{display:flex;gap:8px;align-items:center}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{border:0;background:transparent;padding:5px 11px;font-size:13px;font-weight:700;color:var(--muted)}
+.lang button.on{background:var(--soft);color:var(--ink)}
+.seller{margin-top:6px;font-size:13px;color:var(--muted);border-left:3px solid var(--line);padding-left:8px}
 .top a.gh{font-size:14px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
 .hero{padding:8px 0 4px}
 .hero h1{font-size:clamp(34px,7vw,52px);line-height:1.02;margin:6px 0 10px;letter-spacing:-.03em}
@@ -144,47 +149,50 @@ footer{font-size:13px;color:var(--muted);margin:28px 0 12px}
 <body>
 <main>
 <nav class="top">
-  <a class="brand" href="https://jeejak.id"><img src="/static/jeejak-icon.png" alt="">ProofMuse <span>by Jeejak</span></a>
-  <a class="gh" href="https://github.com/jeejak/proofmuse">GitHub</a>
+  <a class="brand" href="https://jeejak.id"><img src="/static/jeejak-icon.png?v=2" alt="">ProofMuse <span>by Jeejak</span></a>
+  <div class="r">
+    <div class="lang" role="group" aria-label="Language"><button id="lang-en" type="button">EN</button><button id="lang-id" type="button">ID</button></div>
+    <a class="gh" href="https://github.com/jeejak/proofmuse">GitHub</a>
+  </div>
 </nav>
 
 <header class="hero">
-  <h1>Cek bukti packing <b>sebelum paket dikirim.</b></h1>
-  <p>Foto gelap, label terpotong, kardus belum disegel: ketahuan sekarang, selagi masih bisa foto ulang.</p>
-  <p class="en">Checks a seller's packing photos while the parcel is still on the table, and says what to retake.</p>
+  <h1 data-t="h1"></h1>
+  <p data-t="lead"></p>
+  <p class="en" data-t="lead2"></p>
   <!-- Figures from docs/eval/full-test.md (held-out test split). Update together. -->
   <div class="chips">
     <span class="chip meta">Meta Muse Spark 1.3 · SAM 3.1</span>
-    <span class="chip"><b>100%</b> weak-evidence precision &amp; recall</span>
-    <span class="chip"><b>0</b> false alarms</span>
-    <span class="chip"><b>~5 s</b> · <b>$0.014</b> per parcel</span>
-    <span class="chip">62 held-out synthetic parcels</span>
+    <span class="chip" data-t="chip1"></span>
+    <span class="chip" data-t="chip2"></span>
+    <span class="chip" data-t="chip3"></span>
+    <span class="chip" data-t="chip4"></span>
   </div>
 </header>
 
 <section class="card">
-  <div class="step"><i>1</i><h2>Pilih contoh <span class="en">Pick a sample</span></h2></div>
+  <div class="step"><i>1</i><h2 data-t="step1"></h2></div>
   <div class="samples" id="samples"></div>
-  <p class="note">Foto sintetis dengan label dummy. <i>Synthetic photos with dummy waybills.</i></p>
-  <details class="other"><summary>Atau pilih pesanan lain dan unggah foto sendiri · <i>or pick an order and use your own photos</i></summary>
-    <select id="order" aria-label="Pesanan"></select>
+  <p class="note" data-t="samplesNote"></p>
+  <details class="other"><summary data-t="other"></summary>
+    <select id="order" aria-label="Order"></select>
   </details>
   <div class="order" id="orderInfo"></div>
   <div class="warn hidden" id="mismatch"></div>
 </section>
 
 <section class="card">
-  <div class="step"><i>2</i><h2>Foto packing <span class="en">Packing photos</span></h2></div>
+  <div class="step"><i>2</i><h2 data-t="step2"></h2></div>
   <div class="grid" id="photos"></div>
   <div class="add">
-    <label><input type="file" id="cam" accept="image/*" capture="environment"><span>📷 Ambil foto</span></label>
-    <label><input type="file" id="pick" accept="image/jpeg,image/png" multiple><span>🖼️ Dari galeri</span></label>
+    <label><input type="file" id="cam" accept="image/*" capture="environment"><span data-t="cam"></span></label>
+    <label><input type="file" id="pick" accept="image/jpeg,image/png" multiple><span data-t="gallery"></span></label>
   </div>
-  <p class="note">Hanya label dummy: jangan unggah label dengan nama, alamat atau nomor HP asli. <i>Dummy labels only; this demo runs on free API credits.</i></p>
+  <p class="note" data-t="dummy"></p>
 </section>
 
 <div class="bar">
-  <button class="go" id="go" disabled>Cek bukti</button>
+  <button class="go" id="go" disabled></button>
   <div class="status card" id="status">
     <ol class="progress" id="progress"></ol>
   </div>
@@ -192,7 +200,7 @@ footer{font-size:13px;color:var(--muted);margin:28px 0 12px}
 </div>
 
 <section class="card hidden" id="result">
-  <div class="step"><i>3</i><h2>Hasil <span class="en">Result</span></h2></div>
+  <div class="step"><i>3</i><h2 data-t="step3"></h2></div>
   <div id="verdict"></div>
   <ul class="reasons" id="reasons"></ul>
   <div id="retakeHint"></div>
@@ -200,76 +208,145 @@ footer{font-size:13px;color:var(--muted);margin:28px 0 12px}
 </section>
 
 <section class="card hidden" id="history">
-  <h2 style="font-size:16px;margin:0 0 8px">Riwayat percobaan <span class="en">Attempts</span></h2>
+  <h2 style="font-size:16px;margin:0 0 8px" data-t="attempts"></h2>
   <div class="hist" id="hist"></div>
 </section>
 
 <section class="card hidden" id="claim">
-  <div class="step"><i>4</i><h2>Ada komplain pembeli? <span class="en">A buyer complaint?</span></h2></div>
-  <p class="note" style="margin:0 0 10px">Tempel pesan pembeli: foto mana yang menjawabnya, dan apa yang belum terbukti. <i>Which photos answer it, and what they cannot show.</i></p>
+  <div class="step"><i>4</i><h2 data-t="step4"></h2></div>
+  <p class="note" style="margin:0 0 10px" data-t="claimNote"></p>
   <div class="qs" id="claimSamples"></div>
-  <textarea id="claimText" rows="2" maxlength="1000" placeholder="contoh: kak paketnya kosong, ga ada barangnya"></textarea>
-  <button class="sec" id="claimGo">Baca komplain</button>
+  <textarea id="claimText" rows="2" maxlength="1000" placeholder="kak paketnya kosong, ga ada barangnya"></textarea>
+  <button class="sec" id="claimGo"></button>
   <p class="err" id="claimErr"></p>
   <div id="claimOut"></div>
 </section>
 
 <section class="card hidden" id="trace">
   <details>
-    <summary>Di balik layar <span class="en">Under the hood</span></summary>
+    <summary data-t="hood"></summary>
     <p class="en" id="traceSum"></p>
-    <div class="tbl"><table><thead><tr><th>Langkah</th><th>Foto</th><th>Kenapa</th><th>Hasil</th><th>Biaya</th></tr></thead><tbody id="traceRows"></tbody></table></div>
+    <div class="tbl"><table><thead><tr><th data-t="thStep"></th><th data-t="thPhoto"></th><th data-t="thWhy"></th><th data-t="thResult"></th><th data-t="thCost"></th></tr></thead><tbody id="traceRows"></tbody></table></div>
   </details>
 </section>
 
-<footer>
-  ProofMuse is advisory: it flags evidence-quality issues for a person to act on. It never proves what was in the box or decides a dispute.
-  The models observe; plain Go rules decide. By <a href="https://jeejak.id">Jeejak</a>, CV. Adisatya IT Consultant, Kediri, Indonesia.
-  Source and evaluation: <a href="https://github.com/jeejak/proofmuse">github.com/jeejak/proofmuse</a>.
-</footer>
+<footer data-t="footer"></footer>
 </main>
 
 <script>
 const $ = id => document.getElementById(id);
 const el = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) { if (k === 'class') e.className = v; else if (k === 'style') e.style.cssText = v; else e[k] = v; } e.append(...kids.filter(k => k !== null && k !== undefined)); return e; };
-const ISSUE = { blur: 'buram', glare: 'silau', too_dark: 'gelap', too_far: 'terlalu jauh', cropped: 'terpotong', obstructed: 'tertutup' };
-const SAMPLE_EN = { R79: 'Too dark, then retaken', R83: 'Blurry, then retaken', R87: 'Unreadable resi, then retaken', R91: 'Not sealed, then retaken', R39: 'Wrong label on the box', R70: 'Label too far away', R04: 'Two parcels, complete proof' };
+
+// UI strings. Seller-facing verdict and retake text comes from the server
+// (internal/evidence/messages.go) in both languages; this table is only
+// the page around it. English is the default.
+const T = {
+  en: {
+    h1: 'Check packing proof <b>before the parcel ships.</b>',
+    lead: 'Too dark, label cut off, box never shown sealed: caught now, while a retake still takes seconds.',
+    lead2: 'Cek bukti packing sebelum paket dikirim, selagi masih bisa foto ulang.',
+    chip1: '<b>100%</b> weak-evidence precision &amp; recall', chip2: '<b>0</b> false alarms', chip3: '<b>~5 s</b> · <b>$0.014</b> per parcel', chip4: '62 held-out synthetic parcels',
+    step1: 'Pick a sample', samplesNote: 'Synthetic photos with dummy waybills. The packer sees Indonesian; switch to ID to see the seller\'s view.',
+    other: 'Or pick an order and use your own photos', step2: 'Packing photos', cam: '📷 Take photo', gallery: '🖼️ From gallery',
+    dummy: 'Dummy labels only: no real names, addresses or phone numbers. This demo runs on free API credits.',
+    go: 'Check evidence', goAgain: 'Check again', step3: 'Result', attempts: 'Attempts', step4: 'A buyer complaint?',
+    claimNote: 'Paste the buyer\'s message (buyers write in Indonesian). ProofMuse shows which photos answer it, and what photos cannot show.',
+    claimBtn: 'Read complaint', claimBusy: 'Reading…', hood: 'Under the hood', thStep: 'Step', thPhoto: 'Photo', thWhy: 'Why', thResult: 'Result', thCost: 'Cost',
+    footer: 'ProofMuse is advisory: it flags evidence-quality issues for a person to act on. It never proves what was in the box or decides a dispute. The models observe; plain Go rules decide. By <a href="https://jeejak.id">Jeejak</a>, CV. Adisatya IT Consultant, Kediri, Indonesia. Source and evaluation: <a href="https://github.com/jeejak/proofmuse">github.com/jeejak/proofmuse</a>.',
+    steps: ['Reading every photo · Muse Spark', 'Finding the label · SAM 3.1', 'Re-reading the label up close', 'Matching the order · Go rules'],
+    resi: 'Tracking no.', koli: n => `${n} parcel${n > 1 ? 's' : ''}`, clear: 'clear', unreadable: 'tracking no. unreadable',
+    issues: { blur: 'blurry', glare: 'glare', too_dark: 'too dark', too_far: 'too far', cropped: 'cropped', obstructed: 'obstructed' },
+    retakeBtn: '📷 Sample: use the retaken photos of the same parcel', retakeAct: '📷 Retake', remove: 'Remove', answers: 'answers it',
+    allClear: 'Everything checked is clearly shown, and the label matches the order.', sellerSees: 'The packer sees:', cached: 'cached result',
+    mismatch: o => `These photos belong to sample ${o}. Checked against another order, the label will not match.`,
+    otherClaim: 'Packing photos cannot answer this kind of complaint.', answeredBy: a => `Photos that answer it: ${a}.`, noAnswer: 'No photo answers it yet.', notShown: 'Not shown by these photos',
+    claimFoot: 'The model only classifies the message; Go rules pick the photos and the gaps.', failed: 'Failed: ', traceFoot: 'The models observe; Go rules decide.',
+  },
+  id: {
+    h1: 'Cek bukti packing <b>sebelum paket dikirim.</b>',
+    lead: 'Foto gelap, label terpotong, kardus belum disegel: ketahuan sekarang, selagi masih bisa foto ulang.',
+    lead2: 'Checks packing photos while the parcel is still on the table, and says what to retake.',
+    chip1: '<b>100%</b> presisi &amp; recall bukti lemah', chip2: '<b>0</b> alarm palsu', chip3: '<b>~5 dtk</b> · <b>$0.014</b> per paket', chip4: '62 paket sintetis uji',
+    step1: 'Pilih contoh', samplesNote: 'Foto sintetis dengan label dummy.',
+    other: 'Atau pilih pesanan lain dan unggah foto sendiri', step2: 'Foto packing', cam: '📷 Ambil foto', gallery: '🖼️ Dari galeri',
+    dummy: 'Hanya label dummy: jangan unggah label dengan nama, alamat atau nomor HP asli.',
+    go: 'Cek bukti', goAgain: 'Cek lagi', step3: 'Hasil', attempts: 'Riwayat percobaan', step4: 'Ada komplain pembeli?',
+    claimNote: 'Tempel pesan pembeli: foto mana yang menjawabnya, dan apa yang belum terbukti.',
+    claimBtn: 'Baca komplain', claimBusy: 'Membaca…', hood: 'Di balik layar', thStep: 'Langkah', thPhoto: 'Foto', thWhy: 'Kenapa', thResult: 'Hasil', thCost: 'Biaya',
+    footer: 'ProofMuse hanya memberi saran: menandai bukti yang kurang untuk ditindaklanjuti orang. Tidak membuktikan isi paket dan tidak memutuskan sengketa. Model mengamati, aturan Go yang memutuskan. Oleh <a href="https://jeejak.id">Jeejak</a>, CV. Adisatya IT Consultant, Kediri. Kode dan evaluasi: <a href="https://github.com/jeejak/proofmuse">github.com/jeejak/proofmuse</a>.',
+    steps: ['Membaca semua foto · Muse Spark', 'Mencari label · SAM 3.1', 'Membaca ulang label dari dekat', 'Mencocokkan dengan pesanan · aturan Go'],
+    resi: 'Resi', koli: n => `${n} koli`, clear: 'jelas', unreadable: 'resi tidak terbaca',
+    issues: { blur: 'buram', glare: 'silau', too_dark: 'gelap', too_far: 'terlalu jauh', cropped: 'terpotong', obstructed: 'tertutup' },
+    retakeBtn: '📷 Contoh: pakai foto ulang dari paket yang sama', retakeAct: '📷 Foto ulang', remove: 'Hapus', answers: 'menjawab',
+    allClear: 'Semua yang dicek terlihat jelas, dan label cocok dengan pesanan.', sellerSees: 'English:', cached: 'hasil tersimpan',
+    mismatch: o => `Foto ini milik contoh ${o}. Dicek terhadap pesanan lain, labelnya akan terbaca beda.`,
+    otherClaim: 'Komplain ini di luar yang bisa dijawab foto packing.', answeredBy: a => `Foto yang menjawab: ${a}.`, noAnswer: 'Belum ada foto yang menjawab.', notShown: 'Yang belum terbukti',
+    claimFoot: 'Model hanya mengklasifikasi pesan; foto dan kekurangannya ditentukan aturan Go.', failed: 'Gagal: ', traceFoot: 'Model mengamati, aturan Go yang memutuskan.',
+  },
+};
+const SAMPLE_EN = { R79: 'Too dark, then retaken', R83: 'Blurry, then retaken', R87: 'Unreadable tracking no., then retaken', R91: 'Not sealed, then retaken', R39: 'Wrong label on the box', R70: 'Label too far away', R04: 'Two parcels, complete proof' };
 const THUMB = { R70: 0 }; // the far-label shot is mostly empty table; show the item instead
 const CLAIM_SAMPLES = ['kak paketnya kosong, ga ada barangnya 😭', 'barangnya nyampe pecah gan', 'warnanya beda sama yg aku pesen', 'yg dateng cuma 1, aku pesen 2', 'udh seminggu blm nyampe kak'];
-const STEPS = [['observe', 'Membaca semua foto · Muse Spark'], ['ground', 'Mencari label · SAM 3.1'], ['reread', 'Membaca ulang label dari dekat'], ['decide', 'Mencocokkan dengan pesanan · aturan Go']];
+const ICON = { kuat: '✅', perlu_dicek: '🔍', lemah: '⚠️' };
+
+let lang = new URLSearchParams(location.search).get('lang') || (() => { try { return localStorage.getItem('pm.lang'); } catch { return null; } })() || 'en';
+if (!T[lang]) lang = 'en';
+const t = k => T[lang][k];
 
 let orders = [], samples = [], msgs = {}, photos = [], attempts = [], current = null, retakeSet = null, triage = null;
 let photoOrder = null; // the order the loaded sample photos belong to
 let loading = false;
 
+function setLang(l) {
+  lang = l;
+  try { localStorage.setItem('pm.lang', l); } catch {}
+  document.documentElement.lang = l;
+  $('lang-en').classList.toggle('on', l === 'en');
+  $('lang-id').classList.toggle('on', l === 'id');
+  document.querySelectorAll('[data-t]').forEach(e => { e.innerHTML = t(e.dataset.t); });
+  $('claimGo').textContent = t('claimBtn');
+  renderSamples(); showOrder(); render();
+  if (current) show(current, false);
+  if (triage) showClaim(triage, false);
+}
+
 async function init() {
   [orders, samples, msgs] = await Promise.all(['/api/orders', '/api/samples', '/api/messages'].map(u => fetch(u).then(r => r.json())));
   for (const o of orders) $('order').append(el('option', { value: o.order_id, textContent: `${o.order_id} · ${o.courier} · ${o.resi}` }));
-  for (const s of samples) {
-    $('samples').append(el('button', { class: 'sample', onclick: () => loadSample(s) },
-      el('img', { src: s.photos[s.id in THUMB ? THUMB[s.id] : s.photos.length - 1], alt: '', loading: 'lazy' }),
-      el('div', {}, el('b', { textContent: s.title }), el('small', { textContent: SAMPLE_EN[s.id] || '' }))));
-    $('samples').lastChild.dataset.id = s.id;
-  }
   $('order').onchange = () => { showOrder(); resetResult(); };
   $('cam').onchange = e => addFiles(e.target.files, e.target);
   $('pick').onchange = e => addFiles(e.target.files, e.target);
   $('go').onclick = check;
   $('claimGo').onclick = readClaim;
-  for (const t of CLAIM_SAMPLES) $('claimSamples').append(el('button', { textContent: t, onclick: () => { $('claimText').value = t; } }));
+  $('lang-en').onclick = () => setLang('en');
+  $('lang-id').onclick = () => setLang('id');
+  for (const c of CLAIM_SAMPLES) $('claimSamples').append(el('button', { textContent: c, onclick: () => { $('claimText').value = c; } }));
+  setLang(lang);
   if (samples.length) await loadSample(samples[0]);
+}
+
+function renderSamples() {
+  const box = $('samples'); box.innerHTML = '';
+  for (const s of samples) {
+    const [main, sub] = lang === 'en' ? [SAMPLE_EN[s.id] || s.title, s.title] : [s.title, SAMPLE_EN[s.id] || ''];
+    const b = el('button', { class: 'sample' + (photoOrder === s.order_id ? ' on' : ''), onclick: () => loadSample(s) },
+      el('img', { src: s.photos[s.id in THUMB ? THUMB[s.id] : s.photos.length - 1], alt: '', loading: 'lazy' }),
+      el('div', {}, el('b', { textContent: main }), el('small', { textContent: sub })));
+    b.dataset.id = s.id;
+    box.append(b);
+  }
 }
 
 function showOrder() {
   const o = orders.find(o => o.order_id === $('order').value);
   $('orderInfo').innerHTML = '';
   if (o) $('orderInfo').append(
-    el('span', {}, 'Resi ', el('span', { class: 'resi', textContent: o.resi })),
-    el('span', { textContent: o.courier }), el('span', { textContent: `${o.koli} koli` }),
+    el('span', {}, t('resi') + ' ', el('span', { class: 'resi', textContent: o.resi })),
+    el('span', { textContent: o.courier }), el('span', { textContent: t('koli')(o.koli) }),
     el('span', { textContent: o.marketplace }), el('span', { textContent: o.listing_item }));
   const off = photoOrder && photos.length && photoOrder !== $('order').value;
   $('mismatch').classList.toggle('hidden', !off);
-  if (off) $('mismatch').textContent = `Foto ini milik contoh ${photoOrder}. Dicek terhadap pesanan lain, labelnya akan terbaca beda. · These photos belong to ${photoOrder}; against another order the label will not match.`;
+  if (off) $('mismatch').textContent = t('mismatch')(photoOrder);
 }
 
 // Fetch the sample's photos first, then switch order and photos together,
@@ -281,8 +358,7 @@ async function loadSample(s) {
     const ps = await Promise.all(s.photos.map(urlToPhoto));
     photos = ps; photoOrder = s.order_id; retakeSet = s.retake || null;
     $('order').value = s.order_id;
-    document.querySelectorAll('.sample').forEach(b => b.classList.toggle('on', b.dataset.id === s.id));
-    attempts = []; resetResult(); showOrder(); render();
+    attempts = []; resetResult(); renderSamples(); showOrder();
   } finally { loading = false; render(); }
 }
 
@@ -311,7 +387,7 @@ async function addFiles(files, input, at) {
   }
   input.value = '';
   if (at === undefined) photoOrder = null; // own photos: no sample order to warn about
-  resetResult(); showOrder(); render();
+  resetResult(); renderSamples(); showOrder(); render();
 }
 
 function retake(i) {
@@ -323,8 +399,8 @@ function retake(i) {
 
 function photoProblems(p) {
   if (!p) return [];
-  const out = (p.image_quality_issues || []).map(q => ISSUE[q] || q);
-  if (p.label_in_photo === 'yes' && p.label_readable !== 'yes') out.push('resi tidak terbaca');
+  const out = (p.image_quality_issues || []).map(q => t('issues')[q] || q);
+  if (p.label_in_photo === 'yes' && p.label_readable !== 'yes') out.push(t('unreadable'));
   return out;
 }
 
@@ -335,36 +411,36 @@ function render() {
     const obs = res && res.photos && res.photos[i];
     const probs = photoProblems(obs);
     const box = res && (res.grounding || []).find(x => x.photo === i + 1);
-    const wrap = el('div', { class: 'img' }, el('img', { src: p.url, alt: `Foto ${i + 1}` }), el('span', { class: 'n', textContent: i + 1 }));
+    const wrap = el('div', { class: 'img' }, el('img', { src: p.url, alt: `Photo ${i + 1}` }), el('span', { class: 'n', textContent: i + 1 }));
     if (box) {
       const b = box.box;
       wrap.append(el('div', { class: 'bx', style: `left:${b.x_min / 10}%;top:${b.y_min / 10}%;width:${(b.x_max - b.x_min) / 10}%;height:${(b.y_max - b.y_min) / 10}%` },
         el('span', { textContent: `label · SAM ${box.confidence.toFixed(2)}` })));
     }
     const ans = triage && triage.answers.includes(i + 1);
-    if (ans) wrap.append(el('span', { class: 'tag', textContent: 'menjawab · answers' }));
+    if (ans) wrap.append(el('span', { class: 'tag', textContent: t('answers') }));
     const meta = el('div', { class: 'meta' });
-    if (obs) meta.append(probs.length ? el('span', { class: 'bad', textContent: '⚠ ' + probs.join(', ') }) : el('span', { class: 'ok', textContent: obs.resi_text ? '✓ resi ' + obs.resi_text : '✓ jelas' }));
+    if (obs) meta.append(probs.length ? el('span', { class: 'bad', textContent: '⚠ ' + probs.join(', ') }) : el('span', { class: 'ok', textContent: obs.resi_text ? '✓ ' + obs.resi_text : '✓ ' + t('clear') }));
     const acts = el('div', { class: 'acts' },
-      el('button', { textContent: '📷 Foto ulang', onclick: () => retake(i) }),
-      el('button', { textContent: 'Hapus', onclick: () => { photos.splice(i, 1); resetResult(); render(); } }));
+      el('button', { textContent: t('retakeAct'), onclick: () => retake(i) }),
+      el('button', { textContent: t('remove'), onclick: () => { photos.splice(i, 1); resetResult(); render(); } }));
     g.append(el('div', { class: 'ph' + (probs.length ? ' flag' : '') + (ans ? ' ans' : '') }, wrap, meta, acts));
   });
   $('go').disabled = loading || !photos.length || !$('order').value;
-  $('go').textContent = attempts.length ? 'Cek lagi' : 'Cek bukti';
+  $('go').textContent = attempts.length ? t('goAgain') : t('go');
 }
 
 function resetResult() { current = null; triage = null; $('claimOut').innerHTML = ''; $('claimErr').textContent = ''; ['result', 'trace', 'claim'].forEach(id => $(id).classList.add('hidden')); $('err').textContent = ''; }
 
 function progress(n) {
   $('progress').innerHTML = '';
-  STEPS.forEach(([, label], i) => $('progress').append(el('li', { class: i < n ? 'done' : i === n ? 'now' : '', textContent: label })));
+  t('steps').forEach((label, i) => $('progress').append(el('li', { class: i < n ? 'done' : i === n ? 'now' : '', textContent: label })));
 }
 
 async function check() {
   $('err').textContent = ''; $('go').disabled = true; $('status').classList.add('on');
   let step = 0; progress(0);
-  const tick = setInterval(() => { step = Math.min(step + 1, STEPS.length - 1); progress(step); }, 2200);
+  const tick = setInterval(() => { step = Math.min(step + 1, 3); progress(step); }, 2200);
   try {
     const fd = new FormData();
     fd.append('order_id', $('order').value);
@@ -377,39 +453,41 @@ async function check() {
       c = await (await fetch('/api/checks/' + c.id)).json();
     }
     if (c.status !== 'done') throw new Error(c.error || 'check failed');
-    progress(STEPS.length);
-    current = c; attempts.push(c); show(c);
+    progress(4);
+    current = c; attempts.push(c); show(c, true);
   } catch (e) {
-    $('err').textContent = 'Gagal: ' + e.message;
+    $('err').textContent = t('failed') + e.message;
   } finally {
     clearInterval(tick); $('status').classList.remove('on'); render();
   }
 }
 
-const ICON = { kuat: '✅', perlu_dicek: '🔍', lemah: '⚠️' };
-
-function show(c) {
+function show(c, scroll) {
   const r = c.result, v = r.verdict.verdict, vt = msgs.verdicts[v];
+  const [big, small] = lang === 'en' ? [vt[1], vt[0]] : [vt[0], vt[1]];
   $('verdict').innerHTML = '';
   $('verdict').append(el('div', { class: 'verdict ' + v }, el('span', { class: 'ico', textContent: ICON[v] }),
-    el('div', {}, el('div', { class: 'big', textContent: vt[0] }), el('div', { class: 'sub', textContent: vt[1] + (c.reused ? ' · cached result' : '') }))));
+    el('div', {}, el('div', { class: 'big', textContent: big }), el('div', { class: 'sub', textContent: small + (c.reused ? ' · ' + t('cached') : '') }))));
   $('reasons').innerHTML = '';
   for (const code of r.verdict.reasons || []) {
     const m = msgs.reasons[code];
-    $('reasons').append(el('li', {}, el('b', { textContent: m.problem }), el('div', { class: 'todo', textContent: '→ ' + m.retake }), el('div', { class: 'en', textContent: m.english })));
+    const [p, todo, p2, todo2] = lang === 'en' ? [m.problem_en, m.retake_en, m.problem, m.retake] : [m.problem, m.retake, m.problem_en, m.retake_en];
+    $('reasons').append(el('li', {}, el('b', { textContent: p }), el('div', { class: 'todo', textContent: '→ ' + todo }),
+      el('div', { class: 'seller', textContent: `${t('sellerSees')} ${p2}. ${todo2}` })));
   }
-  if (!(r.verdict.reasons || []).length) $('reasons').append(el('li', {}, el('b', { textContent: 'Semua yang dicek terlihat jelas.' }), el('div', { class: 'en', textContent: 'Everything checked is clearly shown, and the label matches the order.' })));
-  $('advisory').textContent = msgs.advisory + ' Advice, not proof: the marketplace still decides any dispute.';
+  if (!(r.verdict.reasons || []).length) $('reasons').append(el('li', {}, el('b', { textContent: t('allClear') })));
+  $('advisory').textContent = lang === 'en' ? msgs.advisory_en : msgs.advisory;
   $('retakeHint').innerHTML = '';
   if (v !== 'kuat' && retakeSet) {
-    $('retakeHint').append(el('button', { class: 'retake', textContent: '📷 Contoh: pakai foto ulang dari paket yang sama · use the retaken photos', onclick: async () => { photos = await Promise.all(retakeSet.map(urlToPhoto)); retakeSet = null; resetResult(); render(); window.scrollTo({ top: $('photos').offsetTop - 80, behavior: 'smooth' }); } }));
+    $('retakeHint').append(el('button', { id: 'retakeBtn', class: 'retake', textContent: t('retakeBtn'), onclick: async () => { photos = await Promise.all(retakeSet.map(urlToPhoto)); retakeSet = null; resetResult(); render(); window.scrollTo({ top: $('photos').offsetTop - 80, behavior: 'smooth' }); } }));
   }
   $('result').classList.remove('hidden');
 
   $('hist').innerHTML = '';
   attempts.forEach((a, i) => {
     if (i) $('hist').append('→');
-    $('hist').append(el('span', {}, `#${i + 1} `, el('span', { class: 'badge ' + a.result.verdict.verdict, textContent: msgs.verdicts[a.result.verdict.verdict][0] })));
+    const vv = msgs.verdicts[a.result.verdict.verdict];
+    $('hist').append(el('span', {}, `#${i + 1} `, el('span', { class: 'badge ' + a.result.verdict.verdict, textContent: lang === 'en' ? vv[1] : vv[0] })));
   });
   $('history').classList.toggle('hidden', attempts.length < 2);
 
@@ -418,50 +496,49 @@ function show(c) {
     $('traceRows').append(el('tr', {}, el('td', { textContent: s.name }), el('td', { textContent: s.photo || '' }), el('td', { textContent: s.why }), el('td', { textContent: s.result }), el('td', { textContent: '$' + (s.usage.cost_usd || 0).toFixed(4) })));
   }
   const u = r.usage;
-  $('traceSum').textContent = `${(r.latency_ns / 1e9).toFixed(1)} s · $${u.cost_usd.toFixed(4)} · ${u.input_tokens} input / ${u.output_tokens} output tokens (${u.reasoning_tokens} reasoning) · ${u.images} SAM images · prompt ${r.prompt_version}` + (c.reused ? ' · hasil tersimpan (cached, no charge)' : '') + '. Model mengamati, aturan Go yang memutuskan. The models observe; Go rules decide.';
+  $('traceSum').textContent = `${(r.latency_ns / 1e9).toFixed(1)} s · $${u.cost_usd.toFixed(4)} · ${u.input_tokens} input / ${u.output_tokens} output tokens (${u.reasoning_tokens} reasoning) · ${u.images} SAM images · prompt ${r.prompt_version}` + (c.reused ? ' · ' + t('cached') : '') + '. ' + t('traceFoot');
   $('trace').classList.remove('hidden');
   $('claim').classList.remove('hidden');
-  $('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  if (scroll) $('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 async function readClaim() {
   const text = $('claimText').value.trim();
   if (!text || !current) return;
-  $('claimErr').textContent = ''; $('claimGo').disabled = true; $('claimGo').textContent = 'Membaca…';
+  $('claimErr').textContent = ''; $('claimGo').disabled = true; $('claimGo').textContent = t('claimBusy');
   try {
     const r = await fetch(`/api/checks/${current.id}/claim`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text }) });
-    const t = await r.json();
-    if (!r.ok) throw new Error(t.error || r.statusText);
-    triage = t; showClaim(t); render();
+    const tr = await r.json();
+    if (!r.ok) throw new Error(tr.error || r.statusText);
+    triage = tr; showClaim(tr, true); render();
   } catch (e) {
-    $('claimErr').textContent = 'Gagal: ' + e.message;
+    $('claimErr').textContent = t('failed') + e.message;
   } finally {
-    $('claimGo').disabled = false; $('claimGo').textContent = 'Baca komplain';
+    $('claimGo').disabled = false; $('claimGo').textContent = t('claimBtn');
   }
 }
 
-function showClaim(t) {
+function showClaim(tr, scroll) {
   const out = $('claimOut'); out.innerHTML = '';
-  const ct = msgs.claims[t.claim_type];
-  out.append(el('div', { class: 'claimtype', textContent: ct.id }), el('div', { class: 'en', textContent: ct.en }));
-  if (t.claim_type === 'lainnya') {
-    out.append(el('p', {}, 'Komplain ini di luar yang bisa dijawab foto packing. ', el('span', { class: 'en', textContent: 'Packing photos cannot answer this kind of complaint.' })));
-    return;
-  }
-  out.append(el('p', {},
-    t.answers.length ? `Foto yang menjawab: ${t.answers.map(n => '#' + n).join(', ')}. ` : 'Belum ada foto yang menjawab. ',
-    el('span', { class: 'en', textContent: t.answers.length ? `Photos that answer it: ${t.answers.map(n => '#' + n).join(', ')}.` : 'No photo answers it yet.' })));
-  if (t.missing.length) {
-    out.append(el('b', { textContent: 'Yang belum terbukti ' }), el('span', { class: 'en', textContent: 'Not shown by these photos' }));
+  const ct = msgs.claims[tr.claim_type];
+  const [main, sub] = lang === 'en' ? [ct.en, ct.id] : [ct.id, ct.en];
+  out.append(el('div', { class: 'claimtype', textContent: main }), el('div', { class: 'en', textContent: sub }));
+  if (tr.claim_type === 'lainnya') { out.append(el('p', { textContent: t('otherClaim') })); return; }
+  out.append(el('p', { textContent: tr.answers.length ? t('answeredBy')(tr.answers.map(n => '#' + n).join(', ')) : t('noAnswer') }));
+  if (tr.missing.length) {
+    out.append(el('b', { textContent: t('notShown') }));
     const ul = el('ul', { class: 'gaps' });
-    for (const g of t.missing) ul.append(el('li', {}, msgs.gaps[g].id, el('div', { class: 'en', textContent: msgs.gaps[g].en })));
+    for (const g of tr.missing) {
+      const [a, b] = lang === 'en' ? [msgs.gaps[g].en, msgs.gaps[g].id] : [msgs.gaps[g].id, msgs.gaps[g].en];
+      ul.append(el('li', {}, a, el('div', { class: 'en', textContent: b })));
+    }
     out.append(ul);
   }
-  out.append(el('p', { class: 'advisory', textContent: `Muse Spark hanya mengklasifikasi; foto dan kekurangannya ditentukan aturan Go. The model only classifies; Go rules pick the photos and the gaps. $${t.usage.cost_usd.toFixed(5)}` }));
-  if (t.answers.length) $('photos').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  out.append(el('p', { class: 'advisory', textContent: `${t('claimFoot')} $${tr.usage.cost_usd.toFixed(5)}` }));
+  if (scroll && tr.answers.length) $('photos').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
-init().catch(e => { $('err').textContent = 'Gagal memuat: ' + e.message; });
+init().catch(e => { $('err').textContent = 'Failed to load: ' + e.message; });
 </script>
 </body>
 </html>

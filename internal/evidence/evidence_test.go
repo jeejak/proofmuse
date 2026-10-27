@@ -98,7 +98,7 @@ func TestEveryReasonHasAMessage(t *testing.T) {
 		ReasonLabelUnreadable, ReasonLabelMismatch, ReasonItemNotVisible, ReasonNotSealed, ReasonKoliMismatch,
 		ReasonItemMismatch, ReasonResiConflict} {
 		m, ok := Messages[r]
-		if !ok || m.Problem == "" || m.Retake == "" || m.English == "" {
+		if !ok || m.Problem == "" || m.Retake == "" || m.ProblemEN == "" || m.RetakeEN == "" {
 			t.Errorf("%s: incomplete message %+v", r, m)
 		}
 	}
