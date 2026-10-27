@@ -72,6 +72,11 @@ var (
 	ErrAuth    = errors.New("proofmuse: API key rejected")
 	ErrLimit   = errors.New("proofmuse: daily limit reached")
 	ErrInvalid = errors.New("proofmuse: model answer did not match the schema")
+	// ErrRejected is a 400: this request can never succeed as sent (for
+	// example koli out of range). Retrying it is pointless.
+	ErrRejected = errors.New("proofmuse: request rejected")
+	// ErrOff is a 404 on /v1/observe: the server has its API switched off.
+	ErrOff = errors.New("proofmuse: API not enabled on this server")
 )
 
 // Client talks to one ProofMuse server.
@@ -133,6 +138,10 @@ func (c *Client) Observe(ctx context.Context, r Request) (*Result, error) {
 		return nil, ErrLimit
 	case http.StatusUnprocessableEntity:
 		return nil, ErrInvalid
+	case http.StatusBadRequest:
+		return nil, fmt.Errorf("%w: %s", ErrRejected, strings.TrimSpace(string(b)))
+	case http.StatusNotFound:
+		return nil, ErrOff
 	default:
 		return nil, fmt.Errorf("proofmuse: http %d: %s", resp.StatusCode, strings.TrimSpace(string(b)))
 	}

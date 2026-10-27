@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"crypto/sha256"
 	"crypto/subtle"
 	"fmt"
 	"io"
@@ -74,7 +75,7 @@ func (s *server) observe(w http.ResponseWriter, r *http.Request) {
 		writeErr(w, 400, "bad resi or koli")
 		return
 	}
-	orderID := fmt.Sprintf("api:%s:%s:%d", name, evidence.NormaliseResi(resi), koli)
+	orderID := orderIDFor(name, resi, koli)
 	id, _ := checks.Key(orderID, s.svc.ConfigKey, photos)
 	if c, ok := s.svc.Get(id); !ok || c.Status == checks.Failed {
 		if ok, why := s.apiLimit.Allow(name); !ok {
@@ -104,6 +105,14 @@ func (s *server) observe(w http.ResponseWriter, r *http.Request) {
 	}
 	s.log.Info("api observe", "caller", name, "id", c.ID, "reused", c.Reused, "verdict", c.Result.Verdict.Verdict)
 	writeJSON(w, 200, toAPI(c))
+}
+
+// orderIDFor names an API order for the idempotency key and the stored
+// result. The resi goes in hashed, so a caller's tracking numbers never
+// land in this server's logs or DATA_DIR in the clear.
+func orderIDFor(caller, resi string, koli int) string {
+	sum := sha256.Sum256([]byte(evidence.NormaliseResi(resi)))
+	return fmt.Sprintf("api:%s:%x:%d", caller, sum[:8], koli)
 }
 
 // readPhotos reads and type-checks the "photo" parts.

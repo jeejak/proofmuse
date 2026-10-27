@@ -10,6 +10,7 @@ import (
 	"log/slog"
 	"net/http"
 	"net/http/httptest"
+	"strings"
 	"sync/atomic"
 	"testing"
 
@@ -113,5 +114,36 @@ func TestObserveSchemaFailure(t *testing.T) {
 	_, err := client.New(ts.URL, testKey).Observe(context.Background(), client.Request{Photos: [][]byte{jpegBytes(t)}})
 	if !errors.Is(err, client.ErrInvalid) {
 		t.Fatalf("err %v, want ErrInvalid", err)
+	}
+}
+
+func TestObserveErrorsAndResiNotStored(t *testing.T) {
+	var gotOrder evidence.Order
+	run := func(ctx context.Context, photos [][]byte, o evidence.Order) (*pipeline.Result, error) {
+		gotOrder = o
+		return &pipeline.Result{Config: pipeline.Defaults(), Record: evidence.Record{ImageUsable: "ok", LabelVisible: "no", PackageSealed: "yes", ItemVisible: "yes"}}, nil
+	}
+	ts := testServer(t, map[string]string{testKey: "jeejak-console"}, run)
+	c := client.New(ts.URL, testKey)
+	photo := [][]byte{jpegBytes(t)}
+	if _, err := c.Observe(context.Background(), client.Request{Photos: photo, Koli: 99}); !errors.Is(err, client.ErrRejected) {
+		t.Fatalf("koli 99: err %v, want ErrRejected", err)
+	}
+	if _, err := c.Observe(context.Background(), client.Request{Photos: photo, Resi: "SPXID5774637064", Koli: 1}); err != nil {
+		t.Fatal(err)
+	}
+	if gotOrder.Resi != "SPXID5774637064" {
+		t.Fatalf("pipeline did not get the resi: %+v", gotOrder)
+	}
+	off := testServer(t, nil, run)
+	if _, err := client.New(off.URL, testKey).Observe(context.Background(), client.Request{Photos: photo}); !errors.Is(err, client.ErrOff) {
+		t.Fatalf("API off: err %v, want ErrOff", err)
+	}
+}
+
+func TestOrderIDHidesResi(t *testing.T) {
+	id := orderIDFor("jeejak-console", "SPXID5774637064", 1)
+	if strings.Contains(id, "5774637064") || !strings.HasPrefix(id, "api:jeejak-console:") || !strings.HasSuffix(id, ":1") {
+		t.Fatalf("order id %q", id)
 	}
 }
