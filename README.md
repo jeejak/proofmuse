@@ -4,6 +4,8 @@
 
 ProofMuse is the successor to [ParcelProof](https://github.com/jeejak/parcel-proof), built on Meta Muse Spark 1.3 and SAM 3.1. An Indonesian online seller photographs the packing, and within seconds gets practical feedback in Indonesian: *Foto label kurang jelas, silakan foto ulang.* The models observe; a Go rules engine decides. The result is advisory. It flags evidence-quality issues for a person to act on and never claims to prove what was in the box or to guarantee a dispute outcome.
 
+![ProofMuse flags three dark packing photos and draws SAM 3.1's label box on each](docs/images/dark-flagged.png)
+
 Built for the Meta Global AI Developer Hackathon (Meta x Cerebral Valley, 2026), Startup track. See [HACKATHON.md](HACKATHON.md) for what was built during the event and what was ported.
 
 ## How it works
@@ -15,6 +17,8 @@ Built for the Meta Global AI Developer Hackathon (Meta x Cerebral Valley, 2026),
 5. **Decide.** Go rules, no model: fold the photos into one record, compare the resi with the order, and return Bukti kuat, Perlu dicek or Bukti lemah with fixed Indonesian reasons and retake instructions.
 
 Every step is written to a trace with why it ran and what it cost.
+
+![A buyer says the box arrived empty; the photos that answer it are highlighted](docs/images/claim-answers.png)
 
 **Buyer claim triage.** When a complaint comes in, the seller pastes the buyer's message under a finished check. Muse Spark only classifies it into one of five claim types (barang kurang, rusak, paket kosong, salah kirim, tidak diterima) or "other". Go rules then pick the photos that answer that claim, skipping blurry, dark or obstructed ones, and name what packing photos cannot show: item count, condition on arrival, handover to the courier. On the 40 synthetic buyer messages in the eval set, the type matched 40 of 40 at 0.8 s and $0.0006 per claim ([`docs/eval/claims-all.md`](docs/eval/claims-all.md)). The messages were written to be clear examples of each type, so this shows the pipeline works, not robustness to messy real chats.
 
@@ -31,6 +35,8 @@ Test split, 62 records, run once per configuration (`go run ./cmd/eval -split te
 | Invalid answers | 0.0% (0/62) | 0.0% (0/62) |
 | Latency per parcel p50 / p95 | 4.6 s / 7.8 s | 2.8 s / 5.7 s |
 | Cost per parcel | $0.0138 | $0.0065 |
+
+![Verify before accusing: a one-digit misread is withdrawn instead of reported as the wrong label](docs/images/verify.png)
 
 What the extra steps buy: without them, Muse Spark misread one digit on a small label and the rules called it the wrong label, the most alarming thing a seller can be told. Verify-before-accusing withdrew that read on the test split (R49) and on the dev split (R70), and confirmed every genuine wrong label.
 
