@@ -21,8 +21,9 @@ Planned scope, ticked as it lands:
 - [ ] Retake loop at packing time (bad photo, Indonesian retake prompt, re-verify)
 - [ ] Claim triage: buyer's claim text to claim type to the evidence that answers it
 - [ ] Dispute packet PDF: verdict, crops and fixed Indonesian strings, no model prose
-- [ ] Async jobs with idempotency keys, retries with backoff, per-request usage and cost tracking
-- [ ] Eval harness and results table: precision, recall, unsure and invalid rate, false alarms, p50/p95 latency, cost per photo
+- [x] Retries with backoff and Retry-After, per-call usage and cost tracking
+- [ ] Async jobs with idempotency keys
+- [x] Eval harness and results table: precision, recall, invalid rate, false alarms, per-photo field agreement, label-box IoU, p50/p95 latency, cost per parcel and per photo
 - [ ] Mobile-friendly web UI with box and mask overlay
 - [ ] Stretch: SAM 3.1 video pass over a packing clip
 - [ ] Stretch: open-weight comparison column (Muse Spark Open)
@@ -54,7 +55,9 @@ here when it lands:
 
 Candidates we may still port, named now so the list cannot grow quietly:
 the no-model basic check for brightness, sharpness and barcode
-(`evidencecheck/basic.go`), and the eval harness layout (`cmd/eval`).
+(`evidencecheck/basic.go`). The eval harness in `cmd/eval` was written
+fresh for the per-photo pipeline; it keeps ParcelProof's idea of scoring
+bukti lemah precision and recall against human labels.
 
 Also pre-existing and not part of this submission: the JejakPaket mobile
 app and the Jeejak backend (private). ProofMuse does not depend on them.
