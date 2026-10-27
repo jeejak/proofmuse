@@ -1,0 +1,7 @@
+.git
+.env
+.env.*
+data/
+docs/eval/*.jsonl
+evalset/review/
+evalset/tools/

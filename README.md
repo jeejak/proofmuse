@@ -41,6 +41,12 @@ What the extra steps buy: without them, Muse Spark misread one digit on a small 
 - **The two disagreements are about legibility.** On R47 and R69 the human marked the label unreadable, while the model read it and matched the order's resi exactly. The labels were left as they are.
 - **The dev split is not pristine.** It was looked at during development, so the test split above is the published number.
 
+## About Jeejak
+
+Jeejak is a family of small-business tools for Indonesian online sellers, made by CV. Adisatya IT Consultant in Kediri, East Java ([jeejak.id](https://jeejak.id)). Its first product, [JejakPaket](https://play.google.com/store/apps/details?id=id.jeejak.paket), records proof for every parcel a Shopee or TikTok Shop seller sends: the resi scan, packing photos, the handover video and a dispute PDF. Paid plans sync that evidence to a seller console that matches it with marketplace orders.
+
+JejakPaket records evidence; ProofMuse checks it. It is the AI layer we built during this hackathon, and it is meant to run inside JejakPaket at packing time once it has been measured on real photos from sellers who opt in. JejakPaket and the console are pre-existing and are not part of this submission; see [HACKATHON.md](HACKATHON.md).
+
 ## Run locally
 
 ```bash
