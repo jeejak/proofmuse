@@ -13,7 +13,6 @@ import (
 	"embed"
 	"encoding/json"
 	"errors"
-	"fmt"
 	"io"
 	"log/slog"
 	"net"
@@ -50,7 +49,11 @@ type server struct {
 	limit   *checks.Limiter
 	trust   bool
 	samples []sample
-	log     *slog.Logger
+	// keys maps an API key to its caller's name (API_KEYS); apiLimit caps
+	// each caller's new checks.
+	keys     map[string]string
+	apiLimit *checks.Limiter
+	log      *slog.Logger
 }
 
 type sample struct {
@@ -96,8 +99,13 @@ func main() {
 	s := &server{
 		claim: claim,
 		set:   set, orders: map[string]evalset.Order{}, svc: svc, log: log,
-		limit: &checks.Limiter{PerClientHour: envInt("LIMIT_PER_HOUR", 30), PerDay: envInt("LIMIT_PER_DAY", 500)},
-		trust: os.Getenv("TRUST_PROXY") == "1",
+		limit:    &checks.Limiter{PerClientHour: envInt("LIMIT_PER_HOUR", 30), PerDay: envInt("LIMIT_PER_DAY", 500)},
+		trust:    os.Getenv("TRUST_PROXY") == "1",
+		keys:     apiKeys(),
+		apiLimit: &checks.Limiter{PerClientHour: envInt("API_LIMIT_PER_HOUR", 600), PerDay: envInt("API_LIMIT_PER_DAY", 2000)},
+	}
+	if len(s.keys) > 0 {
+		log.Info("server-to-server API on", "callers", len(s.keys))
 	}
 	for _, o := range set.Orders {
 		s.orders[o.OrderID] = o
@@ -161,6 +169,7 @@ func (s *server) routes() http.Handler {
 	})
 	mux.Handle("GET /samples/", http.StripPrefix("/samples/", http.FileServer(http.Dir(filepath.Join(s.set.Dir, "records")))))
 	mux.HandleFunc("POST /api/checks", s.createCheck)
+	mux.HandleFunc("POST /v1/observe", s.observe)
 	mux.HandleFunc("GET /api/checks/{id}", s.getCheck)
 	mux.HandleFunc("POST /api/checks/{id}/claim", s.triageClaim)
 	return securityHeaders(mux)
@@ -196,33 +205,10 @@ func (s *server) createCheck(w http.ResponseWriter, r *http.Request) {
 		writeErr(w, 400, "unknown order_id")
 		return
 	}
-	files := r.MultipartForm.File["photo"]
-	if len(files) == 0 || len(files) > maxPhotos {
-		writeErr(w, 400, fmt.Sprintf("send 1 to %d photos", maxPhotos))
+	photos, msg := readPhotos(r)
+	if msg != "" {
+		writeErr(w, 400, msg)
 		return
-	}
-	photos := make([][]byte, 0, len(files))
-	for _, fh := range files {
-		if fh.Size > maxPhotoBytes {
-			writeErr(w, 400, "a photo is larger than 12 MB")
-			return
-		}
-		f, err := fh.Open()
-		if err != nil {
-			writeErr(w, 400, "cannot read photo")
-			return
-		}
-		b, err := io.ReadAll(io.LimitReader(f, maxPhotoBytes+1))
-		f.Close()
-		if err != nil {
-			writeErr(w, 400, "cannot read photo")
-			return
-		}
-		if ct := http.DetectContentType(b); ct != "image/jpeg" && ct != "image/png" {
-			writeErr(w, 400, "photos must be JPEG or PNG")
-			return
-		}
-		photos = append(photos, b)
 	}
 	order := evidence.Order{Resi: o.Resi, Koli: o.Koli}
 	// A result we already have is free: answer it without counting it

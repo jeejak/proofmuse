@@ -21,6 +21,7 @@ Planned scope, ticked as it lands:
 - [x] Retake loop at packing time (bad photo, Indonesian retake prompt, retake one photo, check again, attempt history)
 - [x] Claim triage: buyer's message to claim type (Muse Spark, enum only) to the photos that answer it and what they cannot show (Go rules)
 - [ ] Dispute packet PDF: verdict, crops and fixed Indonesian strings, no model prose
+- [x] Server-to-server API (`POST /v1/observe`, keyed, per-caller limits) and a dependency-free Go client (`client/`) returning the six-field observation the Jeejak console stores
 - [x] Retries with backoff and Retry-After, per-call usage and cost tracking
 - [x] Async jobs with idempotency keys (order + photo hashes + prompt + config), results persisted, per-client and daily rate limits
 - [x] Eval harness and results table: precision, recall, invalid rate, false alarms, per-photo field agreement, label-box IoU, p50/p95 latency, cost per parcel and per photo
