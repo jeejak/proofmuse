@@ -123,12 +123,30 @@ func main() {
 func (s *server) routes() http.Handler {
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /health", func(w http.ResponseWriter, _ *http.Request) { io.WriteString(w, "ok\n") })
-	mux.HandleFunc("GET /static/jeejak-icon.png", func(w http.ResponseWriter, r *http.Request) {
-		b, _ := static.ReadFile("static/jeejak-icon.png")
-		w.Header().Set("Content-Type", "image/png")
-		w.Header().Set("Cache-Control", "public, max-age=86400")
-		w.Write(b)
-	})
+	// Icons, from the embedded static dir. Browsers ask for /favicon.ico
+	// on their own, so it answers with the 32 px PNG.
+	for path, file := range map[string]string{
+		"/static/jeejak-icon.png": "jeejak-icon.png",
+		"/static/favicon-32.png":  "favicon-32.png",
+		"/favicon.svg":            "favicon.svg",
+		"/favicon.ico":            "favicon-32.png",
+		"/apple-touch-icon.png":   "apple-touch-icon.png",
+	} {
+		mux.HandleFunc("GET "+path, func(w http.ResponseWriter, r *http.Request) {
+			b, err := static.ReadFile("static/" + file)
+			if err != nil {
+				http.NotFound(w, r)
+				return
+			}
+			ct := "image/png"
+			if strings.HasSuffix(file, ".svg") {
+				ct = "image/svg+xml"
+			}
+			w.Header().Set("Content-Type", ct)
+			w.Header().Set("Cache-Control", "public, max-age=86400")
+			w.Write(b)
+		})
+	}
 	mux.HandleFunc("GET /{$}", func(w http.ResponseWriter, r *http.Request) {
 		b, _ := static.ReadFile("static/index.html")
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
