@@ -12,6 +12,13 @@ def main():
     with tempfile.TemporaryDirectory() as folder:
         root=Path(folder)
         for name in ('photos.csv','labels.csv'):shutil.copyfile(ROOT/name,root/name)
+        # The live set is already reviewed; reset the copy to its pre-review
+        # state so this test exercises a first review on any snapshot.
+        fields=list(read(root/'photos.csv')[0].keys())
+        reset=[dict(p,needs_review='yes',reviewed_by='',reviewed_at='') for p in read(root/'photos.csv')]
+        csvwrite(root/'photos.csv',reset,fields)
+        lfields=list(read(root/'labels.csv')[0].keys())
+        csvwrite(root/'labels.csv',[dict(r,label_source='proposed',record_fields_source='proposed',record_reviewed_by='',record_reviewed_at='') for r in read(root/'labels.csv')],lfields)
         original=read(root/'photos.csv');rid=original[0]['record_id']
         rows=[p for p in original if p['record_id']==rid]
         decisions=[]

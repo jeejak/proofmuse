@@ -4,7 +4,9 @@ All images are synthetic, generated with an image model. They are not camera pho
 
 R01 to R64 were generated on 2026-10-07 for ParcelProof and are pre-existing. Everything from R65 on, and every file except the copied photos and the original label columns, was built during the hackathon. New assets were generated on 2026-10-26. Source photos were copied and resized to JPEG with a 1280 pixel long side; the source directories were not edited.
 
-Labels marked `needs_review=yes` are model proposals, not human labels. Only rows Samsul reviewed count as human labels in any reported metric. Every initial photo proposal was checked against pixels. The original record columns preserve the earlier intended shot-list values, including the legacy column name `human_verdict`; that name does not certify a human grade. Only R47, R50 and R60 had earlier visual spot checks. Those checks are not imported as completed blind human reviews.
+**Human review, 2026-10-27.** Samsul reviewed all 399 photos in the review page, 397 in blind mode (his values entered before the proposals were shown) and 2 in assisted mode. He changed 42 photos' fields, mostly whether a sealed box is shown, and redrew 200 label boxes. His decisions are kept verbatim in `review/review-decisions.csv`. Every photo row now has `needs_review=no`.
+
+**Record labels are derived, not proposed.** No record row was reviewed directly. `tools/derive_records.py` recomputes every record column (`image_usable`, `label_visible`, `label_resi_read`, `package_sealed`, `item_visible`, `koli_seen`, `human_verdict`, `verdict_reasons`) from the reviewed photo labels with fixed rules written at the top of that script, and marks the row `record_fields_source=derived_from_human_photos`. The verdict applies ParcelProof's rules to those values. One exception rests on construction rather than review: the four `item_mismatch` records carry an `item_mismatch` reason because the photo shows a different item from the order listing, which no photo field records. Derivation moved 12 verdicts from the earlier intended values; for example R47, R69 and R70 lose their resi read because no photo shows a readable label, and five staged obstructions become usable because the obstruction covers only some photos. `tools/verify.py` fails if a derived row is out of date.
 
 The waybills are dummies; no real person's shipping data appears anywhere. New labels were visually checked for unwanted names, telephone numbers and addresses. Four first shots (R79/01, R81/01, R83/01 and R85/01) were regenerated as a precaution because unrequested paper slips contained unverifiable tiny text. R87/02 was regenerated separately to correct its courier logo. See `tools/regeneration-log.jsonl`. The inherited images include printed book-cover author text and, in some scenes, hands. Those are pre-existing synthetic content, not customer records. No real customer data was supplied. This is a documented scope limitation to any broader claim that no person-like text appears anywhere in the images.
 
@@ -61,9 +63,9 @@ The exact output of `tools/verify.py` is recorded below.
   "pre_existing_photos": 279,
   "new_photos": 120,
   "verdict": {
-    "kuat": 43,
-    "lemah": 41,
-    "perlu_dicek": 20
+    "kuat": 42,
+    "lemah": 36,
+    "perlu_dicek": 26
   },
   "group": {
     "blurry": 6,
@@ -95,9 +97,9 @@ The exact output of `tools/verify.py` is recorded below.
     "salah_kirim": 8,
     "tidak_diterima": 8
   },
-  "claims_on_weak_records": 26,
+  "claims_on_weak_records": 23,
   "retake_pairs": 8,
-  "needs_review": 399
+  "needs_review": 0
 }
 ```
 

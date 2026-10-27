@@ -40,8 +40,12 @@ def check(root=ROOT,check_sources=True):
         originals=list(csv.DictReader((WORK/'jeejak-eval-set-synthetic/labels.csv').open()))
         for original in originals:
             current=byrec[original['record_id']]
-            if current.get('record_fields_source')!='human':
+            if current.get('record_fields_source') not in ('human','derived_from_human_photos'):
                 require(all(current[k]==v for k,v in original.items()),original['record_id']+' original label columns changed without explicit human record review')
+    from derive_records import derive,FIELDS as DERIVED_FIELDS
+    for fresh in derive([r for r in labels if r.get('record_fields_source')=='derived_from_human_photos'],photos):
+        cur=byrec[fresh['record_id']]
+        require(all(cur[k]==fresh[k] for k in DERIVED_FIELDS+['verdict_reasons']),fresh['record_id']+' derived record fields out of date; run tools/derive_records.py')
     for p in photos:
         pby[p['record_id']].append(p)
         key=p['record_id']+'/'+p['photo']

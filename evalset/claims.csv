@@ -9,9 +9,9 @@ SYN-C07,SYN-R07,yg datang kurang kak... ada foto sebelum ditutup ga?,barang_kura
 SYN-C08,SYN-R95,"aku terima sebagian aja, sisanya blm ada",barang_kurang,R95/01.jpg|R95/03.jpg,item_quantity_not_established,true
 SYN-C09,SYN-R15,kak barangnya nyampe rusak 😭,barang_rusak,,item_not_visible|not_sealed|delivery_condition_not_shown,true
 SYN-C10,SYN-R21,"gan ini penyok pas aku buka, packingnya gimana?",barang_rusak,,item_not_visible|not_sealed|delivery_condition_not_shown,true
-SYN-C11,SYN-R27,"BARANG RUSAK KAK, minta dicek ya",barang_rusak,R27/01.jpg,not_sealed|delivery_condition_not_shown,true
+SYN-C11,SYN-R27,"BARANG RUSAK KAK, minta dicek ya",barang_rusak,R27/01.jpg|R27/03.jpg,delivery_condition_not_shown,true
 SYN-C12,SYN-R31,"udh sampe tp ada yg pecah, sedih bgt",barang_rusak,R31/01.jpg|R31/04.jpg,delivery_condition_not_shown,true
-SYN-C13,SYN-R48,"kak ada lecetnya, sebelum dikirim kondisinya gmn?",barang_rusak,R48/01.jpg,not_sealed|delivery_condition_not_shown,true
+SYN-C13,SYN-R48,"kak ada lecetnya, sebelum dikirim kondisinya gmn?",barang_rusak,R48/01.jpg|R48/03.jpg,delivery_condition_not_shown,true
 SYN-C14,SYN-R59,ini rusak di jalan apa dr awal ya kak?,barang_rusak,R59/01.jpg,not_sealed|delivery_condition_not_shown,true
 SYN-C15,SYN-R99,bungkusnya kebuka trus barangnya rusak nih,barang_rusak,R99/01.jpg|R99/03.jpg,delivery_condition_not_shown,true
 SYN-C16,SYN-R03,"kak barangnya retak, ada foto pas dipacking?",barang_rusak,R03/01.jpg|R03/06.jpg,delivery_condition_not_shown,true

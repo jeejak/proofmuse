@@ -5,9 +5,9 @@
   "pre_existing_photos": 279,
   "new_photos": 120,
   "verdict": {
-    "kuat": 43,
-    "lemah": 41,
-    "perlu_dicek": 20
+    "kuat": 42,
+    "lemah": 36,
+    "perlu_dicek": 26
   },
   "group": {
     "blurry": 6,
@@ -39,7 +39,7 @@
     "salah_kirim": 8,
     "tidak_diterima": 8
   },
-  "claims_on_weak_records": 26,
+  "claims_on_weak_records": 23,
   "retake_pairs": 8,
-  "needs_review": 399
+  "needs_review": 0
 }

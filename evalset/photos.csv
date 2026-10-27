@@ -1,400 +1,400 @@
 record_id,photo,orientation,label_in_photo,label_readable,image_quality_issues,boxes_in_photo,sealed_box_in_photo,item_in_photo,label_box,needs_review,reviewed_by,reviewed_at,synthetic
-R01,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R01,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R01,03.jpg,landscape,yes,yes,,1,yes,no,440 320 790 640,yes,,,true
-R01,04.jpg,landscape,yes,yes,,1,yes,no,175 230 820 900,yes,,,true
-R02,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R02,02.jpg,landscape,yes,yes,,1,yes,no,340 230 680 450,yes,,,true
-R02,03.jpg,landscape,yes,yes,,1,yes,no,230 330 765 955,yes,,,true
-R03,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R03,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R03,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R03,04.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
-R03,05.jpg,landscape,yes,yes,,1,yes,no,355 235 665 440,yes,,,true
-R03,06.jpg,landscape,yes,yes,,1,yes,no,300 380 850 800,yes,,,true
-R04,01.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R04,02.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R04,03.jpg,landscape,yes,yes,,2,yes,no,160 330 400 470,yes,,,true
-R04,04.jpg,landscape,yes,yes,,2,yes,no,170 320 640 840,yes,,,true
-R05,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R05,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R05,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R05,04.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R05,05.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
-R05,06.jpg,landscape,no,no,,1,yes,no,,yes,,,true
-R05,07.jpg,landscape,yes,yes,,1,yes,no,350 270 680 470,yes,,,true
-R05,08.jpg,landscape,yes,yes,,1,yes,yes,350 370 875 830,yes,,,true
-R06,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R06,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R06,03.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
-R06,04.jpg,landscape,yes,yes,,1,yes,no,340 230 680 450,yes,,,true
-R06,05.jpg,landscape,yes,yes,,1,yes,no,240 270 850 890,yes,,,true
-R07,01.jpg,landscape,no,no,,3,no,yes,,yes,,,true
-R07,02.jpg,landscape,no,no,,3,no,yes,,yes,,,true
-R07,03.jpg,landscape,no,no,,3,yes,yes,,yes,,,true
-R07,04.jpg,landscape,no,no,,3,no,yes,,yes,,,true
-R07,05.jpg,landscape,no,no,,3,uncertain,yes,,yes,,,true
-R07,06.jpg,landscape,no,no,,3,yes,no,,yes,,,true
-R07,07.jpg,landscape,yes,yes,,3,yes,no,85 345 310 530,yes,,,true
-R07,08.jpg,landscape,yes,yes,,3,yes,yes,235 580 770 860,yes,,,true
-R08,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R08,02.jpg,landscape,yes,yes,,1,yes,no,320 230 685 500,yes,,,true
-R08,03.jpg,landscape,yes,yes,,1,yes,no,265 320 760 790,yes,,,true
-R09,01.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R09,02.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R09,03.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R09,04.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R09,05.jpg,landscape,no,no,,2,uncertain,yes,,yes,,,true
-R09,06.jpg,landscape,yes,yes,,2,yes,no,130 300 410 465,yes,,,true
-R09,07.jpg,landscape,yes,yes,,2,yes,yes,100 430 550 915,yes,,,true
-R10,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R10,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R10,03.jpg,landscape,yes,yes,,1,yes,no,345 285 680 515,yes,,,true
-R10,04.jpg,landscape,yes,yes,,1,yes,no,225 325 835 830,yes,,,true
-R100,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R100,02.jpg,landscape,yes,yes,,1,yes,no,325 210 690 485,yes,,,true
-R100,03.jpg,landscape,yes,yes,,1,yes,no,235 470 780 855,yes,,,true
-R101,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R101,02.jpg,landscape,yes,yes,,1,yes,no,335 225 680 465,yes,,,true
-R101,03.jpg,landscape,yes,yes,,1,yes,no,250 320 775 740,yes,,,true
-R102,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R102,02.jpg,landscape,yes,yes,,1,yes,no,315 215 695 500,yes,,,true
-R102,03.jpg,landscape,yes,yes,,1,yes,no,220 425 780 845,yes,,,true
-R103,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R103,02.jpg,landscape,yes,yes,,1,yes,no,380 205 665 440,yes,,,true
-R103,03.jpg,landscape,yes,yes,,1,yes,no,225 450 770 850,yes,,,true
-R104,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R104,02.jpg,landscape,yes,yes,,1,yes,no,330 205 700 500,yes,,,true
-R104,03.jpg,landscape,yes,yes,,1,yes,no,240 470 780 845,yes,,,true
-R11,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R11,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R11,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R11,04.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
-R11,05.jpg,landscape,yes,yes,,1,yes,no,420 230 735 470,yes,,,true
-R11,06.jpg,landscape,yes,yes,,1,yes,yes,295 320 850 850,yes,,,true
-R12,01.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R12,02.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R12,03.jpg,landscape,yes,yes,,2,yes,no,180 350 410 540,yes,,,true
-R12,04.jpg,landscape,yes,yes,,2,yes,yes,490 360 960 855,yes,,,true
-R13,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R13,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R13,03.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
-R13,04.jpg,landscape,yes,yes,,1,yes,no,300 230 690 470,yes,,,true
-R13,05.jpg,landscape,yes,yes,,1,yes,yes,435 220 980 830,yes,,,true
-R14,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R14,02.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R14,03.jpg,landscape,yes,no,too_dark,1,yes,no,465 370 700 505,yes,,,true
-R14,04.jpg,landscape,yes,no,too_dark,1,yes,yes,550 560 805 770,yes,,,true
-R15,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R15,02.jpg,landscape,yes,no,too_dark,1,yes,no,430 280 665 410,yes,,,true
-R15,03.jpg,landscape,yes,no,too_dark,1,no,yes,265 550 500 895,yes,,,true
-R16,01.jpg,landscape,no,no,too_dark,2,no,yes,,yes,,,true
-R16,02.jpg,landscape,no,no,too_dark,2,no,yes,,yes,,,true
-R16,03.jpg,landscape,no,no,too_dark,2,uncertain,yes,,yes,,,true
-R16,04.jpg,landscape,yes,no,too_dark,2,yes,no,310 430 510 510,yes,,,true
-R16,05.jpg,landscape,yes,no,too_dark,2,yes,yes,690 450 930 700,yes,,,true
-R17,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R17,02.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R17,03.jpg,landscape,yes,no,too_dark,1,yes,no,400 335 650 500,yes,,,true
-R17,04.jpg,landscape,yes,no,too_dark,1,yes,yes,630 340 875 610,yes,,,true
-R18,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R18,02.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R18,03.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R18,04.jpg,landscape,no,no,too_dark,1,uncertain,no,,yes,,,true
-R18,05.jpg,landscape,yes,no,too_dark,1,yes,no,505 370 755 550,yes,,,true
-R18,06.jpg,landscape,yes,no,too_dark,1,yes,yes,460 400 700 820,yes,,,true
-R19,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R19,02.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R19,03.jpg,landscape,yes,no,too_dark,1,uncertain,no,500 385 665 525,yes,,,true
-R19,04.jpg,landscape,yes,no,too_dark,1,uncertain,no,405 420 685 735,yes,,,true
-R20,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R20,02.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R20,03.jpg,landscape,yes,no,blur,1,yes,no,335 245 700 475,yes,,,true
-R20,04.jpg,landscape,yes,no,blur,1,yes,yes,270 200 770 600,yes,,,true
-R21,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R21,02.jpg,landscape,yes,no,blur,1,yes,no,300 140 720 425,yes,,,true
-R21,03.jpg,landscape,yes,no,blur,1,yes,yes,325 350 850 830,yes,,,true
-R22,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R22,02.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R22,03.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R22,04.jpg,landscape,no,no,blur,1,uncertain,yes,,yes,,,true
-R22,05.jpg,landscape,yes,no,blur,1,yes,no,350 275 685 520,yes,,,true
-R22,06.jpg,landscape,yes,no,blur,1,yes,yes,400 400 960 865,yes,,,true
-R23,01.jpg,landscape,no,no,blur,2,no,yes,,yes,,,true
-R23,02.jpg,landscape,no,no,blur,2,no,yes,,yes,,,true
-R23,03.jpg,landscape,yes,no,blur,2,yes,no,175 320 430 420,yes,,,true
-R23,04.jpg,landscape,yes,no,blur,2,yes,yes,490 430 970 900,yes,,,true
-R24,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R24,02.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R24,03.jpg,landscape,no,no,blur,1,uncertain,yes,,yes,,,true
-R24,04.jpg,landscape,yes,no,blur,1,yes,no,360 190 755 480,yes,,,true
-R24,05.jpg,landscape,yes,no,blur,1,yes,yes,180 410 750 900,yes,,,true
-R25,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R25,02.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R25,03.jpg,landscape,yes,no,blur,1,uncertain,no,340 235 690 450,yes,,,true
-R25,04.jpg,landscape,yes,no,blur,1,uncertain,no,300 320 810 820,yes,,,true
-R26,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R26,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R26,03.jpg,landscape,yes,no,obstructed,1,yes,no,560 440 675 520,yes,,,true
-R26,04.jpg,landscape,no,no,obstructed,1,yes,no,,yes,,,true
-R27,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R27,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R27,03.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
-R27,04.jpg,landscape,yes,no,obstructed,1,yes,no,515 310 670 450,yes,,,true
-R27,05.jpg,landscape,no,no,obstructed,1,yes,no,,yes,,,true
-R28,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R28,02.jpg,landscape,yes,no,obstructed,1,yes,no,365 290 670 495,yes,,,true
-R28,03.jpg,landscape,no,no,obstructed,1,yes,no,,yes,,,true
-R29,01.jpg,landscape,no,no,obstructed,1,no,yes,,yes,,,true
-R29,02.jpg,landscape,no,no,obstructed,1,no,yes,,yes,,,true
-R29,03.jpg,landscape,yes,yes,obstructed,1,yes,no,530 400 770 550,yes,,,true
-R29,04.jpg,landscape,yes,yes,obstructed,1,yes,no,420 390 870 765,yes,,,true
-R30,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R30,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R30,03.jpg,landscape,yes,yes,obstructed,1,uncertain,no,280 500 550 780,yes,,,true
-R30,04.jpg,landscape,yes,yes,obstructed,1,uncertain,no,280 310 815 730,yes,,,true
-R31,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R31,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R31,03.jpg,landscape,no,no,,1,yes,no,,yes,,,true
-R31,04.jpg,landscape,no,no,,1,yes,no,,yes,,,true
-R32,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R32,02.jpg,landscape,no,no,,1,yes,no,,yes,,,true
-R32,03.jpg,landscape,no,no,,1,yes,no,,yes,,,true
-R33,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R33,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R33,03.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
-R33,04.jpg,landscape,no,no,,1,yes,no,,yes,,,true
-R33,05.jpg,landscape,no,no,,1,yes,no,,yes,,,true
-R34,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R34,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R34,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R34,04.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
-R34,05.jpg,landscape,no,no,,1,yes,no,,yes,,,true
-R34,06.jpg,landscape,no,no,,1,yes,no,,yes,,,true
-R35,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R35,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R35,03.jpg,landscape,no,no,,1,yes,no,,yes,,,true
-R35,04.jpg,landscape,no,no,,1,yes,no,,yes,,,true
-R36,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R36,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R36,03.jpg,landscape,yes,yes,,1,yes,no,320 230 680 450,yes,,,true
-R36,04.jpg,landscape,yes,yes,,1,yes,no,220 130 865 830,yes,,,true
-R37,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R37,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R37,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R37,04.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
-R37,05.jpg,landscape,yes,yes,,1,yes,no,455 270 800 475,yes,,,true
-R37,06.jpg,landscape,yes,yes,,1,yes,no,180 300 860 820,yes,,,true
-R38,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R38,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R38,03.jpg,landscape,yes,yes,,1,yes,no,310 215 700 470,yes,,,true
-R38,04.jpg,landscape,yes,yes,,1,yes,no,175 310 810 860,yes,,,true
-R39,01.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R39,02.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R39,03.jpg,landscape,no,no,,2,uncertain,yes,,yes,,,true
-R39,04.jpg,landscape,yes,yes,,2,yes,no,180 345 405 505,yes,,,true
-R39,05.jpg,landscape,yes,yes,,2,yes,no,250 350 740 850,yes,,,true
-R40,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R40,02.jpg,landscape,yes,yes,,1,yes,no,345 235 685 440,yes,,,true
-R40,03.jpg,landscape,yes,yes,,1,yes,no,220 235 840 830,yes,,,true
-R41,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R41,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R41,03.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
-R41,04.jpg,landscape,yes,yes,,1,yes,no,320 190 700 440,yes,,,true
-R41,05.jpg,landscape,yes,yes,,1,yes,yes,310 270 815 790,yes,,,true
-R42,01.jpg,landscape,yes,yes,,1,yes,no,320 195 700 430,yes,,,true
-R42,02.jpg,landscape,yes,yes,,1,yes,no,540 410 760 775,yes,,,true
-R42,03.jpg,landscape,yes,yes,,1,yes,no,285 360 865 855,yes,,,true
-R43,01.jpg,landscape,yes,yes,,1,yes,no,310 215 720 505,yes,,,true
-R43,02.jpg,landscape,yes,yes,,1,yes,no,635 340 875 735,yes,,,true
-R43,03.jpg,landscape,yes,yes,,1,yes,no,280 300 930 820,yes,,,true
-R43,04.jpg,landscape,yes,yes,,1,yes,no,580 280 810 735,yes,,,true
-R44,01.jpg,landscape,yes,yes,,1,yes,no,360 280 650 440,yes,,,true
-R44,02.jpg,landscape,yes,yes,,1,yes,no,370 395 670 780,yes,,,true
-R44,03.jpg,landscape,yes,yes,,1,yes,no,270 270 865 775,yes,,,true
-R45,01.jpg,landscape,yes,yes,,1,yes,no,395 255 695 440,yes,,,true
-R45,02.jpg,landscape,yes,yes,,1,yes,no,550 350 850 755,yes,,,true
-R45,03.jpg,landscape,yes,yes,,1,yes,no,300 310 875 850,yes,,,true
-R45,04.jpg,landscape,yes,yes,,1,yes,no,435 445 750 750,yes,,,true
-R46,01.jpg,landscape,no,no,,1,no,no,,yes,,,true
-R46,02.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
-R46,03.jpg,landscape,yes,yes,,1,yes,no,355 260 680 470,yes,,,true
-R46,04.jpg,landscape,yes,yes,,1,yes,no,275 270 875 875,yes,,,true
-R47,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R47,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R47,03.jpg,landscape,yes,uncertain,,1,yes,no,335 255 680 470,yes,,,true
-R47,04.jpg,landscape,yes,yes,,1,yes,no,250 135 785 810,yes,,,true
-R48,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R48,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R48,03.jpg,landscape,yes,no,obstructed,1,yes,no,320 285 720 615,yes,,,true
-R48,04.jpg,landscape,yes,no,obstructed,1,yes,no,355 310 850 880,yes,,,true
-R49,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R49,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R49,03.jpg,landscape,no,no,,1,uncertain,no,,yes,,,true
-R49,04.jpg,landscape,yes,uncertain,too_far,1,yes,no,440 375 550 455,yes,,,true
-R49,05.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R50,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R50,02.jpg,landscape,yes,yes,,1,yes,no,430 260 760 590,yes,,,true
-R50,03.jpg,landscape,yes,yes,,1,yes,no,300 200 685 820,yes,,,true
-R51,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R51,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R51,03.jpg,landscape,yes,yes,,1,no,yes,550 530 780 830,yes,,,true
-R51,04.jpg,landscape,yes,yes,,1,no,yes,400 430 790 820,yes,,,true
-R52,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R52,02.jpg,landscape,yes,yes,,1,no,yes,620 495 820 830,yes,,,true
-R52,03.jpg,landscape,yes,yes,,1,no,yes,250 405 600 805,yes,,,true
-R53,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R53,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R53,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R53,04.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R53,05.jpg,landscape,yes,yes,,1,no,yes,580 540 780 845,yes,,,true
-R53,06.jpg,landscape,yes,yes,,1,no,yes,370 550 760 800,yes,,,true
-R54,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R54,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R54,03.jpg,landscape,yes,yes,,1,no,yes,550 650 800 880,yes,,,true
-R54,04.jpg,landscape,yes,yes,,1,no,yes,395 475 810 850,yes,,,true
-R55,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R55,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R55,03.jpg,landscape,yes,yes,,1,yes,no,350 230 685 465,yes,,,true
-R55,04.jpg,landscape,yes,yes,,1,yes,yes,315 285 800 845,yes,,,true
-R56,01.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R56,02.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R56,03.jpg,landscape,yes,yes,,2,yes,no,185 320 380 500,yes,,,true
-R56,04.jpg,landscape,yes,yes,,2,yes,yes,395 350 990 925,yes,,,true
-R57,01.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R57,02.jpg,landscape,no,no,,2,no,yes,,yes,,,true
-R57,03.jpg,landscape,yes,yes,,2,yes,no,210 315 405 445,yes,,,true
-R57,04.jpg,landscape,yes,yes,,2,yes,yes,280 425 685 770,yes,,,true
-R58,01.jpg,landscape,no,no,,3,no,yes,,yes,,,true
-R58,02.jpg,landscape,no,no,,3,no,yes,,yes,,,true
-R58,03.jpg,landscape,no,no,,3,yes,yes,,yes,,,true
-R58,04.jpg,landscape,yes,yes,,3,yes,no,80 360 300 525,yes,,,true
-R58,05.jpg,landscape,yes,yes,,3,yes,yes,390 445 805 850,yes,,,true
-R59,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R59,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R59,03.jpg,landscape,yes,yes,,1,no,yes,190 535 405 815,yes,,,true
-R59,04.jpg,landscape,yes,yes,,1,no,yes,505 510 945 820,yes,,,true
-R60,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R60,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R60,03.jpg,landscape,yes,uncertain,,1,no,yes,545 580 815 810,yes,,,true
-R60,04.jpg,landscape,yes,yes,,1,no,no,365 325 895 795,yes,,,true
-R61,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R61,02.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R61,03.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R61,04.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R62,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R62,02.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R62,03.jpg,landscape,yes,no,too_dark,1,yes,no,485 340 725 470,yes,,,true
-R62,04.jpg,landscape,yes,no,too_dark,1,yes,yes,595 410 820 750,yes,,,true
-R63,01.jpg,landscape,yes,yes,,1,yes,no,375 250 680 460,yes,,,true
-R63,02.jpg,landscape,yes,yes,,1,yes,no,550 360 800 740,yes,,,true
-R63,03.jpg,landscape,yes,yes,,1,yes,no,245 245 845 835,yes,,,true
-R64,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R64,02.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R64,03.jpg,landscape,yes,no,blur,1,no,yes,310 480 550 700,yes,,,true
-R64,04.jpg,landscape,yes,no,blur,1,no,yes,540 530 870 880,yes,,,true
-R65,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R65,02.jpg,landscape,yes,yes,glare,1,yes,no,300 205 720 525,yes,,,true
-R65,03.jpg,landscape,yes,no,glare,1,yes,no,205 260 795 700,yes,,,true
-R66,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R66,02.jpg,landscape,yes,yes,glare,1,yes,no,300 200 720 525,yes,,,true
-R66,03.jpg,landscape,yes,no,glare,1,yes,no,235 345 765 790,yes,,,true
-R67,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R67,02.jpg,landscape,yes,yes,glare,1,yes,no,275 180 715 525,yes,,,true
-R67,03.jpg,landscape,yes,no,glare,1,yes,no,230 300 795 740,yes,,,true
-R68,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R68,02.jpg,landscape,yes,yes,glare,1,yes,no,295 190 705 480,yes,,,true
-R68,03.jpg,landscape,yes,no,glare,1,yes,no,215 300 795 710,yes,,,true
-R69,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R69,02.jpg,landscape,yes,yes,too_far,1,yes,no,430 420 580 535,yes,,,true
-R69,03.jpg,landscape,yes,no,too_far,1,uncertain,no,915 440 960 457,yes,,,true
-R70,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R70,02.jpg,landscape,yes,yes,too_far,1,yes,no,440 410 560 525,yes,,,true
-R70,03.jpg,landscape,yes,no,too_far,1,uncertain,no,910 515 955 538,yes,,,true
-R71,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R71,02.jpg,landscape,yes,yes,,1,yes,no,465 260 850 565,yes,,,true
-R71,03.jpg,landscape,yes,yes,cropped,1,uncertain,no,465 225 1000 940,yes,,,true
-R72,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R72,02.jpg,landscape,yes,yes,,1,yes,no,470 170 885 430,yes,,,true
-R72,03.jpg,landscape,yes,yes,cropped,1,uncertain,no,520 350 1000 1000,yes,,,true
-R73,01.jpg,portrait,no,no,,1,no,yes,,yes,,,true
-R73,02.jpg,portrait,yes,yes,,1,yes,no,290 290 745 505,yes,,,true
-R73,03.jpg,portrait,yes,yes,,1,yes,no,185 365 825 710,yes,,,true
-R74,01.jpg,portrait,no,no,,1,no,yes,,yes,,,true
-R74,02.jpg,portrait,yes,yes,,1,yes,no,300 320 745 500,yes,,,true
-R74,03.jpg,portrait,yes,yes,,1,yes,no,110 470 890 835,yes,,,true
-R75,01.jpg,portrait,no,no,,1,no,yes,,yes,,,true
-R75,02.jpg,portrait,yes,yes,,1,yes,no,280 285 730 480,yes,,,true
-R75,03.jpg,portrait,yes,yes,,1,yes,no,120 480 910 850,yes,,,true
-R76,01.jpg,portrait,no,no,,1,no,yes,,yes,,,true
-R76,02.jpg,portrait,yes,yes,,1,yes,no,280 300 740 510,yes,,,true
-R76,03.jpg,portrait,yes,yes,,1,yes,no,155 290 865 660,yes,,,true
-R77,01.jpg,portrait,no,no,,1,no,yes,,yes,,,true
-R77,02.jpg,portrait,yes,yes,,1,yes,no,290 310 745 510,yes,,,true
-R77,03.jpg,portrait,yes,yes,,1,yes,no,175 500 825 850,yes,,,true
-R78,01.jpg,portrait,no,no,,1,no,yes,,yes,,,true
-R78,02.jpg,portrait,yes,yes,,1,yes,no,285 280 740 495,yes,,,true
-R78,03.jpg,portrait,yes,yes,,1,yes,no,190 420 815 820,yes,,,true
-R79,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R79,02.jpg,landscape,yes,yes,too_dark,1,yes,no,370 240 675 485,yes,,,true
-R79,03.jpg,landscape,yes,yes,too_dark,1,yes,no,245 435 760 850,yes,,,true
-R80,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R80,02.jpg,landscape,yes,yes,,1,yes,no,350 230 670 520,yes,,,true
-R80,03.jpg,landscape,yes,yes,,1,yes,no,290 515 745 835,yes,,,true
-R81,01.jpg,landscape,no,no,too_dark,1,no,yes,,yes,,,true
-R81,02.jpg,landscape,yes,yes,too_dark,1,yes,no,340 250 710 510,yes,,,true
-R81,03.jpg,landscape,yes,yes,too_dark,1,yes,no,270 540 735 900,yes,,,true
-R82,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R82,02.jpg,landscape,yes,yes,,1,yes,no,340 195 685 485,yes,,,true
-R82,03.jpg,landscape,yes,yes,,1,yes,no,245 315 775 720,yes,,,true
-R83,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R83,02.jpg,landscape,yes,yes,blur,1,yes,no,295 225 735 555,yes,,,true
-R83,03.jpg,landscape,yes,no,blur,1,yes,no,220 310 890 960,yes,,,true
-R84,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R84,02.jpg,landscape,yes,yes,,1,yes,no,300 225 740 540,yes,,,true
-R84,03.jpg,landscape,yes,yes,,1,yes,no,235 205 770 670,yes,,,true
-R85,01.jpg,landscape,no,no,blur,1,no,yes,,yes,,,true
-R85,02.jpg,landscape,yes,yes,blur,1,yes,no,305 185 690 480,yes,,,true
-R85,03.jpg,landscape,yes,no,blur,1,yes,no,270 235 855 810,yes,,,true
-R86,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R86,02.jpg,landscape,yes,yes,,1,yes,no,335 195 670 490,yes,,,true
-R86,03.jpg,landscape,yes,yes,,1,yes,no,295 450 735 795,yes,,,true
-R87,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R87,02.jpg,landscape,yes,no,cropped,1,yes,no,770 205 1000 645,yes,,,true
-R87,03.jpg,landscape,yes,no,cropped,1,yes,no,705 205 975 645,yes,,,true
-R88,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R88,02.jpg,landscape,yes,yes,,1,yes,no,335 210 685 475,yes,,,true
-R88,03.jpg,landscape,yes,yes,,1,yes,no,275 420 760 795,yes,,,true
-R89,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R89,02.jpg,landscape,yes,no,cropped,1,yes,no,600 160 1000 595,yes,,,true
-R89,03.jpg,landscape,yes,no,cropped,1,yes,no,665 180 1000 570,yes,,,true
-R90,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R90,02.jpg,landscape,yes,yes,,1,yes,no,335 210 690 475,yes,,,true
-R90,03.jpg,landscape,yes,yes,,1,yes,no,260 435 775 855,yes,,,true
-R91,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R91,02.jpg,landscape,yes,yes,,1,no,yes,370 620 650 840,yes,,,true
-R91,03.jpg,landscape,yes,yes,,1,no,yes,340 520 675 830,yes,,,true
-R92,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R92,02.jpg,landscape,yes,yes,,1,yes,no,335 240 665 510,yes,,,true
-R92,03.jpg,landscape,yes,yes,,1,yes,no,230 460 780 860,yes,,,true
-R93,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R93,02.jpg,landscape,yes,yes,,1,no,yes,345 695 635 855,yes,,,true
-R93,03.jpg,landscape,yes,yes,,1,no,yes,275 495 730 860,yes,,,true
-R94,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R94,02.jpg,landscape,yes,yes,,1,yes,no,315 215 700 520,yes,,,true
-R94,03.jpg,landscape,yes,yes,,1,yes,no,220 495 770 885,yes,,,true
-R95,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R95,02.jpg,landscape,yes,yes,,1,yes,no,330 245 680 535,yes,,,true
-R95,03.jpg,landscape,yes,yes,,1,yes,no,300 255 720 580,yes,,,true
-R96,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R96,02.jpg,landscape,yes,yes,,1,yes,no,335 275 700 620,yes,,,true
-R96,03.jpg,landscape,yes,yes,,1,yes,no,245 480 750 850,yes,,,true
-R97,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R97,02.jpg,landscape,yes,yes,,1,yes,no,325 245 685 505,yes,,,true
-R97,03.jpg,landscape,yes,yes,,1,yes,no,230 550 775 900,yes,,,true
-R98,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R98,02.jpg,landscape,yes,yes,,1,yes,no,345 260 680 515,yes,,,true
-R98,03.jpg,landscape,yes,yes,,1,yes,no,210 425 785 920,yes,,,true
-R99,01.jpg,landscape,no,no,,1,no,yes,,yes,,,true
-R99,02.jpg,landscape,yes,yes,,1,yes,no,340 230 675 495,yes,,,true
-R99,03.jpg,landscape,yes,yes,,1,yes,no,225 365 775 820,yes,,,true
+R01,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:20:57.932+07:00,true
+R01,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:21:02.426+07:00,true
+R01,03.jpg,landscape,yes,yes,,1,yes,no,440 319 787 639,no,Samsul,2026-10-27T07:21:07.587+07:00,true
+R01,04.jpg,landscape,yes,yes,,1,yes,no,172 224 816 920,no,Samsul,2026-10-27T07:21:12.600+07:00,true
+R02,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:01:30.274+07:00,true
+R02,02.jpg,landscape,yes,yes,,1,yes,no,340 236 675 454,no,Samsul,2026-10-27T07:01:42.155+07:00,true
+R02,03.jpg,landscape,yes,yes,,1,yes,no,239 335 766 869,no,Samsul,2026-10-27T07:01:51.054+07:00,true
+R03,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:01:56.259+07:00,true
+R03,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:01:59.740+07:00,true
+R03,03.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:02:05.784+07:00,true
+R03,04.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:02:09.532+07:00,true
+R03,05.jpg,landscape,yes,yes,,1,yes,no,354 236 651 415,no,Samsul,2026-10-27T07:02:13.554+07:00,true
+R03,06.jpg,landscape,yes,yes,,1,yes,no,297 377 854 799,no,Samsul,2026-10-27T07:02:18.104+07:00,true
+R04,01.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:21:17.044+07:00,true
+R04,02.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:21:21.759+07:00,true
+R04,03.jpg,landscape,yes,yes,,2,yes,no,160 335 404 473,no,Samsul,2026-10-27T07:21:26.838+07:00,true
+R04,04.jpg,landscape,yes,yes,,2,yes,yes,165 326 636 853,no,Samsul,2026-10-27T07:21:32.246+07:00,true
+R05,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:21:37.448+07:00,true
+R05,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:21:42.202+07:00,true
+R05,03.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:21:47.412+07:00,true
+R05,04.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:21:52.072+07:00,true
+R05,05.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:21:56.650+07:00,true
+R05,06.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:22:01.215+07:00,true
+R05,07.jpg,landscape,yes,yes,,1,yes,no,344 272 687 473,no,Samsul,2026-10-27T07:22:06.093+07:00,true
+R05,08.jpg,landscape,yes,yes,,1,yes,yes,344 374 876 831,no,Samsul,2026-10-27T07:22:11.460+07:00,true
+R06,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:02:24.164+07:00,true
+R06,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:02:30.802+07:00,true
+R06,03.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:02:35.667+07:00,true
+R06,04.jpg,landscape,yes,yes,,1,yes,no,344 224 677 447,no,Samsul,2026-10-27T07:02:40.275+07:00,true
+R06,05.jpg,landscape,yes,yes,,1,yes,no,237 281 854 885,no,Samsul,2026-10-27T07:02:44.357+07:00,true
+R07,01.jpg,landscape,no,no,,3,no,yes,,no,Samsul,2026-10-27T07:02:47.889+07:00,true
+R07,02.jpg,landscape,no,no,,3,no,yes,,no,Samsul,2026-10-27T07:02:51.543+07:00,true
+R07,03.jpg,landscape,no,no,,3,yes,yes,,no,Samsul,2026-10-27T07:02:55.533+07:00,true
+R07,04.jpg,landscape,no,no,,3,no,yes,,no,Samsul,2026-10-27T07:02:59.650+07:00,true
+R07,05.jpg,landscape,no,no,,3,yes,yes,,no,Samsul,2026-10-27T07:03:03.120+07:00,true
+R07,06.jpg,landscape,no,no,,3,yes,no,,no,Samsul,2026-10-27T07:03:06.751+07:00,true
+R07,07.jpg,landscape,yes,yes,,3,yes,no,117 345 304 537,no,Samsul,2026-10-27T07:03:16.217+07:00,true
+R07,08.jpg,landscape,yes,yes,,3,yes,yes,230 588 763 866,no,Samsul,2026-10-27T07:03:25.023+07:00,true
+R08,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:22:16.117+07:00,true
+R08,02.jpg,landscape,yes,yes,,1,yes,no,325 233 691 495,no,Samsul,2026-10-27T07:22:21.081+07:00,true
+R08,03.jpg,landscape,yes,yes,,1,yes,no,261 326 754 783,no,Samsul,2026-10-27T07:22:26.166+07:00,true
+R09,01.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:03:28.857+07:00,true
+R09,02.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:03:32.422+07:00,true
+R09,03.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:03:36.410+07:00,true
+R09,04.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:03:39.995+07:00,true
+R09,05.jpg,landscape,no,no,,2,yes,yes,,no,Samsul,2026-10-27T07:03:43.985+07:00,true
+R09,06.jpg,landscape,yes,yes,,2,yes,no,136 310 409 463,no,Samsul,2026-10-27T07:03:52.200+07:00,true
+R09,07.jpg,landscape,yes,yes,,2,yes,yes,93 415 543 895,no,Samsul,2026-10-27T07:03:56.236+07:00,true
+R10,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:03:59.884+07:00,true
+R10,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:04:04.229+07:00,true
+R10,03.jpg,landscape,yes,yes,,1,yes,no,344 278 675 514,no,Samsul,2026-10-27T07:04:08.331+07:00,true
+R10,04.jpg,landscape,yes,yes,,1,yes,no,227 339 835 834,no,Samsul,2026-10-27T07:04:12.731+07:00,true
+R100,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:20:08.643+07:00,true
+R100,02.jpg,landscape,yes,yes,,1,yes,no,325 198 687 479,no,Samsul,2026-10-27T07:20:13.535+07:00,true
+R100,03.jpg,landscape,yes,yes,,1,yes,no,244 486 756 856,no,Samsul,2026-10-27T07:20:18.503+07:00,true
+R101,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:35:20.850+07:00,true
+R101,02.jpg,landscape,yes,yes,,1,yes,no,337 230 684 463,no,Samsul,2026-10-27T07:35:26.835+07:00,true
+R101,03.jpg,landscape,yes,yes,,1,yes,no,254 319 775 735,no,Samsul,2026-10-27T07:35:32.065+07:00,true
+R102,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:35:36.992+07:00,true
+R102,02.jpg,landscape,yes,yes,,1,yes,no,321 214 691 502,no,Samsul,2026-10-27T07:35:42.774+07:00,true
+R102,03.jpg,landscape,yes,yes,,1,yes,no,254 422 775 847,no,Samsul,2026-10-27T07:35:48.307+07:00,true
+R103,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:20:22.947+07:00,true
+R103,02.jpg,landscape,yes,yes,,1,yes,no,380 208 667 438,no,Samsul,2026-10-27T07:20:28.090+07:00,true
+R103,03.jpg,landscape,yes,yes,,1,yes,no,225 454 768 847,no,Samsul,2026-10-27T07:20:33.209+07:00,true
+R104,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:20:41.706+07:00,true
+R104,02.jpg,landscape,yes,yes,,1,yes,no,333 208 696 470,no,Samsul,2026-10-27T07:20:47.159+07:00,true
+R104,03.jpg,landscape,yes,yes,,1,yes,no,244 473 768 837,no,Samsul,2026-10-27T07:20:52.727+07:00,true
+R11,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:04:16.363+07:00,true
+R11,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:04:20.033+07:00,true
+R11,03.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:04:24.004+07:00,true
+R11,04.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:04:27.706+07:00,true
+R11,05.jpg,landscape,yes,yes,,1,yes,no,423 233 739 473,no,Samsul,2026-10-27T07:04:31.778+07:00,true
+R11,06.jpg,landscape,yes,yes,,1,yes,yes,292 319 849 837,no,Samsul,2026-10-27T07:04:36.641+07:00,true
+R12,01.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:22:30.632+07:00,true
+R12,02.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:22:35.197+07:00,true
+R12,03.jpg,landscape,yes,yes,,2,yes,no,182 358 440 543,no,Samsul,2026-10-27T07:22:45.053+07:00,true
+R12,04.jpg,landscape,yes,yes,,2,yes,yes,493 358 962 856,no,Samsul,2026-10-27T07:22:50.371+07:00,true
+R13,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:22:54.883+07:00,true
+R13,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:22:59.819+07:00,true
+R13,03.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:23:04.372+07:00,true
+R13,04.jpg,landscape,yes,yes,,1,yes,no,304 233 694 463,no,Samsul,2026-10-27T07:23:09.436+07:00,true
+R13,05.jpg,landscape,yes,yes,,1,yes,yes,433 224 990 831,no,Samsul,2026-10-27T07:23:14.688+07:00,true
+R14,01.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:23:19.226+07:00,true
+R14,02.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:23:23.803+07:00,true
+R14,03.jpg,landscape,yes,no,too_dark,1,yes,no,459 345 667 463,no,Samsul,2026-10-27T07:23:28.783+07:00,true
+R14,04.jpg,landscape,yes,no,too_dark,1,yes,yes,536 505 763 709,no,Samsul,2026-10-27T07:23:34.050+07:00,true
+R15,01.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:23:40.607+07:00,true
+R15,02.jpg,landscape,yes,no,too_dark,1,yes,no,452 313 648 422,no,Samsul,2026-10-27T07:23:45.795+07:00,true
+R15,03.jpg,landscape,yes,no,too_dark,1,no,yes,273 537 505 888,no,Samsul,2026-10-27T07:23:51.370+07:00,true
+R16,01.jpg,landscape,no,no,too_dark,2,no,yes,,no,Samsul,2026-10-27T07:04:43.887+07:00,true
+R16,02.jpg,landscape,no,no,too_dark,2,no,yes,,no,Samsul,2026-10-27T07:04:47.563+07:00,true
+R16,03.jpg,landscape,no,no,too_dark,2,yes,yes,,no,Samsul,2026-10-27T07:04:51.650+07:00,true
+R16,04.jpg,landscape,yes,no,too_dark,2,yes,no,316 431 443 505,no,Samsul,2026-10-27T07:04:56.144+07:00,true
+R16,05.jpg,landscape,yes,no,too_dark,2,yes,yes,692 425 919 623,no,Samsul,2026-10-27T07:05:04.831+07:00,true
+R17,01.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:05:08.819+07:00,true
+R17,02.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:05:12.575+07:00,true
+R17,03.jpg,landscape,yes,no,too_dark,1,yes,no,400 355 646 489,no,Samsul,2026-10-27T07:05:17.071+07:00,true
+R17,04.jpg,landscape,yes,no,too_dark,1,yes,yes,644 342 842 575,no,Samsul,2026-10-27T07:05:21.620+07:00,true
+R18,01.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:05:27.164+07:00,true
+R18,02.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:05:33.711+07:00,true
+R18,03.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:05:37.727+07:00,true
+R18,04.jpg,landscape,no,no,too_dark,1,yes,no,,no,Samsul,2026-10-27T07:05:41.456+07:00,true
+R18,05.jpg,landscape,yes,no,too_dark,1,yes,no,505 367 691 534,no,Samsul,2026-10-27T07:05:45.732+07:00,true
+R18,06.jpg,landscape,yes,no,too_dark,1,yes,yes,443 364 696 744,no,Samsul,2026-10-27T07:05:54.021+07:00,true
+R19,01.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:23:56.107+07:00,true
+R19,02.jpg,landscape,no,no,too_dark,1,no,uncertain,,no,Samsul,2026-10-27T07:24:00.886+07:00,true
+R19,03.jpg,landscape,yes,no,too_dark,1,uncertain,no,500 399 667 527,no,Samsul,2026-10-27T07:24:06.629+07:00,true
+R19,04.jpg,landscape,yes,no,too_dark,1,yes,no,404 415 684 703,no,Samsul,2026-10-27T07:24:11.734+07:00,true
+R20,01.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:05:57.723+07:00,true
+R20,02.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:06:01.352+07:00,true
+R20,03.jpg,landscape,yes,no,blur,1,yes,no,333 272 713 463,no,Samsul,2026-10-27T07:06:05.527+07:00,true
+R20,04.jpg,landscape,yes,no,blur,1,yes,yes,297 208 775 575,no,Samsul,2026-10-27T07:06:09.772+07:00,true
+R21,01.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:24:17.434+07:00,true
+R21,02.jpg,landscape,yes,no,blur,1,yes,no,285 224 703 463,no,Samsul,2026-10-27T07:24:22.940+07:00,true
+R21,03.jpg,landscape,yes,no,blur,1,yes,uncertain,321 351 799 799,no,Samsul,2026-10-27T07:24:28.392+07:00,true
+R22,01.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:06:16.816+07:00,true
+R22,02.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:06:20.614+07:00,true
+R22,03.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:06:24.957+07:00,true
+R22,04.jpg,landscape,no,no,blur,1,yes,yes,,no,Samsul,2026-10-27T07:06:29.412+07:00,true
+R22,05.jpg,landscape,yes,no,blur,1,yes,no,368 249 734 431,no,Samsul,2026-10-27T07:06:33.582+07:00,true
+R22,06.jpg,landscape,yes,no,blur,1,yes,yes,445 288 873 815,no,Samsul,2026-10-27T07:06:37.956+07:00,true
+R23,01.jpg,landscape,no,no,blur,2,no,yes,,no,Samsul,2026-10-27T07:06:45.203+07:00,true
+R23,02.jpg,landscape,no,no,blur,2,no,yes,,no,Samsul,2026-10-27T07:06:49.097+07:00,true
+R23,03.jpg,landscape,yes,no,blur,2,yes,no,153 288 428 415,no,Samsul,2026-10-27T07:06:53.467+07:00,true
+R23,04.jpg,landscape,yes,no,blur,2,yes,yes,469 447 955 911,no,Samsul,2026-10-27T07:06:57.641+07:00,true
+R24,01.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:24:33.076+07:00,true
+R24,02.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:24:37.456+07:00,true
+R24,03.jpg,landscape,no,no,blur,1,yes,yes,,no,Samsul,2026-10-27T07:24:41.949+07:00,true
+R24,04.jpg,landscape,yes,no,blur,1,yes,no,409 240 684 447,no,Samsul,2026-10-27T07:24:46.769+07:00,true
+R24,05.jpg,landscape,yes,no,blur,1,yes,yes,196 358 734 847,no,Samsul,2026-10-27T07:24:51.841+07:00,true
+R25,01.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:24:56.619+07:00,true
+R25,02.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:25:02.021+07:00,true
+R25,03.jpg,landscape,yes,no,blur,1,yes,no,376 233 667 409,no,Samsul,2026-10-27T07:25:07.353+07:00,true
+R25,04.jpg,landscape,yes,no,blur,1,yes,no,328 304 823 799,no,Samsul,2026-10-27T07:25:12.639+07:00,true
+R26,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:07:01.625+07:00,true
+R26,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:07:08.895+07:00,true
+R26,03.jpg,landscape,yes,no,obstructed,1,yes,no,368 345 679 521,no,Samsul,2026-10-27T07:07:13.296+07:00,true
+R26,04.jpg,landscape,no,no,obstructed,1,yes,no,,no,Samsul,2026-10-27T07:07:18.046+07:00,true
+R27,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:25:17.134+07:00,true
+R27,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:25:21.661+07:00,true
+R27,03.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:25:26.458+07:00,true
+R27,04.jpg,landscape,yes,no,obstructed,1,yes,no,356 310 672 447,no,Samsul,2026-10-27T07:25:31.994+07:00,true
+R27,05.jpg,landscape,yes,no,obstructed,1,yes,no,368 345 758 550,no,Samsul,2026-10-27T07:25:41.561+07:00,true
+R28,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:07:21.746+07:00,true
+R28,02.jpg,landscape,yes,no,obstructed,1,yes,no,361 288 667 479,no,Samsul,2026-10-27T07:07:25.900+07:00,true
+R28,03.jpg,landscape,no,no,obstructed,1,yes,no,,no,Samsul,2026-10-27T07:07:30.091+07:00,true
+R29,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:07:33.793+07:00,true
+R29,02.jpg,landscape,no,no,obstructed,1,no,yes,,no,Samsul,2026-10-27T07:07:38.661+07:00,true
+R29,03.jpg,landscape,yes,yes,obstructed,1,yes,no,531 399 778 553,no,Samsul,2026-10-27T07:07:46.326+07:00,true
+R29,04.jpg,landscape,yes,yes,obstructed,1,yes,no,428 393 823 757,no,Samsul,2026-10-27T07:07:50.602+07:00,true
+R30,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:25:46.774+07:00,true
+R30,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:25:51.737+07:00,true
+R30,03.jpg,landscape,yes,yes,,1,yes,no,280 473 555 776,no,Samsul,2026-10-27T07:25:57.402+07:00,true
+R30,04.jpg,landscape,yes,yes,,1,yes,no,278 319 804 728,no,Samsul,2026-10-27T07:26:03.134+07:00,true
+R31,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:07:54.463+07:00,true
+R31,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:07:58.122+07:00,true
+R31,03.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:08:01.987+07:00,true
+R31,04.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:08:05.588+07:00,true
+R32,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:08:09.408+07:00,true
+R32,02.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:08:13.153+07:00,true
+R32,03.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:08:17.464+07:00,true
+R33,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:26:07.755+07:00,true
+R33,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:26:12.826+07:00,true
+R33,03.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:26:17.847+07:00,true
+R33,04.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:26:23.166+07:00,true
+R33,05.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:26:27.875+07:00,true
+R34,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:26:32.643+07:00,true
+R34,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:26:37.194+07:00,true
+R34,03.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:26:42.095+07:00,true
+R34,04.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:26:47.374+07:00,true
+R34,05.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:26:52.348+07:00,true
+R34,06.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:27:00.225+07:00,true
+R35,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:08:21.238+07:00,true
+R35,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:08:24.936+07:00,true
+R35,03.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:08:28.741+07:00,true
+R35,04.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:08:32.576+07:00,true
+R36,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:08:39.314+07:00,true
+R36,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:08:43.135+07:00,true
+R36,03.jpg,landscape,yes,yes,,1,yes,no,321 240 677 450,no,Samsul,2026-10-27T07:08:47.771+07:00,true
+R36,04.jpg,landscape,yes,yes,,1,yes,no,222 192 864 885,no,Samsul,2026-10-27T07:08:51.909+07:00,true
+R37,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:27:05.380+07:00,true
+R37,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:27:10.020+07:00,true
+R37,03.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:27:18.696+07:00,true
+R37,04.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:27:23.632+07:00,true
+R37,05.jpg,landscape,yes,yes,,1,yes,no,459 272 778 473,no,Samsul,2026-10-27T07:27:29.107+07:00,true
+R37,06.jpg,landscape,yes,yes,,1,yes,no,177 304 864 824,no,Samsul,2026-10-27T07:27:34.525+07:00,true
+R38,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:08:56.844+07:00,true
+R38,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:09:01.270+07:00,true
+R38,03.jpg,landscape,yes,yes,,1,yes,no,313 214 696 463,no,Samsul,2026-10-27T07:09:06.721+07:00,true
+R38,04.jpg,landscape,yes,yes,,1,yes,no,170 304 816 872,no,Samsul,2026-10-27T07:09:11.218+07:00,true
+R39,01.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:27:39.474+07:00,true
+R39,02.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:27:44.663+07:00,true
+R39,03.jpg,landscape,no,no,,2,yes,yes,,no,Samsul,2026-10-27T07:27:50.452+07:00,true
+R39,04.jpg,landscape,yes,yes,,2,yes,no,182 342 409 495,no,Samsul,2026-10-27T07:27:55.557+07:00,true
+R39,05.jpg,landscape,yes,yes,,2,yes,no,242 335 744 831,no,Samsul,2026-10-27T07:28:01.056+07:00,true
+R40,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:09:15.332+07:00,true
+R40,02.jpg,landscape,yes,yes,,1,yes,no,349 246 691 431,no,Samsul,2026-10-27T07:09:23.596+07:00,true
+R40,03.jpg,landscape,yes,yes,,1,yes,no,222 240 840 831,no,Samsul,2026-10-27T07:09:28.347+07:00,true
+R41,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:09:32.474+07:00,true
+R41,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:09:36.817+07:00,true
+R41,03.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:09:41.136+07:00,true
+R41,04.jpg,landscape,yes,yes,,1,yes,no,321 182 696 406,no,Samsul,2026-10-27T07:09:45.804+07:00,true
+R41,05.jpg,landscape,yes,yes,,1,yes,yes,321 281 816 808,no,Samsul,2026-10-27T07:09:50.814+07:00,true
+R42,01.jpg,landscape,yes,yes,,1,yes,no,325 185 699 422,no,Samsul,2026-10-27T07:28:06.097+07:00,true
+R42,02.jpg,landscape,yes,yes,,1,yes,no,543 457 696 767,no,Samsul,2026-10-27T07:28:16.353+07:00,true
+R42,03.jpg,landscape,yes,yes,,1,yes,no,289 358 864 824,no,Samsul,2026-10-27T07:28:21.650+07:00,true
+R43,01.jpg,landscape,yes,yes,,1,yes,no,313 198 720 511,no,Samsul,2026-10-27T07:09:55.516+07:00,true
+R43,02.jpg,landscape,yes,yes,,1,yes,no,636 342 878 735,no,Samsul,2026-10-27T07:10:00.333+07:00,true
+R43,03.jpg,landscape,yes,yes,,1,yes,no,285 297 931 805,no,Samsul,2026-10-27T07:10:04.906+07:00,true
+R43,04.jpg,landscape,yes,yes,,1,yes,no,577 278 821 735,no,Samsul,2026-10-27T07:10:13.247+07:00,true
+R44,01.jpg,landscape,yes,yes,,1,yes,no,416 281 644 431,no,Samsul,2026-10-27T07:10:21.229+07:00,true
+R44,02.jpg,landscape,yes,yes,,1,yes,no,368 409 675 719,no,Samsul,2026-10-27T07:10:26.121+07:00,true
+R44,03.jpg,landscape,yes,yes,,1,yes,no,261 272 864 776,no,Samsul,2026-10-27T07:10:31.094+07:00,true
+R45,01.jpg,landscape,yes,yes,,1,yes,no,385 259 691 438,no,Samsul,2026-10-27T07:10:39.421+07:00,true
+R45,02.jpg,landscape,yes,yes,,1,yes,no,555 345 854 751,no,Samsul,2026-10-27T07:10:44.041+07:00,true
+R45,03.jpg,landscape,yes,yes,,1,yes,no,297 304 864 853,no,Samsul,2026-10-27T07:10:48.301+07:00,true
+R45,04.jpg,landscape,yes,yes,,1,yes,no,440 393 756 757,no,Samsul,2026-10-27T07:10:52.537+07:00,true
+R46,01.jpg,landscape,no,no,,1,no,no,,no,Samsul,2026-10-27T07:28:26.264+07:00,true
+R46,02.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:28:31.241+07:00,true
+R46,03.jpg,landscape,yes,yes,,1,yes,no,356 256 684 470,no,Samsul,2026-10-27T07:28:36.852+07:00,true
+R46,04.jpg,landscape,yes,yes,,1,yes,no,273 262 871 872,no,Samsul,2026-10-27T07:28:42.133+07:00,true
+R47,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:10:56.311+07:00,true
+R47,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:11:00.230+07:00,true
+R47,03.jpg,landscape,yes,no,,1,yes,no,333 259 684 470,no,Samsul,2026-10-27T07:11:12.039+07:00,true
+R47,04.jpg,landscape,yes,no,,1,uncertain,no,249 134 782 808,no,Samsul,2026-10-27T07:11:12.035+07:00,true
+R48,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:28:49.866+07:00,true
+R48,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:28:54.889+07:00,true
+R48,03.jpg,landscape,yes,no,,1,yes,no,337 288 727 617,no,Samsul,2026-10-27T07:29:00.308+07:00,true
+R48,04.jpg,landscape,yes,no,obstructed,1,yes,no,352 313 847 901,no,Samsul,2026-10-27T07:29:06.085+07:00,true
+R49,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:11:16.671+07:00,true
+R49,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:11:20.461+07:00,true
+R49,03.jpg,landscape,no,no,,1,yes,no,,no,Samsul,2026-10-27T07:11:24.267+07:00,true
+R49,04.jpg,landscape,yes,no,too_far,1,yes,no,445 374 548 454,no,Samsul,2026-10-27T07:11:28.855+07:00,true
+R49,05.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:11:32.761+07:00,true
+R50,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:29:14.316+07:00,true
+R50,02.jpg,landscape,yes,yes,,1,yes,no,440 262 775 591,no,Samsul,2026-10-27T07:29:20.141+07:00,true
+R50,03.jpg,landscape,yes,yes,,1,yes,no,301 160 679 728,no,Samsul,2026-10-27T07:29:25.469+07:00,true
+R51,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:11:36.630+07:00,true
+R51,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:11:40.687+07:00,true
+R51,03.jpg,landscape,yes,yes,,1,no,yes,553 534 780 847,no,Samsul,2026-10-27T07:11:45.361+07:00,true
+R51,04.jpg,landscape,yes,yes,,1,no,yes,400 431 787 821,no,Samsul,2026-10-27T07:11:50.198+07:00,true
+R52,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:11:54.554+07:00,true
+R52,02.jpg,landscape,yes,yes,,1,no,yes,620 521 823 815,no,Samsul,2026-10-27T07:12:00.028+07:00,true
+R52,03.jpg,landscape,yes,yes,,1,no,yes,254 406 608 815,no,Samsul,2026-10-27T07:12:04.659+07:00,true
+R53,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:29:30.291+07:00,true
+R53,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:29:35.051+07:00,true
+R53,03.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:29:41.987+07:00,true
+R53,04.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:29:46.808+07:00,true
+R53,05.jpg,landscape,yes,yes,,1,no,yes,572 550 780 837,no,Samsul,2026-10-27T07:29:51.958+07:00,true
+R53,06.jpg,landscape,yes,yes,,1,no,yes,364 553 770 799,no,Samsul,2026-10-27T07:29:57.432+07:00,true
+R54,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:12:08.772+07:00,true
+R54,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:12:12.785+07:00,true
+R54,03.jpg,landscape,yes,yes,,1,no,yes,555 645 770 879,no,Samsul,2026-10-27T07:12:20.881+07:00,true
+R54,04.jpg,landscape,yes,yes,,1,no,yes,392 454 811 821,no,Samsul,2026-10-27T07:12:25.445+07:00,true
+R55,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:30:02.660+07:00,true
+R55,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:30:07.583+07:00,true
+R55,03.jpg,landscape,yes,yes,,1,yes,no,349 246 684 473,no,Samsul,2026-10-27T07:30:12.841+07:00,true
+R55,04.jpg,landscape,yes,yes,,1,yes,yes,316 281 804 856,no,Samsul,2026-10-27T07:30:18.273+07:00,true
+R56,01.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:12:29.390+07:00,true
+R56,02.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:12:33.424+07:00,true
+R56,03.jpg,landscape,yes,yes,,2,yes,no,187 326 445 486,no,Samsul,2026-10-27T07:12:41.594+07:00,true
+R56,04.jpg,landscape,yes,yes,,2,yes,yes,440 361 998 911,no,Samsul,2026-10-27T07:12:46.211+07:00,true
+R57,01.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:30:22.862+07:00,true
+R57,02.jpg,landscape,no,no,,2,no,yes,,no,Samsul,2026-10-27T07:30:27.484+07:00,true
+R57,03.jpg,landscape,yes,yes,,2,yes,no,208 319 404 441,no,Samsul,2026-10-27T07:30:32.848+07:00,true
+R57,04.jpg,landscape,yes,yes,,2,yes,yes,297 425 691 757,no,Samsul,2026-10-27T07:30:38.202+07:00,true
+R58,01.jpg,landscape,no,no,,3,no,yes,,no,Samsul,2026-10-27T07:30:42.920+07:00,true
+R58,02.jpg,landscape,no,no,,3,no,yes,,no,Samsul,2026-10-27T07:30:47.472+07:00,true
+R58,03.jpg,landscape,no,no,,3,yes,yes,,no,Samsul,2026-10-27T07:30:52.355+07:00,true
+R58,04.jpg,landscape,yes,yes,,3,yes,no,124 367 316 527,no,Samsul,2026-10-27T07:30:57.889+07:00,true
+R58,05.jpg,landscape,yes,yes,,3,yes,yes,388 447 806 863,no,Samsul,2026-10-27T07:31:03.617+07:00,true
+R59,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:12:49.996+07:00,true
+R59,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:12:53.835+07:00,true
+R59,03.jpg,landscape,yes,yes,,1,no,yes,196 569 404 821,no,Samsul,2026-10-27T07:12:58.687+07:00,true
+R59,04.jpg,landscape,yes,yes,,1,no,yes,505 514 888 821,no,Samsul,2026-10-27T07:13:03.581+07:00,true
+R60,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:13:07.405+07:00,true
+R60,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:13:11.292+07:00,true
+R60,03.jpg,landscape,yes,no,,1,no,yes,555 581 818 815,no,Samsul,2026-10-27T07:13:15.772+07:00,true
+R60,04.jpg,landscape,yes,no,,1,no,no,364 326 895 789,no,Samsul,2026-10-27T07:13:21.074+07:00,true
+R61,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:13:24.948+07:00,true
+R61,02.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:13:28.957+07:00,true
+R61,03.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:13:32.834+07:00,true
+R61,04.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:13:36.626+07:00,true
+R62,01.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:13:40.516+07:00,true
+R62,02.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:13:44.605+07:00,true
+R62,03.jpg,landscape,yes,no,too_dark,1,yes,no,483 342 696 454,no,Samsul,2026-10-27T07:13:48.907+07:00,true
+R62,04.jpg,landscape,yes,no,too_dark,1,yes,yes,591 422 835 741,no,Samsul,2026-10-27T07:13:53.731+07:00,true
+R63,01.jpg,landscape,yes,yes,,1,yes,no,368 272 675 463,no,Samsul,2026-10-27T07:31:08.719+07:00,true
+R63,02.jpg,landscape,yes,yes,,1,yes,no,541 358 799 719,no,Samsul,2026-10-27T07:31:14.016+07:00,true
+R63,03.jpg,landscape,yes,yes,,1,yes,no,232 240 852 847,no,Samsul,2026-10-27T07:31:19.679+07:00,true
+R64,01.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:13:57.826+07:00,true
+R64,02.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:14:01.787+07:00,true
+R64,03.jpg,landscape,yes,no,blur,1,no,yes,261 543 541 799,no,Samsul,2026-10-27T07:14:06.199+07:00,true
+R64,04.jpg,landscape,yes,no,blur,1,no,yes,536 534 878 847,no,Samsul,2026-10-27T07:14:11.003+07:00,true
+R65,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:14:15.277+07:00,true
+R65,02.jpg,landscape,yes,yes,glare,1,yes,no,301 198 708 502,no,Samsul,2026-10-27T07:14:20.339+07:00,true
+R65,03.jpg,landscape,yes,no,glare,1,yes,no,206 262 763 703,no,Samsul,2026-10-27T07:14:25.178+07:00,true
+R66,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:14:29.080+07:00,true
+R66,02.jpg,landscape,yes,yes,glare,1,yes,no,301 201 708 521,no,Samsul,2026-10-27T07:14:33.680+07:00,true
+R66,03.jpg,landscape,yes,no,glare,1,yes,no,237 345 739 783,no,Samsul,2026-10-27T07:14:38.260+07:00,true
+R67,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:31:27.770+07:00,true
+R67,02.jpg,landscape,yes,yes,glare,1,yes,no,280 176 711 463,no,Samsul,2026-10-27T07:31:36.310+07:00,true
+R67,03.jpg,landscape,yes,no,glare,1,yes,no,244 310 763 735,no,Samsul,2026-10-27T07:31:41.720+07:00,true
+R68,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:31:46.833+07:00,true
+R68,02.jpg,landscape,yes,yes,glare,1,yes,no,309 192 703 473,no,Samsul,2026-10-27T07:31:56.592+07:00,true
+R68,03.jpg,landscape,yes,no,glare,1,yes,no,220 304 799 703,no,Samsul,2026-10-27T07:32:01.686+07:00,true
+R69,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:14:42.239+07:00,true
+R69,02.jpg,landscape,yes,no,too_far,1,yes,no,433 415 581 534,no,Samsul,2026-10-27T07:14:46.777+07:00,true
+R69,03.jpg,landscape,yes,no,too_far,1,uncertain,no,904 431 955 447,no,Samsul,2026-10-27T07:14:59.276+07:00,true
+R70,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:32:06.484+07:00,true
+R70,02.jpg,landscape,yes,no,too_far,1,yes,no,440 406 555 518,no,Samsul,2026-10-27T07:32:11.934+07:00,true
+R70,03.jpg,landscape,yes,no,too_far,1,uncertain,no,911 508 955 526,no,Samsul,2026-10-27T07:32:24.848+07:00,true
+R71,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:15:03.297+07:00,true
+R71,02.jpg,landscape,yes,yes,,1,yes,no,505 259 847 565,no,Samsul,2026-10-27T07:15:07.740+07:00,true
+R71,03.jpg,landscape,yes,yes,cropped,1,yes,no,464 233 1000 911,no,Samsul,2026-10-27T07:15:12.723+07:00,true
+R72,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:15:16.756+07:00,true
+R72,02.jpg,landscape,yes,yes,,1,yes,no,469 179 804 431,no,Samsul,2026-10-27T07:15:21.579+07:00,true
+R72,03.jpg,landscape,yes,yes,cropped,1,yes,no,524 367 1000 1000,no,Samsul,2026-10-27T07:15:26.152+07:00,true
+R73,01.jpg,portrait,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:15:30.665+07:00,true
+R73,02.jpg,portrait,yes,yes,,1,yes,no,306 293 744 506,no,Samsul,2026-10-27T07:15:58.489+07:00,true
+R73,03.jpg,portrait,yes,yes,,1,yes,no,208 372 823 706,no,Samsul,2026-10-27T07:15:58.485+07:00,true
+R74,01.jpg,portrait,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:32:29.725+07:00,true
+R74,02.jpg,portrait,yes,yes,,1,yes,no,297 320 739 497,no,Samsul,2026-10-27T07:32:35.322+07:00,true
+R74,03.jpg,portrait,yes,yes,,1,yes,no,110 470 895 840,no,Samsul,2026-10-27T07:32:40.991+07:00,true
+R75,01.jpg,portrait,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:16:10.877+07:00,true
+R75,02.jpg,portrait,yes,yes,,1,yes,no,280 284 730 481,no,Samsul,2026-10-27T07:16:15.537+07:00,true
+R75,03.jpg,portrait,yes,yes,,1,yes,no,122 481 911 874,no,Samsul,2026-10-27T07:16:20.095+07:00,true
+R76,01.jpg,portrait,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:16:24.099+07:00,true
+R76,02.jpg,portrait,yes,yes,,1,yes,no,285 302 734 508,no,Samsul,2026-10-27T07:16:28.625+07:00,true
+R76,03.jpg,portrait,yes,yes,,1,yes,no,158 287 864 657,no,Samsul,2026-10-27T07:16:33.141+07:00,true
+R77,01.jpg,portrait,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:32:45.935+07:00,true
+R77,02.jpg,portrait,yes,yes,,1,yes,no,292 311 739 506,no,Samsul,2026-10-27T07:32:51.382+07:00,true
+R77,03.jpg,portrait,yes,yes,,1,yes,no,177 508 828 849,no,Samsul,2026-10-27T07:32:56.843+07:00,true
+R78,01.jpg,portrait,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:16:37.632+07:00,true
+R78,02.jpg,portrait,yes,yes,,1,yes,no,285 280 734 488,no,Samsul,2026-10-27T07:16:42.393+07:00,true
+R78,03.jpg,portrait,yes,yes,,1,yes,no,194 420 816 811,no,Samsul,2026-10-27T07:16:47.575+07:00,true
+R79,01.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:16:52.218+07:00,true
+R79,02.jpg,landscape,yes,yes,too_dark,1,yes,no,368 243 620 479,no,Samsul,2026-10-27T07:17:02.485+07:00,true
+R79,03.jpg,landscape,yes,yes,too_dark,1,yes,no,249 431 758 856,no,Samsul,2026-10-27T07:17:07.822+07:00,true
+R80,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:17:12.467+07:00,true
+R80,02.jpg,landscape,yes,yes,,1,yes,no,356 233 672 518,no,Samsul,2026-10-27T07:17:18.625+07:00,true
+R80,03.jpg,landscape,yes,yes,,1,yes,no,297 511 739 837,no,Samsul,2026-10-27T07:17:23.257+07:00,true
+R81,01.jpg,landscape,no,no,too_dark,1,no,yes,,no,Samsul,2026-10-27T07:33:01.666+07:00,true
+R81,02.jpg,landscape,yes,yes,too_dark,1,yes,no,340 249 644 505,no,Samsul,2026-10-27T07:33:11.834+07:00,true
+R81,03.jpg,landscape,yes,yes,too_dark,1,yes,no,309 543 744 920,no,Samsul,2026-10-27T07:33:22.078+07:00,true
+R82,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:33:27.296+07:00,true
+R82,02.jpg,landscape,yes,yes,,1,yes,no,340 198 684 479,no,Samsul,2026-10-27T07:33:32.970+07:00,true
+R82,03.jpg,landscape,yes,yes,,1,yes,no,261 313 775 709,no,Samsul,2026-10-27T07:33:38.060+07:00,true
+R83,01.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:33:42.863+07:00,true
+R83,02.jpg,landscape,yes,no,blur,1,yes,no,297 217 715 543,no,Samsul,2026-10-27T07:33:48.174+07:00,true
+R83,03.jpg,landscape,yes,no,blur,1,yes,no,218 313 854 911,no,Samsul,2026-10-27T07:33:53.550+07:00,true
+R84,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:33:58.358+07:00,true
+R84,02.jpg,landscape,yes,yes,,1,yes,no,297 224 734 537,no,Samsul,2026-10-27T07:34:04.264+07:00,true
+R84,03.jpg,landscape,yes,yes,,1,yes,no,242 208 768 665,no,Samsul,2026-10-27T07:34:09.726+07:00,true
+R85,01.jpg,landscape,no,no,blur,1,no,yes,,no,Samsul,2026-10-27T07:17:27.550+07:00,true
+R85,02.jpg,landscape,yes,no,blur,1,yes,no,333 192 691 486,no,Samsul,2026-10-27T07:17:32.241+07:00,true
+R85,03.jpg,landscape,yes,no,blur,1,yes,no,278 304 775 792,no,Samsul,2026-10-27T07:17:37.106+07:00,true
+R86,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:17:41.059+07:00,true
+R86,02.jpg,landscape,yes,yes,,1,yes,no,337 198 667 486,no,Samsul,2026-10-27T07:17:45.496+07:00,true
+R86,03.jpg,landscape,yes,yes,,1,yes,no,297 463 734 783,no,Samsul,2026-10-27T07:17:50.169+07:00,true
+R87,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:17:54.892+07:00,true
+R87,02.jpg,landscape,yes,no,cropped,1,yes,no,770 208 1000 639,no,Samsul,2026-10-27T07:18:00.034+07:00,true
+R87,03.jpg,landscape,yes,no,,1,yes,no,703 214 971 639,no,Samsul,2026-10-27T07:18:06.143+07:00,true
+R88,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:18:10.159+07:00,true
+R88,02.jpg,landscape,yes,yes,,1,yes,no,340 214 684 470,no,Samsul,2026-10-27T07:18:14.579+07:00,true
+R88,03.jpg,landscape,yes,yes,,1,yes,no,273 415 758 789,no,Samsul,2026-10-27T07:18:19.442+07:00,true
+R89,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:34:14.711+07:00,true
+R89,02.jpg,landscape,yes,no,cropped,1,yes,no,600 176 1000 597,no,Samsul,2026-10-27T07:34:21.608+07:00,true
+R89,03.jpg,landscape,yes,no,cropped,1,yes,no,667 192 1000 569,no,Samsul,2026-10-27T07:34:26.964+07:00,true
+R90,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:34:31.892+07:00,true
+R90,02.jpg,landscape,yes,yes,,1,yes,no,356 214 687 473,no,Samsul,2026-10-27T07:34:37.780+07:00,true
+R90,03.jpg,landscape,yes,yes,,1,yes,no,261 438 770 853,no,Samsul,2026-10-27T07:34:43.357+07:00,true
+R91,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:18:23.763+07:00,true
+R91,02.jpg,landscape,yes,yes,,1,no,yes,373 623 644 837,no,Samsul,2026-10-27T07:18:28.557+07:00,true
+R91,03.jpg,landscape,yes,yes,,1,no,yes,340 518 672 831,no,Samsul,2026-10-27T07:18:34.042+07:00,true
+R92,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:18:38.389+07:00,true
+R92,02.jpg,landscape,yes,yes,,1,yes,no,368 240 667 502,no,Samsul,2026-10-27T07:18:43.122+07:00,true
+R92,03.jpg,landscape,yes,yes,,1,yes,no,232 463 711 856,no,Samsul,2026-10-27T07:18:47.757+07:00,true
+R93,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:18:53.349+07:00,true
+R93,02.jpg,landscape,yes,yes,,1,no,yes,349 696 627 856,no,Samsul,2026-10-27T07:18:59.470+07:00,true
+R93,03.jpg,landscape,yes,yes,,1,no,yes,278 495 708 856,no,Samsul,2026-10-27T07:19:04.690+07:00,true
+R94,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:19:09.054+07:00,true
+R94,02.jpg,landscape,yes,yes,,1,yes,no,316 217 696 511,no,Samsul,2026-10-27T07:19:14.870+07:00,true
+R94,03.jpg,landscape,yes,yes,,1,yes,no,225 495 768 879,no,Samsul,2026-10-27T07:19:19.929+07:00,true
+R95,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:34:48.570+07:00,true
+R95,02.jpg,landscape,yes,yes,,1,yes,no,328 240 684 527,no,Samsul,2026-10-27T07:34:54.319+07:00,true
+R95,03.jpg,landscape,yes,yes,,1,yes,no,304 256 711 581,no,Samsul,2026-10-27T07:34:59.999+07:00,true
+R96,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:19:25.207+07:00,true
+R96,02.jpg,landscape,yes,yes,,1,yes,no,337 278 696 613,no,Samsul,2026-10-27T07:19:30.086+07:00,true
+R96,03.jpg,landscape,yes,yes,,1,yes,no,249 479 754 856,no,Samsul,2026-10-27T07:19:35.229+07:00,true
+R97,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:35:04.967+07:00,true
+R97,02.jpg,landscape,yes,yes,,1,yes,no,328 246 684 502,no,Samsul,2026-10-27T07:35:10.442+07:00,true
+R97,03.jpg,landscape,yes,yes,,1,yes,no,232 559 775 901,no,Samsul,2026-10-27T07:35:15.893+07:00,true
+R98,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:19:39.776+07:00,true
+R98,02.jpg,landscape,yes,yes,,1,yes,no,344 256 679 511,no,Samsul,2026-10-27T07:19:44.871+07:00,true
+R98,03.jpg,landscape,yes,yes,,1,yes,no,218 422 763 869,no,Samsul,2026-10-27T07:19:49.719+07:00,true
+R99,01.jpg,landscape,no,no,,1,no,yes,,no,Samsul,2026-10-27T07:19:54.193+07:00,true
+R99,02.jpg,landscape,yes,yes,,1,yes,no,340 233 675 489,no,Samsul,2026-10-27T07:19:59.161+07:00,true
+R99,03.jpg,landscape,yes,yes,,1,yes,no,225 367 768 783,no,Samsul,2026-10-27T07:20:04.020+07:00,true
