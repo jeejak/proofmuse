@@ -11,6 +11,10 @@ var prices = map[string]price{
 	"muse-spark-1.3":             {InPerM: 1.25, CachedInPerM: 0.15, OutPerM: 4.25},
 	"muse-spark-1.3-contributor": {InPerM: 0.10, CachedInPerM: 0.10, OutPerM: 0.20},
 	"sam-3.1":                    {PerImage: 2.50 / 1000},
+	// Baseten Model API list price for Muse Spark Open, as captured from
+	// baseten.co/pricing on 2026-10-23 (usagepricing.com snapshot; the
+	// page itself did not render for us on 2026-11-03).
+	"meta-models/muse-spark-open-1026": {InPerM: 1.25, CachedInPerM: 0.15, OutPerM: 4.25},
 }
 
 // Cost prices one call from its reported usage. Unknown models cost 0

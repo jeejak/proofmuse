@@ -49,19 +49,21 @@ res, err := c.Observe(ctx, client.Request{Photos: jpegs, Resi: "JP123", Koli: 1}
 
 Test split, 62 records, run once per configuration (`go run ./cmd/eval -split test`). Reports: [`docs/eval/`](docs/eval/).
 
-| | Full pipeline | Muse Spark only |
-|---|---|---|
-| Verdict agrees with human | 96.8% (60/62) | 95.2% (59/62) |
-| Bukti lemah precision | **100.0%** (21/21) | 95.5% (21/22) |
-| Bukti lemah recall | 100.0% (21/21) | 100.0% (21/21) |
-| False alarms on human "kuat" | 0.0% (0/25) | 0.0% (0/25) |
-| Invalid answers | 0.0% (0/62) | 0.0% (0/62) |
-| Latency per parcel p50 / p95 | 4.6 s / 7.8 s | 2.8 s / 5.7 s |
-| Cost per parcel | $0.0138 | $0.0065 |
+| | Full pipeline | Muse Spark only | Full pipeline, Muse Spark Open on Baseten |
+|---|---|---|---|
+| Verdict agrees with human | 96.8% (60/62) | 95.2% (59/62) | 83.9% (52/62) |
+| Bukti lemah precision | **100.0%** (21/21) | 95.5% (21/22) | 88.2% (15/17) |
+| Bukti lemah recall | 100.0% (21/21) | 100.0% (21/21) | 71.4% (15/21) |
+| False alarms on human "kuat" | 0.0% (0/25) | 0.0% (0/25) | 8.0% (2/25) |
+| Invalid answers | 0.0% (0/62) | 0.0% (0/62) | 0.0% (0/62) |
+| Latency per parcel p50 / p95 | 4.6 s / 7.8 s | 2.8 s / 5.7 s | 10.9 s / 16.6 s |
+| Cost per parcel | $0.0138 | $0.0065 | $0.0138 |
 
 ![Verify before accusing: a one-digit misread is withdrawn instead of reported as the wrong label](docs/images/verify.png)
 
 What the extra steps buy: without them, Muse Spark misread one digit on a small label and the rules called it the wrong label, the most alarming thing a seller can be told. Verify-before-accusing withdrew that read on the test split (R49) and on the dev split (R70), and confirmed every genuine wrong label.
+
+**Open weights.** The third column is the same pipeline, prompt and SAM calls with the vision model swapped for Muse Spark Open (`meta-models/muse-spark-open-1026`) served by Baseten through its OpenAI-compatible endpoint, at `reasoning_effort: minimal` ([`docs/eval/spark-open-test.md`](docs/eval/spark-open-test.md)). It fills the same strict schema (0 invalid answers once reasoning is capped; with reasoning uncapped one answer in five hit the output limit) and finds labels about as well (first-pass box IoU 0.87 vs 0.78 for 1.3), but it answers "uncertain" on `item_in_photo` for most photos (31% agreement vs 98% for 1.3), so three "item never shown" parcels pass as strong, and its two reads of a label disagree often enough that verify withdrew 8 of 9 mismatches, including the three genuine wrong labels, which came out "perlu dicek" instead of "lemah". Between two identical runs 5 of 62 verdicts changed ([`run 1`](docs/eval/spark-open-test-run1.md), whose cost column predates the Baseten price entry). The cost is the same as the hosted model because Baseten lists the same per-token rate ($1.25 in, $4.25 out per 1M, snapshot of baseten.co/pricing on 2026-10-23).
 
 **Honest limits.**
 

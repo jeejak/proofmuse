@@ -28,7 +28,7 @@ Planned scope, ticked as it lands:
 - [x] Mobile-friendly web UI with the SAM label box overlay and the step trace
 - [x] Console integration: the Jeejak console calls ProofMuse through `client/` on a demo deployment (private repo, disclosed below)
 - [ ] Stretch: SAM 3.1 video pass over a packing clip
-- [ ] Stretch: open-weight comparison column (Muse Spark Open)
+- [x] Stretch: open-weight comparison column (Muse Spark Open on Baseten, same pipeline and prompt; `docs/eval/spark-open-test.md`)
 
 ## Pre-existing (not judged)
 
