@@ -3,7 +3,7 @@
 // phones have synced, and it has no dependencies beyond the standard
 // library so any Go service can import it.
 //
-//	c := client.New("https://proofmuse.jeejak.id", os.Getenv("PROOFMUSE_API_KEY"))
+//	c := client.New("https://proofmuse.example.com", os.Getenv("PROOFMUSE_API_KEY"))
 //	res, err := c.Observe(ctx, client.Request{Photos: jpegs, Resi: "JP123", Koli: 1})
 package client
 

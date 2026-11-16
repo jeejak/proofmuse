@@ -6,7 +6,7 @@ ProofMuse is the successor to [ParcelProof](https://github.com/jeejak/parcel-pro
 
 ![ProofMuse flags three dark packing photos and draws SAM 3.1's label box on each](docs/images/dark-flagged.png)
 
-**Live demo:** https://proofmuse.jeejak.id (no login; staged sample parcels with dummy waybills are preloaded).
+**Demo:** the public instance at proofmuse.jeejak.id was taken down on 2026-11-16, after the hackathon results. The video below shows it end to end; to run your own, see [docs/deploy.md](docs/deploy.md).
 
 **Demo video (3 min):** https://youtu.be/OJSj9r7RKPY
 
@@ -33,7 +33,7 @@ Other backends call ProofMuse with an API key. This is how the Jeejak console pl
 ```go
 import "github.com/jeejak/proofmuse/client"
 
-c := client.New("https://proofmuse.jeejak.id", os.Getenv("PROOFMUSE_API_KEY"))
+c := client.New("https://proofmuse.example.com", os.Getenv("PROOFMUSE_API_KEY"))
 res, err := c.Observe(ctx, client.Request{Photos: jpegs, Resi: "JP123", Koli: 1})
 // res.Observation: image_usable, label_visible, label_resi_read, package_sealed, item_visible, koli_seen
 // res.Verdict, res.Reasons, res.Usage (tokens, SAM images, cost, latency)
